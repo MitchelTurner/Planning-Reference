@@ -136,6 +136,16 @@ td .ref, li .ref, p .ref { vertical-align: 1px; }
 .callout.caution b:first-child { color: var(--caution); }
 .callout.tide { background: var(--tide-tint); }
 
+/* Verbatim code: set apart from the site's own wording, because only this is quotable in a motion. */
+.quote { border-left: 3px solid var(--tide); background: var(--surface); border-radius: 0 10px 10px 0; padding: 14px 18px; display: grid; gap: 10px; }
+.quote-cite { font-family: var(--f-mono); font-size: 11.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.quote-cite a { color: inherit; }
+.quote p, .quote li { font-size: 15px; line-height: 1.55; max-width: none; }
+.quote ol { margin: 0; padding-left: 22px; display: grid; gap: 7px; }
+.quote ol ol { margin-top: 7px; }
+.quote ol li::marker { color: var(--faint); font-variant-numeric: tabular-nums; }
+.quote .lead { font-weight: 600; }
+
 /* Tables */
 .tbl-wrap { border: 1px solid var(--rule); border-radius: 12px; background: var(--surface); overflow-x: auto; }
 table { width: 100%; border-collapse: collapse; font-size: 14.5px; line-height: 1.45; }
@@ -279,6 +289,11 @@ details.q .ans .fact { background: var(--paper); border-radius: 8px; padding: 10
 .hcard .btn-copy:hover { background: rgba(255,255,255,.18); }
 .hcard .row { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
 .hcard .script { font-size: 15px; color: #fff; }
+.hcard .hc-note { font-size: 13.5px; color: #8ea4ab; margin: 8px 0 0; max-width: none; }
+.hcard .motions { display: grid; gap: 10px; margin-top: 12px; }
+.hcard .motion { background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.12); border-radius: 10px; padding: 12px 14px; display: grid; gap: 8px; }
+.hcard .motion b { font-size: 14px; color: #9fc7e6; }
+.hcard .motion .script { font-size: 14.5px; line-height: 1.55; color: #dce6e8; }
 
 /* Drawer */
 .scrim { position: fixed; inset: 0; background: rgba(12,24,30,.35); z-index: 60; }
@@ -286,6 +301,9 @@ details.q .ans .fact { background: var(--paper); border-radius: 8px; padding: 10
 .drawer .hcard { padding: 0; }
 .drawer-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; color: #fff; }
 .drawer-head b { font-family: var(--f-display); font-size: 20px; }
+.drawer-actions { display: flex; gap: 8px; }
+.drawer-actions .btn { background: rgba(255,255,255,.1); color: #fff; border: 1px solid rgba(255,255,255,.2); }
+.drawer-actions .btn:hover { background: rgba(255,255,255,.18); }
 
 .empty { background: var(--surface); border: 1px dashed var(--rule-strong); border-radius: 12px; padding: 28px; text-align: center; color: var(--muted); }
 .match-count { font-size: 13.5px; color: var(--muted); padding-top: 18px; }
@@ -456,7 +474,7 @@ footer.foot { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--r
 
 <div class="scrim" id="scrim" hidden></div>
 <div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Hearing card" hidden>
-  <div class="drawer-head"><b>Hearing card</b><button class="btn btn-sm btn-copy" id="closeCard" type="button" style="background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.2)">Close</button></div>
+  <div class="drawer-head"><b>Hearing card</b><span class="drawer-actions"><button class="btn btn-sm" id="printCard" type="button">Print</button><button class="btn btn-sm" id="closeCard" type="button">Close</button></span></div>
   <div id="drawerBody"></div>
 </div>
 <div class="scrim" id="askScrim" hidden></div>
@@ -481,7 +499,7 @@ footer.foot { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--r
   // Citation chips are the main way into a source: code sections open the code,
   // plan and appendix citations hand the question to Ask.
   var R = function (t) {
-    var code = /^KGBC (\d+\.\d+\.\d+)/.exec(t);
+    var code = /^KGBC (\d+\.\d+(?:\.\d+)?)/.exec(t);
     if (code) return '<a class="ref" href="https://ketchikangateway.borough.codes/KGBC/' + code[1] + '" target="_blank" rel="noopener" title="Open ' + esc(t) + ' in the Borough code">' + t + '</a>';
     return '<button type="button" class="ref" data-ref="' + esc(t) + '" title="Ask what ' + esc(t) + ' says">' + t + '</button>';
   };
@@ -503,6 +521,15 @@ footer.foot { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--r
     k1860c: "https://ketchikangateway.borough.codes/KGBC/18.60.030",
     k1870: "https://ketchikangateway.borough.codes/KGBC/18.70.020",
     k1870f: "https://ketchikangateway.borough.codes/KGBC/18.70.060",
+    k1840: "https://ketchikangateway.borough.codes/KGBC/18.40.010",
+    k1850: "https://ketchikangateway.borough.codes/KGBC/18.50.010",
+    k1850c: "https://ketchikangateway.borough.codes/KGBC/18.50.030",
+    k1860i: "https://ketchikangateway.borough.codes/KGBC/18.60.040",
+    k1860m: "https://ketchikangateway.borough.codes/KGBC/18.60.050",
+    k1890var: "https://ketchikangateway.borough.codes/KGBC/18.90.030",
+    k1890cup: "https://ketchikangateway.borough.codes/KGBC/18.90.040",
+    k1890rez: "https://ketchikangateway.borough.codes/KGBC/18.90.050",
+    k1890app: "https://ketchikangateway.borough.codes/KGBC/18.90.070",
     jnuOverlay: "https://juneau.org/?p=277628",
     jnuOrd: "https://juneau.org/wp-content/uploads/2022/07/2021-36_v9_final.pdf",
     jnuAdu: "https://juneau.org/newsroom-item/cbj-accessory-dwelling-unit-grants-increased-to-13500",
@@ -525,14 +552,33 @@ footer.foot { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--r
   }
   function list(items) { return '<ul class="list">' + items.map(function (x) { return '<li class="s-unit">' + x + '</li>'; }).join('') + '</ul>'; }
   function P(t) { return '<p class="s-unit">' + t + '</p>'; }
+  // Quoted code is reproduced word for word; the lead-in and the numbered standards come straight from the section.
+  function quote(cite, url, lead, items) {
+    return '<div class="quote s-unit"><p class="quote-cite">' + ext(url, cite) + '</p><p class="lead">' + lead + '</p>' +
+      '<ol>' + items.map(function (x) {
+        return '<li>' + (Array.isArray(x) ? x[0] + '<ol type="i">' + x[1].map(function (y) { return '<li>' + y + '</li>'; }).join('') + '</ol>' : x) + '</li>';
+      }).join('') + '</ol></div>';
+  }
 
   /* ---------- Hearing card ---------- */
   var FORMULA = 'The request meets [code section, criterion]. [Staff report or testimony] shows [fact]. It is consistent with the [Future Land Use designation] and advances [strategy and action].';
   var SCRIPT = "Please talk to Planning staff. It may come before me, so I can't discuss specifics.";
+  var MOTIONS = [
+    ["Approve a conditional use permit", "I move to approve conditional use permit [number] for [applicant] at [address], based on the findings in the staff report dated [date], which I adopt, and specifically finding that the use is reasonably necessary for the public health, safety, and general welfare; that it will not permanently or substantially injure the lawful use of neighboring properties; that it is generally in harmony with the comprehensive plan, which designates this parcel [designation]; that it is expressly permitted in the [zone] zone; and that it meets the standards in KGBC 18.50.030 for this use."],
+    ["Approve with a condition", "…and further, as a condition under KGBC 18.90.040(c)(7), that [condition], which is necessary because [criterion] would not otherwise be met on this record."],
+    ["Deny a conditional use permit", "I move to deny conditional use permit [number], finding that the record does not support criterion [number] of KGBC 18.90.040(c)(6)(e), because [specific evidence or absence of evidence], and directing staff to prepare written findings to that effect."],
+    ["Approve a major variance", "I move to approve variance [number] for [applicant] at [address], finding on the evidence the applicant provided that the special conditions requiring the variance were not caused by the applicant, specifically [condition]; that the variance does not permit a use prohibited in the [zone] zone; that it does not solely relieve an inconvenience, because an alternative is complicated by [topography, existing development pattern, or lot shape]; and that it does not solely relieve a pecuniary hardship, because [the alternative costs more than 10% more, or exterior walls must be demolished]."],
+    ["Recommend a rezone", "I move to recommend that the Assembly approve the rezone of [legal description] from [zone] to [zone], finding under KGBC 18.90.050(b)(4) that the change [corrects a map error / adapts to changed conditions / implements a plan change]; that transportation, utilities, and public services are adequate for the development it allows, per [source]; that its impact on neighborhood character is [finding]; that it will not create pressure for further map amendments into areas lacking infrastructure; and that it furthers the comprehensive plan, specifically [strategy and action]."],
+    ["Postpone for more information", "I move to recess this hearing to [date, within 30 days] under KGBC 18.90.040(c)(6)(f), to obtain [specific information], which the commission needs to make a finding on criterion [number]."]
+  ];
   function hearingCard() {
     return '<div class="hcard">' +
       '<div class="row"><h3>Finding formula</h3><button class="btn btn-sm btn-copy" type="button" data-copy="formula">Copy formula</button></div>' +
       '<div class="formula">“The request meets <em>[code section, criterion]</em>. <em>[Staff report or testimony]</em> shows <em>[fact]</em>. It is consistent with the <em>[Future Land Use designation]</em> and advances <em>[strategy and action]</em>.”</div>' +
+      '<div><h3>Motions</h3><p class="hc-note">Fill the brackets from the staff report and the testimony. A motion that names the criterion and the evidence is what survives an appeal.</p>' +
+      '<div class="motions">' + MOTIONS.map(function (m, i) {
+        return '<div class="motion"><div class="row"><b>' + m[0] + '</b><button class="btn btn-sm btn-copy" type="button" data-copy="motion' + i + '">Copy</button></div><p class="script">“' + m[1] + '”</p></div>';
+      }).join('') + '</div></div>' +
       '<div class="grid2"><div><h3>Five facts</h3><ul style="margin-top:10px">' +
       '<li>The Borough owns <b>0.5%</b> of the land in its boundaries. <span class="src">Appx A p. 10</span></li>' +
       '<li>Population is projected to fall about <b>20%</b> by 2050. <span class="src">Exec Sum p. 5</span></li>' +
@@ -666,8 +712,82 @@ footer.foot { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--r
       ["Legislative (policy)", "Code text amendments, area rezones, area plans, the work plan", "Anything relevant: fiscal return, street safety, housing need, Strong Towns ideas"],
       ["Quasi-judicial (like a judge)", "Conditional use permits, variances, plats, a single-parcel rezone", "Only the code's approval criteria and the hearing record, plus plan consistency where the criteria call for it"]
     ]) +
+    P('<b>Where to start.</b> For a hearing, read the <a href="#criteria">approval criteria</a>, which are the code\'s own words for each kind of request, then check the parcel\'s <a href="#flum">land use designation</a> and its <a href="#zones">zoning district</a>. Ask has the full plan, the appendices, the Fact Book, and KGBC Title 18 loaded, so it can quote any of them back with the passage.') +
     fig("Routine permits could skip the hearing under a staff-decided Type II path", "Three ways a land use decision gets made in KGB", paths(), "Appendix A p. 4 · Core Plan Land Use 2a") +
     P('<b>How to answer a challenge outside a hearing.</b> Lead with a Ketchikan fact, then the outside evidence. Never discuss a pending application outside the hearing.'));
+
+  sec("criteria", "Start", "Approval criteria", "The legal test", "What you have to find, word for word",
+    '<p class="point s-unit">In a quasi-judicial hearing the code sets the test, and nothing else does. These are the criteria as written. Everything else on this site is argument; only this is quotable in a motion.</p>' +
+    table(["Request", "Who decides", "Criteria", "Deadline to decide"], [
+      ["Conditional use permit", "Planning commission, public hearing", R("KGBC 18.90.040(c)(6)(e)") + " — five findings, all required", "Hearing within 30 days of receipt; written findings within 30 days of the close of the hearing"],
+      ["Abbreviated conditional use permit", "Zoning official, unless remanded", R("KGBC 18.90.040(b)(8)") + " — expressly listed as abbreviated, and no timely request to remand", "Decision within 30 days of a complete application"],
+      ["Major variance", "Planning commission, public hearing", R("KGBC 18.90.030(c)(7)(e)") + " — four standards, all required", "Hearing within 30 days of receipt; written resolution within 30 days of the close"],
+      ["Minor variance", "Zoning official", R("KGBC 18.90.030(b)(7)") + " — within 5 ft or 50% of the setback, whichever is less, or under 10% of any quantifiable standard", "Decision within 30 days of a complete application"],
+      ["Rezone or overlay", "Commission recommends, Assembly adopts", R("KGBC 18.90.050(b)(4)") + " — five subjects the commission must study", "Hearing within 45 days of initiation; report to the Clerk within 7 days of acting"],
+      ["Code text amendment", "Commission recommends, Assembly adopts", R("KGBC 18.90.050(c)(5)") + " — six subjects the commission must study", "Hearing within 45 days of initiation; report to the Clerk within 7 days of acting"]
+    ]) +
+    '<h3>Conditional use permit</h3>' +
+    quote("KGBC 18.90.040(c)(6)(e), Applicable Criteria", SRC.k1890cup,
+      "As express conditions precedent to the granting of any conditional use permit, a majority of the planning commission members (not merely a majority of the members present), after a public hearing, must find in writing that:", [
+      "The requested conditional use is reasonably necessary for the public health, safety, and general welfare; and",
+      "The requested conditional use will not permanently or substantially injure the lawful use of neighboring properties; and",
+      "The requested conditional use will generally be in harmony with the comprehensive plan; and",
+      "The requested conditional use is expressly permitted by the zoning ordinance in the zone in which the conditional use permit is requested; and",
+      "The requested conditional use meets any specific criteria contained in KGBC 18.50.030."
+    ]) +
+    '<div class="callout caution s-unit"><b>A majority of the whole commission, not of those present</b><span>The code says so in as many words. With a seven-member commission, four yes votes are needed no matter how many members are at the table, so a 3–2 vote of a five-member quorum does not grant the permit. Criterion 3 is also the hook for the plan: harmony with the comprehensive plan is itself a finding you must make, which is why the ' + '<a href="#plan">plan crosswalk</a>' + ' matters in a hearing and not only in policy debate.</span></div>' +
+    P('<b>Use-specific criteria.</b> Criterion 5 points to ' + R("KGBC 18.50.030") + ', which sets extra standards for particular conditional uses. Read that section for the use in front of you before the hearing; it is where most of the real work is.') +
+    P('<b>What you can require.</b> The commission may attach conditions more restrictive than the zone\'s development standards, attach time limits, and require landscaping, lawful water and sewer, lawful parking, curb cuts and traffic movement, "and any other conditions which will uphold the spirit and intent of the zoning ordinance, the comprehensive plan, and the harmony and beneficial use of neighboring properties," along with an agreement and performance bond ' + R("KGBC 18.90.040(c)(7)") + '. A condition is usually the better answer to a workable objection than a denial.') +
+    P('<b>Relief from use-specific standards.</b> The commission may decrease or waive the ' + R("KGBC 18.50.030") + ' standards, permanently or temporarily, on a finding that doing so "would not adversely impact surrounding properties" ' + R("KGBC 18.90.040(c)(8)") + '.') +
+    '<h3>Major variance</h3>' +
+    quote("KGBC 18.90.030(c)(7)(e), Applicable Criteria", SRC.k1890var,
+      "A variance from a quantifiable standard may be granted in accordance with the review procedures provided in this subsection provided the applicant provides evidence that the following standards are met:", [
+      "Special conditions that require the variance are not caused by the person seeking the variance;",
+      "The variance will not permit a land use in a district in which that use is prohibited;",
+      ["The variance will not solely relieve an inconvenience. A request for a variance shall be found to be based solely on an inconvenience if an alternative having the same effect is possible without a variance, and would not be complicated by any of the following:", [
+        "Topographical or geological challenges to development; or",
+        "Existing development patterns, including building layout, size, and location; or",
+        "Irregularities in lot shape that cannot be abated without the acquisition of land from another party."
+      ]],
+      ["The variance will not solely relieve a pecuniary hardship. This standard is not met if:", [
+        "An alternative, having the same effect, is possible without a variance, and the alternative would increase the cost of the project by no more than 10 percent; and",
+        "No exterior walls of a principal building must be demolished; and",
+        "No exterior walls of an accessory building must be demolished, and the value of the building is less than 10 percent of the value of all buildings on the property, or $10,000, whichever is less."
+      ]]
+    ]) +
+    P('<b>The burden sits with the applicant.</b> The text says the applicant "provides evidence that the following standards are met." If the record is silent on a standard, it is not met. Standards 3 and 4 are written as tests with explicit thresholds, so ask for the number: what does the alternative cost, and is the increase more than 10 percent?') +
+    P('<b>Why the setback variances keep coming.</b> Ketchikan hears dozens a year ' + R("Appx A p. 4") + '. Criterion 3(ii) is usually the one that carries them: existing development patterns on small historic lots complicate any alternative. That is a sign the standard is mismatched to the older town, which is the case for ' + '<a href="#legal">an alternative standard</a>' + ' rather than for denying the variances.') +
+    '<div class="callout tide s-unit"><b>Conditions and expiry</b><span>Major variances may carry conditions "to protect the best interests of the surrounding property or neighborhood," and the commission may limit a variance\'s effective date or duration by condition ' + R("KGBC 18.90.030(c)(8)") + '. Unless the commission says otherwise, an approved variance must be used within six months; a conditional use permit gets 12 months.</span></div>' +
+    '<h3>Rezone or overlay</h3>' +
+    quote("KGBC 18.90.050(b)(4)", SRC.k1890rez,
+      "The planning commission shall study any request or petition for amendment of the official zoning map to determine:", [
+      ["The need and justification for any proposed change of the zoning map to:", [
+        "Address an error or uncertainty in the official zoning map; or",
+        "Adapt to changing conditions over which the owner(s) of the area have limited control; or",
+        "To implement a change in the comprehensive plan."
+      ]],
+      ["There is adequate public infrastructure to support the potential development the amendment to the official zoning map will allow, to include:", [
+        "Transportation to support the levels and types of traffic; and",
+        "Electrical and communications; and",
+        "Water and sewer; and",
+        "Demand for public services including fire, police, EMS, and schools."
+      ]],
+      ["The impact of the rezone or overlay on the character of the surrounding area or neighborhood as indicated by:", [
+        "Traffic routes and volumes; and",
+        "Density of development; and",
+        "Building type, size, and height."
+      ]],
+      "The amendment to the official zoning map will not cause a need or increased pressure for additional map amendments that will allow development for which there is inadequate infrastructure or will adversely impact surrounding properties.",
+      "The amendment to the official zoning map will implement or further the purposes of the comprehensive plan."
+    ]) +
+    P('<b>This is where the fiscal case is admissible.</b> Subject (b) asks whether infrastructure can support what the map change allows, and subject (d) asks whether it will create pressure for more map changes into places that lack infrastructure. A lifecycle cost estimate answers both directly. For a text amendment, ' + R("KGBC 18.90.050(c)(5)") + ' adds the impact on existing development rights, on land use patterns, on adjacent lands, and on "the equitable distribution of land use rights."') +
+    '<h3>Appeals</h3>' +
+    table(["From", "To", "Filing deadline", "Grounds"], [
+      ["Zoning official decision", "Planning commission", "10 days from the decision, in writing with the zoning official", "Limited to the improper application of law by a zoning official"],
+      ["Planning commission decision on a CUP, variance, PUD modification, or administrative appeal", "Board of adjustment, which is the Assembly", "15 days from the decision, with the Borough Clerk", "Procedural error; error in applying the law; lack of evidence to support findings and conclusions; or misrepresentation of a fact"],
+      ["Board of adjustment", "Superior court", "Under Alaska Appellate Rule 602", "Judicial review"]
+    ]) +
+    '<div class="callout caution s-unit"><b>Write findings for the record you will be reviewed on</b><span>The board of adjustment "shall hear and decide appeals on the record established by the planning commission," and evidence not before the commission "will not be heard or made a part of the board of adjustment record" ' + R("KGBC 18.90.070(c)(3)(g)") + '. One of the four grounds for reversal is a lack of evidence supporting your findings. So tie every finding to something a reader can locate in the record: a page of the staff report, a named witness, a plan citation. If the board does not act within 30 days of closing the hearing, your decision stands ' + R("KGBC 18.90.070(c)(3)(k)") + '.</span></div>');
 
   sec("card", "Start", "Hearing card", "Keep open at the dais", "Hearing card",
     '<p class="point s-unit">The finding formula, the five facts most worth having ready, and the scripts for the moments that trip people up. The same card opens from the button in the top bar.</p><div class="s-unit">' + hearingCard() + '</div>');
@@ -694,6 +814,58 @@ footer.foot { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--r
     P('With so little public land, most new housing has to fit on private lots that already have streets and pipes.') +
     fig("Affordable housing is the top housing priority at 71%", "Share of 2025 survey respondents choosing each, up to three picks (N = 409)", priorities(), "Appendix C p. 82 · 2025 Community Survey, Question 11") +
     P('Infrastructure that leads to housing ranked second, ahead of permitting changes. Two more facts carry weight: property tax funds schools, and road upkeep outside the City falls on service-area residents.'));
+
+  sec("zones", "Ketchikan", "Zoning districts", "Reference", "Every zoning district and its numbers",
+    '<p class="point s-unit">Fifteen base districts and five overlays. The numbers below are the whole of ' + R("KGBC 18.60") + ', so you can check an application against its zone without leaving the page.</p>' +
+    '<h3>Residential</h3>' +
+    table(["Zone", "Min. lot area", "Min. width", "Front", "Side", "Rear", "Max. height", "Max. coverage", "Dwellings per lot"], [
+      ["RR Rural", "50,000 sq ft", "160 ft", "25 ft", "30 ft", "60 ft", "30 ft", "25%", "1"],
+      ["RS Suburban", "25,000 sq ft", "110 ft", "15 ft", "15 ft", "20 ft", "30 ft", "50%", "2"],
+      ["RL Low density", "15,000 sq ft", "100 ft", "15 ft", "15 ft", "20 ft", "30 ft", "50%", "3"],
+      ["RN Neighborhood", "10,000 sq ft", "75 ft", "15 ft", "10 ft", "20 ft", "30 ft", "50%", "3"],
+      ["RM Medium density", "5,000 sq ft", "50 ft", "10 ft", "5 ft", "15 ft", "30 ft", "50%", "4"],
+      ["RH High density", "5,000 sq ft", "50 ft", "10 ft", "5 ft", "5 ft *", "30 ft", "100%", "No limit"]
+    ], { cls: "tbl-cmp", stack: false }) +
+    '<p class="note s-unit">* Where an RH lot\'s rear line abuts an RL, RS, RN, or RM lot, the minimum rear yard is 15 feet. ' + ext(SRC.k1860, "KGBC 18.60.020") + '</p>' +
+    '<h3>Commercial, industrial, and miscellaneous</h3>' +
+    table(["Zone", "Min. lot area", "Min. width", "Front", "Side", "Rear", "Max. height", "Max. coverage", "Dwellings per lot"], [
+      ["CC Central commercial", "None", "50 ft", "0", "0", "0", "None", "100%", "No limit"],
+      ["CG General commercial", "None", "50 ft", "0", "0", "0", "50 ft", "100%", "No limit"],
+      ["FD Future development", "None", "None", "0", "0", "0", "None", "100%", "1"],
+      ["IL Light industrial", "None", "None", "0", "0", "0", "50 ft", "100%", "No limit"],
+      ["IH Heavy industrial", "None", "None", "0", "0", "0", "None", "100%", "2, caretaker only"],
+      ["AD Airport development", "None", "None", "0", "0", "0", "None", "100%", "—"],
+      ["PLI Public lands and institutions", "None", "None", "10 ft", "10 ft", "10 ft", "None", "100%", "—"],
+      ["HD Creek Street historic", "None", "None", "0", "0", "0", "2 stories", "100%", "—"]
+    ], { cls: "tbl-cmp", stack: false }) +
+    '<p class="note s-unit">Where a CC, CG, or PLI zone abuts or is separated by an alley from a residential zone, yards are those of the adjacent residential zone; a CG use must also be screened. Residential development in FD follows the RS standards. Overlay districts use the underlying zone\'s numbers. Sources: ' + ext(SRC.k1860c, "KGBC 18.60.030") + ', ' + ext(SRC.k1860i, "18.60.040") + ', ' + ext(SRC.k1860m, "18.60.050") + '.</p>' +
+    '<h3>What each district is for</h3>' +
+    P('The purpose statements in ' + R("KGBC 18.40.010") + ' are worth reading before a rezone hearing, because a rezone has to be justified against the district\'s stated intent, not only its numbers.') +
+    table(["Zone", "Established to"], [
+      ["FD Future development", "Keep areas in a natural state for recreation, watersheds, and wildlife, and to conserve and extract natural resources on a sustained yield basis"],
+      ["RR Rural residential", "Offer larger lots for a rural lifestyle and more effective on-site sewage treatment; one single-family dwelling per lot"],
+      ["RS Suburban residential", "Allow single- and two-family structures on larger lots while protecting environmental features"],
+      ["RL Low density residential", "Serve outlying and rural areas, preserving open quality and preventing health hazards where there is no public water and sewer"],
+      ["RN Neighborhood residential", "Serve suburban neighborhoods with public sewer or common marine outfalls, on lots smaller than RL but large enough for privacy and yard space"],
+      ["RM Medium density residential", "Serve areas where medium density residential development is desirable"],
+      ["RH High density residential", "Serve areas where high density residential development is desirable"],
+      ["CC Central commercial", "Hold the intensive, highly valued core of the central business district; ground floor frontage is generally limited to uses needing window display or walk-in trade"],
+      ["CG General commercial", "Concentrate a broad range of retail, wholesale, and service uses and prevent adverse effects on nearby commercial and residential property"],
+      ["IL Light industrial", "Combine industrial and commercial uses that have no nuisance effect, or whose nuisance effects can be controlled"],
+      ["IH Heavy industrial", "Hold a broad range of industrial uses, separated from other zones by railyards, open space, or natural boundaries"],
+      ["AD Airport development", "Encourage airport-related business and industry consistent with the airport master plan"],
+      ["HD Creek Street historic district", "Prevent harm from inappropriate exterior appearance and stimulate systematic, aesthetic development within the district"],
+      ["PLI Public lands and institutions", "Reserve large or contiguous parcels for public service uses: open space, recreation, administration, education"],
+      ["PUD Planned unit development", "Give developers design and land use choices through flexible standards, and lower costs by permitting smaller networks of utilities and streets"]
+    ]) +
+    '<h3>Overlays</h3>' +
+    list([
+      '<b>CI, Cottage Industry.</b> Encourages small home-based businesses in outlying areas without roaded access to retail and services. The use must be run by the family occupying the dwelling, plus at most one non-resident employee.',
+      '<b>CPA, Central Parking Area.</b> Lets owners in a pedestrian-accessed area develop without using real estate for parking ' + R("KGBC 18.70.020") + '.',
+      '<b>MBR / MBU, Mobile Building Restricted and Unrestricted.</b> MBR prohibits mobile buildings, with carve-outs for manufactured homes, construction-site buildings, in-transit storage on industrial lots, and mobile food vendors. MBU allows them as a principal permitted use.',
+      '<b>NT, Newtown Overlay.</b> Design standards: architecture consistent with early-20th-century through 1950s Ketchikan, wood or wood-look siding and trim, awnings on storefronts abutting sidewalks, sign size limits, no flashing lights, no audible loudspeakers. "These standards shall be liberally construed in favor of the property owner."'
+    ]) +
+    '<div class="callout tide s-unit"><b>The use table is the other half</b><span>Dimensions tell you how big; ' + R("KGBC 18.50.010") + ' tells you whether the use is allowed at all. Each use is marked <b>A</b> accessory, <b>P</b> permitted, <b>PS</b> permitted with standards, or <b>C</b> conditional in each district, and "any use or structure not listed … shall be prohibited." That last sentence is the answer whenever someone argues a use is allowed because the code does not forbid it.</span></div>');
 
   sec("strongtowns", "Ideas", "Strong Towns", "The framework", "Strong Towns: the core ideas and the evidence",
     '<p class="point s-unit">Spread-out growth produces tax revenue now but leaves long-term maintenance costs the tax base can’t cover. Compact, incremental growth on existing streets and pipes pays its way.</p>' +
@@ -739,6 +911,31 @@ footer.foot { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--r
       '<b>Neighborhood streets should be narrow.</b> Narrow streets cost less to build, plow, and repave. The infrastructure working group raised flexible road standards (Appx C p. 123). That is a Title 17 change.',
       '<b>Cruise-season congestion is a reason to slow downtown, not widen it.</b> There is no room to widen along the viaduct, and added capacity fills back up. Coach staggering ' + R("Transportation 5d") + ' manages demand instead.'
     ]));
+
+  sec("flum", "Plan", "Land use designations", "The map behind the motion", "Future Land Use Map designations",
+    '<p class="point s-unit">Harmony with the comprehensive plan is a conditional use finding you have to make ' + R("KGBC 18.90.040(c)(6)(e)") + ', and plan consistency is one of the rezone subjects ' + R("KGBC 18.90.050(b)(4)") + '. In practice that means the designation a parcel carries on the Future Land Use Map. These are the categories and what the plan says each is for.</p>' +
+    table(["Designation", "Intended land uses", "Applies to", "Use examples"], [
+      ["Downtown Core", "High-intensity mixed-use areas focused on infill and redevelopment in walkable districts with existing infrastructure", "Expansion of the Central Commercial zone", "Medical or professional office, restaurant, grocery store, mixed-use commercial buildings, cultural facilities"],
+      ["Urban Residential", "Residential areas supporting a mix of high- and low-density housing near core services, transit, and infrastructure, to promote efficient land use and walkability", "All residential areas connected to public sewer, where smaller lots and higher densities are feasible", "Fourplex, townhome, live-work units, group living facilities, single-family units, corner store, café"],
+      ["Rural Residential", "Residential areas outside core service areas that may have limits to infrastructure or lot size minimums, shaped by access, terrain, and on-site water and wastewater capacity", "All residential areas not connected to public sewer", "Single-family home, duplex, accessory dwelling, manufactured home, cabin, small-scale farm, home occupation"],
+      ["Rural Mixed Use", "Residential, commercial, and light industrial together, with the goal of preserving the residential character of surrounding neighborhoods", "Remote areas and neighborhood communities outside municipal areas", "Single-family home, cottage industry, lodge, general store, boat repair, storage yard"],
+      ["Commercial", "Retail, service, office, and automotive uses serving residents and visitors, typically on major corridors or highway-accessible sites", "Near the downtown core and some areas along Tongass Highway", "Retail, office, restaurant, grocery, hotel, gas station, auto repair, school, community facility"],
+      ["Industrial", "Light and heavy industry needing separation from residential or commercial uses because of noise, traffic, or operational intensity", "Light Industrial and Heavy Industrial zones", "Warehouse, processing plant, freight terminal, construction yard, salvage operation, material storage"],
+      ["Commercial Waterfront", "Waterfront-dependent uses combining light industrial, recreation, and commercial, balancing working waterfronts with community space; residential is accessory", "Areas along harbors", "Boat harbors, docks, retail, parks, canneries"],
+      ["Industrial Waterfront", "Marine-related waterfront-dependent uses that are industrial in nature", "West of A&amp;P, Fuel Dock, Coast Guard docks, Ward Cove", "Freight docks, ferry docks, cruise ship docks"],
+      ["Airport", "Aviation-related uses, transportation facilities, and compatible commercial or industrial activity essential to regional mobility and freight", "Airport District zone", "Aviation and accessory uses"],
+      ["Institutional", "Sites owned by municipal entities, generally for public works purposes", "Ketchikan Creek, Carlanna Creek", "Water treatment facilities and storage areas, utility fields"],
+      ["Recreation and Open Space", "Parks, conservation, and recreation as principal uses, not managed by State or Federal government", "Parks, harbors; drawn from the 2023 Master Parks and Playgrounds Plan and State-designated areas", "Playground, sports field, trailhead, beach access, picnic area, natural area"],
+      ["Public Management", "State, federal, and other lands with multiple uses: flood protection, habitat, traditional use, cultural and heritage protection by Tribal governments, recreation, tourism, timber", "Tongass National Forest, State lands, State Historic Preservation sites", "Uses designated by State and Federal agencies and land trusts"],
+      ["Unspecified Future Use", "Large, vacant private lands where no specific future land use pattern has been identified", "Remote areas borough-wide", "None"]
+    ]) +
+    '<p class="note s-unit">Sources: ' + R("Exec Sum pp. 8–9") + ' for the categories, ' + R("Appx A p. 3") + ' for the designation details.</p>' +
+    '<h3>Overlays on the map</h3>' +
+    table(["Overlay", "What it means", "Where"], [
+      ["Area Plan", "Areas where further planning may be needed or additional development regulations may apply", "Downtown, Ward Cove, Herring Cove, Creek Street, Hopkins Alley, Settlers Cove, Gravina Island"],
+      ["Environmental Constraints", "Known steep slopes, flood areas, and similar, flagging where more detailed site analysis may be warranted before development", "See Appendix A"]
+    ]) +
+    '<div class="callout tide s-unit"><b>Three sentences worth memorizing</b><span>Urban Residential is defined as <i>all residential areas connected to public sewer</i>, and it lists fourplexes, townhomes, live-work units, corner stores, and cafés as intended uses. Rural Residential is <i>all residential areas not connected to public sewer</i>. Unspecified Future Use lands "lack infrastructure, access, and may require further planning, community input, and infrastructure feasibility studies before future land use decisions are made" ' + R("Appx A p. 3") + '. Together those settle most arguments about where added housing belongs and where it does not.</span></div>');
 
   sec("plan", "Plan", "Plan crosswalk", "Cite the plan first", "Where the adopted plan already backs this",
     '<p class="point s-unit">Most Strong Towns ideas are already in the adopted plan. When challenged, cite the plan first. It carries legal weight; Strong Towns does not.</p>' +
@@ -847,6 +1044,37 @@ footer.foot { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--r
       ["Building permits and units added per year", "Borough and City building departments", "Whether code changes produce housing " + R("Housing 1b")]
     ]));
 
+  sec("glossary", "Defend", "Glossary", "Shorthand", "Glossary",
+    '<p class="point s-unit">The abbreviations that appear in staff reports and on this page, in one place.</p>' +
+    '<h3>Zoning districts</h3>' +
+    P('Residential, least to most dense: <b>RR</b> rural, <b>RS</b> suburban, <b>RL</b> low density, <b>RN</b> neighborhood, <b>RM</b> medium density, <b>RH</b> high density. Commercial: <b>CC</b> central, <b>CG</b> general. Industrial: <b>IL</b> light, <b>IH</b> heavy. Other: <b>FD</b> future development, <b>AD</b> airport development, <b>PLI</b> public lands and institutions, <b>HD</b> Creek Street historic district, <b>PUD</b> planned unit development. Overlays: <b>CI</b> cottage industry, <b>CPA</b> central parking area, <b>MBR</b> and <b>MBU</b> mobile building restricted and unrestricted, <b>NT</b> Newtown. Full standards are in the ' + '<a href="#zones">zoning districts</a>' + ' section.') +
+    '<h3>Process and documents</h3>' +
+    table(["Term", "What it means"], [
+      ["CUP", "Conditional use permit. Granted by the commission at a public hearing on the five findings in " + R("KGBC 18.90.040(c)(6)(e)")],
+      ["Abbreviated CUP", "A conditional use permit the zoning official may grant without a hearing, for uses the code specifically lists for that path. Any notified person can pull it to the commission within 15 days"],
+      ["Variance", "Permission to depart from a quantifiable standard such as a setback or height. Minor variances are decided by staff; major ones come to the commission"],
+      ["Quantifiable standard", "A standard expressed as a number, which is what a variance can vary. A variance cannot allow a use the district prohibits"],
+      ["Rezone", "An amendment to the official zoning map. The commission recommends; the Assembly adopts by ordinance"],
+      ["Overlay", "A district layered on top of a base zone, modifying its requirements. Creating one needs a petition from owners of at least 67% of the area"],
+      ["PUD", "Planned unit development. A flexible-standards zone meant to lower cost through smaller utility and street networks"],
+      ["Board of adjustment", "The Assembly, sitting to hear appeals from commission decisions on the commission's record"],
+      ["Zoning official", "The staff officer who administers Title 18, decides minor variances and abbreviated CUPs, and determines whether an application is complete"],
+      ["Legislative vs. quasi-judicial", "Legislative decisions set policy and anything relevant may be argued. Quasi-judicial decisions apply existing rules to one property, and only the code criteria and the hearing record count"],
+      ["Findings of fact", "The written reasons tying each criterion to evidence in the record. Required within 30 days of closing a CUP or variance hearing, and the thing an appeal is decided against"],
+      ["Ex parte contact", "Contact about a pending case outside the hearing. Disclose it on the record"],
+      ["Nonconforming", "A use or building that was lawful when built but does not meet today's standards. " + R("KGBC 18.30.030") + " governs what may be rebuilt"],
+      ["FLUM", "Future Land Use Map, adopted with the comprehensive plan. The " + '<a href="#flum">designation table</a>' + " explains each category"],
+      ["Comprehensive plan", "The 2035 KGB Comprehensive Plan, adopted Feb 2, 2026: Core Plan, Executive Summary, and Appendices A–D"],
+      ["CIP", "Capital Improvement Plan, the Borough's list of capital projects. " + R("Governance 3b") + " calls for a yearly update against long-range demographic trends"],
+      ["STIP", "Statewide Transportation Improvement Program, Alaska DOT&amp;PF's funding list. How State road projects on Tongass Avenue get paid for"],
+      ["ADU", "Accessory dwelling unit: a second, smaller home on a lot with a house"],
+      ["Missing middle", "Housing between a detached house and a large apartment building: duplexes, fourplexes, townhomes, courtyard apartments"],
+      ["Value per acre", "Taxable value divided by land area, used to compare how much revenue different development patterns return on the same ground"],
+      ["Stroad", "A street-road hybrid: too many driveways to be fast, too fast to be a good street"],
+      ["Service area", "A defined area whose residents pay for a service, such as road maintenance, that is not funded areawide"],
+      ["AS 29.40.040", "The Alaska statute requiring second-class boroughs to adopt land use regulations carrying out the comprehensive plan"]
+    ]));
+
   sec("sources", "Defend", "Sources", "References", "Sources",
     '<div class="sources">' +
     '<div class="s-unit"><h3>Ketchikan plan documents</h3><ul><li>2035 KGB Comprehensive Plan: Core Plan, Executive Summary, Appendices A–D (adopted Feb 2, 2026)</li></ul></div>' +
@@ -855,8 +1083,15 @@ footer.foot { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--r
     '<li>' + ext(SRC.k1830, "KGBC 18.30.030, Nonconforming uses and structures") + '</li>' +
     '<li>' + ext(SRC.k1860, "KGBC 18.60.020, Residential development requirements") + '</li>' +
     '<li>' + ext(SRC.k1860c, "KGBC 18.60.030, Commercial development requirements") + '</li>' +
+    '<li>' + ext(SRC.k1840, "KGBC 18.40.010, Establishment of zoning districts") + '</li>' +
+    '<li>' + ext(SRC.k1850, "KGBC 18.50.010, Land use allowances") + ' and ' + ext(SRC.k1850c, "18.50.030, Conditional use standards") + '</li>' +
+    '<li>' + ext(SRC.k1860i, "KGBC 18.60.040, Industrial development requirements") + ' and ' + ext(SRC.k1860m, "18.60.050, Miscellaneous development requirements") + '</li>' +
     '<li>' + ext(SRC.k1870, "KGBC 18.70.020, Central parking area") + '</li>' +
-    '<li>' + ext(SRC.k1870f, "KGBC 18.70.060, Parking development requirements") + '</li></ul></div>' +
+    '<li>' + ext(SRC.k1870f, "KGBC 18.70.060, Parking development requirements") + '</li>' +
+    '<li>' + ext(SRC.k1890var, "KGBC 18.90.030, Variances") + '</li>' +
+    '<li>' + ext(SRC.k1890cup, "KGBC 18.90.040, Conditional use permits") + '</li>' +
+    '<li>' + ext(SRC.k1890rez, "KGBC 18.90.050, Rezones, code amendments, overlays, and planned unit developments") + '</li>' +
+    '<li>' + ext(SRC.k1890app, "KGBC 18.90.070, Appeals") + '</li></ul></div>' +
     '<div class="s-unit"><h3>Strong Towns and fiscal productivity</h3><ul>' +
     '<li>' + ext(SRC.lafayette, "The Real Reason Your City Has No Money, Strong Towns (2017)") + '</li>' +
     '<li>' + ext(SRC.incr, "Incremental Housing Overview, Strong Towns Action Lab") + '</li>' +
@@ -912,7 +1147,8 @@ footer.foot { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--r
   function say(msg) { toast.textContent = msg; toast.hidden = false; clearTimeout(tt); tt = setTimeout(function () { toast.hidden = true; }, 1800); }
   document.addEventListener("click", function (e) {
     var b = e.target.closest("[data-copy]"); if (!b) return;
-    var text = b.getAttribute("data-copy") === "formula" ? FORMULA : SCRIPT;
+    var key = b.getAttribute("data-copy"), motion = /^motion(\d+)$/.exec(key);
+    var text = motion ? MOTIONS[Number(motion[1])][1] : key === "formula" ? FORMULA : SCRIPT;
     var done = function () { say("Copied"); };
     try {
       navigator.clipboard.writeText(text).then(done, function () { fallback(text); });
@@ -939,6 +1175,12 @@ footer.foot { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--r
   function closeCard() { drawer.hidden = true; scrim.hidden = true; opener.focus(); }
   opener.addEventListener("click", openCard);
   document.getElementById("closeCard").addEventListener("click", closeCard);
+  document.getElementById("printCard").addEventListener("click", function () {
+    // print-card hides the page and unpins the drawer so the card prints on its own sheets.
+    document.body.classList.add("print-card");
+    window.print();
+  });
+  window.addEventListener("afterprint", function () { document.body.classList.remove("print-card"); });
   scrim.addEventListener("click", closeCard);
 
   /* Q&A */
@@ -1109,15 +1351,16 @@ footer.foot { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--r
   });
 
   var SUGGEST = [
+    "What are the approval criteria for a conditional use permit? Quote them.",
     "What does the plan say about parking minimums?",
-    "What are the RM zone setbacks and minimum lot size?",
+    "Is a duplex allowed in the RN zone, and does it need a permit?",
     "Which actions in the plan support missing-middle housing?",
     "What does the plan say about Herring Cove?",
     "What did residents say about short-term rentals?"
   ];
   function emptyState() {
     var w = el("div", "ask-empty");
-    var p = el("p"); p.innerHTML = "<b>Ask the plan.</b> Answers come from the comp plan, its appendices, the Fact Book, and any files in the docs folder, with the passages they rely on.";
+    var p = el("p"); p.innerHTML = "<b>Ask the plan and the code.</b> Answers come from the comp plan, its appendices, the Fact Book, and KGBC Title 18, quoting the passages they rely on.";
     w.appendChild(p);
     var s = el("div", "ask-suggest");
     SUGGEST.forEach(function (q) { var b = el("button", null, q); b.type = "button"; b.addEventListener("click", function () { input.value = q; ask(); }); s.appendChild(b); });
