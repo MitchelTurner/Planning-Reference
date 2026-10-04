@@ -949,7 +949,11 @@ footer.foot { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--r
   }
   function markIn(el, term) {
     var walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, null), nodes = [], n;
-    while ((n = walker.nextNode())) { if (n.nodeValue.toLowerCase().indexOf(term) > -1 && !n.parentNode.closest("svg")) nodes.push(n); }
+    while ((n = walker.nextNode())) {
+      if (n.nodeValue.toLowerCase().indexOf(term) < 0) continue;
+      if (n.parentNode.closest("svg") || n.parentNode.closest("mark.hit")) continue;
+      nodes.push(n);
+    }
     nodes.forEach(function (node) {
       var v = node.nodeValue, lower = v.toLowerCase(), frag = document.createDocumentFragment(), i = 0, k;
       while ((k = lower.indexOf(term, i)) > -1) {
@@ -963,6 +967,9 @@ footer.foot { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--r
   }
   function run() {
     var term = q.value.trim().toLowerCase();
+    // Match every word anywhere in the unit, so "minimum parking" finds the same text as "parking minimums".
+    var words = term.split(/\s+/).filter(Boolean);
+    var matches = function (haystack) { return words.every(function (w) { return haystack.indexOf(w) > -1; }); };
     clearMarks();
     clearBtn.hidden = !term; kbd.hidden = !!term;
     var mc = document.getElementById("matchCount"), hero = document.querySelector(".hero");
@@ -979,9 +986,9 @@ footer.foot { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--r
       var el = document.getElementById(s.id), hits = 0;
       el.querySelectorAll(".s-unit").forEach(function (u) {
         if (u.parentElement.closest(".s-unit")) return;
-        var hit = u._text.indexOf(term) > -1 || (s.title.toLowerCase().indexOf(term) > -1);
+        var hit = matches(u._text) || matches(s.title.toLowerCase());
         u.hidden = !hit;
-        if (hit) { hits++; if (u.tagName === "DETAILS") u.open = true; markIn(u, term); }
+        if (hit) { hits++; if (u.tagName === "DETAILS") u.open = true; words.forEach(function (w) { markIn(u, w); }); }
       });
       el.querySelectorAll(".s-unit .s-unit").forEach(function (u) { u.hidden = false; });
       el.querySelectorAll(":scope > h3").forEach(function (h) { h.hidden = true; });
