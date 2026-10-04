@@ -11,8 +11,7 @@ import { fileURLToPath } from "node:url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const PORT = Number(process.env.PORT) || 3000;
-const MODEL = process.env.CLAUDE_MODEL || "claude-sonnet-5-5";
-const MAX_TOKENS = Number(process.env.MAX_TOKENS) || 2000;
+const MAX_TOKENS = Number(process.env.MAX_TOKENS) || 8000;
 const CACHE_TTL = process.env.CACHE_TTL === "5m" ? "5m" : "1h";
 const DOCS_DIR = process.env.DOCS_DIR || path.join(__dirname, "docs");
 const PASSCODE = process.env.APP_PASSCODE || "";
@@ -20,6 +19,43 @@ const RATE_PER_MIN = Number(process.env.RATE_LIMIT_PER_MIN) || 20;
 const API_KEY = process.env.ANTHROPIC_API_KEY || "";
 
 const client = API_KEY ? new Anthropic({ apiKey: API_KEY }) : null;
+
+// Opus 5.5 is the floor. A newer claude-opus-* id from the Models API replaces it.
+// CLAUDE_MODEL pins one id and skips that check. Anthropic does not publish a floating "latest" alias.
+const PINNED_OPUS = "claude-opus-5-5";
+
+function opusRank(id) {
+  const match = /^claude-opus-(\d+)(?:-(\d+))?$/.exec(id);
+  if (!match) return null;
+  return [Number(match[1]), match[2] === undefined ? 0 : Number(match[2])];
+}
+
+function isNewerOpus(candidate, current) {
+  const next = opusRank(candidate);
+  const prev = opusRank(current);
+  if (!next || !prev) return false;
+  return next[0] > prev[0] || (next[0] === prev[0] && next[1] > prev[1]);
+}
+
+async function resolveModel() {
+  if (process.env.CLAUDE_MODEL) return process.env.CLAUDE_MODEL;
+  if (!client) return PINNED_OPUS;
+  try {
+    let best = PINNED_OPUS;
+    for await (const model of client.models.list({}, { timeout: 10_000 })) {
+      if (!opusRank(model.id)) continue;
+      if (model.capabilities?.citations?.supported === false) continue;
+      if (model.max_input_tokens != null && model.max_input_tokens < 200_000) continue;
+      if (isNewerOpus(model.id, best)) best = model.id;
+    }
+    return best;
+  } catch (err) {
+    console.warn(`Could not check for a newer Opus (${err.message}). Using ${PINNED_OPUS}.`);
+    return PINNED_OPUS;
+  }
+}
+
+const MODEL = await resolveModel();
 
 const SYSTEM_PROMPT = `You are a research assistant for a member of the Ketchikan Gateway Borough Planning Commission (Ketchikan, Alaska). He asks questions during and before public meetings and needs fast, accurate answers drawn from the reference documents provided in this conversation.
 
@@ -195,7 +231,7 @@ app.post("/api/warm", async (req, res) => {
   try {
     const msg = await client.messages.create({
       model: MODEL,
-      max_tokens: 1,
+      max_tokens: 256,
       system: SYSTEM_PROMPT,
       messages: [{ role: "user", content: [...documentBlocks(), { type: "text", text: "Reply with OK." }] }],
     });

@@ -25,7 +25,7 @@ ANTHROPIC_API_KEY=sk-ant-... APP_PASSCODE=pick-one npm start
 3. Open the service's **Variables** tab and add:
    - `ANTHROPIC_API_KEY`: from console.anthropic.com → API Keys
    - `APP_PASSCODE`: anything you like. The reference pages stay public; only Ask needs the passcode.
-   - Optional: `CLAUDE_MODEL`, `CACHE_TTL`, `MAX_TOKENS`, `RATE_LIMIT_PER_MIN` (see `.env.example`)
+   - Optional: `CACHE_TTL`, `MAX_TOKENS`, `RATE_LIMIT_PER_MIN` (see `env.example`). Leave `CLAUDE_MODEL` unset. Ask uses the newest Claude Opus, starting at Opus 5.5, and moves to a newer Opus when Anthropic releases one. Set `CLAUDE_MODEL` only to pin a specific id.
 4. **Settings → Networking → Generate Domain** to get a URL.
 5. Open the site, click **Ask**, enter the passcode once (the browser remembers it).
 
@@ -41,7 +41,7 @@ Worth adding:
 - The 2024–2028 Borough Strategic Plan, the Tourism Strategy, the Housing Market Study
 - Adopted area plans (Creek Street, Hopkins Alley/Newtown)
 
-Everything in `docs/` goes to Claude on every question. The current set is about 110,000 tokens. Claude Sonnet 5.5 can take about 1 million, but cost and speed grow with size, so remove old agenda packets when you're done with them. The server log prints the total at startup.
+Everything in `docs/` goes to Claude on every question. The current set is about 110,000 tokens. Opus 5.5 can take about 1 million, but cost and speed grow with size, so remove old agenda packets when you're done with them. The server log prints the total at startup.
 
 ## Using it in a meeting
 
@@ -50,15 +50,15 @@ Everything in `docs/` goes to Claude on every question. The current set is about
 - **New** starts a fresh conversation. Follow-up questions inside one conversation keep context.
 - Click a `[1]` marker or a source to see the exact passage.
 
-## Cost (Claude Sonnet 5.5, about 110k tokens of documents)
+## Cost (Claude Opus 5.5, about 110k tokens of documents)
 
 | Action | Approximate cost |
 | --- | --- |
-| Preload (writes the 1-hour cache) | $0.44 |
+| Preload (writes the 1-hour cache) | $0.90 |
 | Each question while cached | $0.03 |
-| Each question with no cache | $0.25 |
+| Each question with no cache | $0.50 |
 
-A two-hour meeting with 30 questions comes to roughly $1.50. Set a monthly spend limit in the Anthropic Console. `claude-opus-5-5` gives stronger answers at a higher cost, about $0.90 for a preload and still about $0.03 per cached question. `claude-haiku-4-5-20251001` is cheapest but has a 200k-token limit.
+A two-hour meeting with 30 questions comes to roughly $2. Set a monthly spend limit in the Anthropic Console. The server stays on the newest Opus: when Anthropic ships a later one, the next restart uses it. Set `CLAUDE_MODEL=claude-opus-5-5` to stay on this release.
 
 ## Things to know
 
