@@ -448,8 +448,15 @@ footer.foot { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--r
 (function () {
   "use strict";
   var ext = function (url, text) { return '<a href="' + url + '" target="_blank" rel="noopener">' + text + '</a>'; };
-  var R = function (t) { return '<span class="ref">' + t + '</span>'; };
-  var esc = function (s) { return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;"); };
+  var esc = function (s) { return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;"); };
+
+  // Citation chips are the main way into a source: code sections open the code,
+  // plan and appendix citations hand the question to Ask.
+  var R = function (t) {
+    var code = /^KGBC (\d+\.\d+\.\d+)/.exec(t);
+    if (code) return '<a class="ref" href="https://ketchikangateway.borough.codes/KGBC/' + code[1] + '" target="_blank" rel="noopener" title="Open ' + esc(t) + ' in the Borough code">' + t + '</a>';
+    return '<button type="button" class="ref" data-ref="' + esc(t) + '" title="Ask what ' + esc(t) + ' says">' + t + '</button>';
+  };
 
   var SRC = {
     statute: "https://law.justia.com/codes/alaska/title-29/chapter-29-40/section-29-40-040/",
@@ -883,6 +890,14 @@ footer.foot { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--r
       navigator.clipboard.writeText(text).then(done, function () { fallback(text); });
     } catch (err) { fallback(text); }
   });
+  document.addEventListener("click", function (e) {
+    var chip = e.target.closest("button.ref[data-ref]"); if (!chip) return;
+    e.preventDefault();
+    document.dispatchEvent(new CustomEvent("ask:prefill", {
+      detail: { question: "What does " + chip.getAttribute("data-ref") + " say? Quote it." }
+    }));
+  });
+
   function fallback(text) {
     var ta = document.createElement("textarea"); ta.value = text; ta.setAttribute("readonly", ""); ta.style.position = "fixed"; ta.style.opacity = "0";
     document.body.appendChild(ta); ta.select();
@@ -1013,6 +1028,11 @@ footer.foot { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--r
   function close() { panel.hidden = true; scrimA.hidden = true; openBtn.focus(); }
   openBtn.addEventListener("click", open);
   closeBtn.addEventListener("click", close);
+  document.addEventListener("ask:prefill", function (e) {
+    open();
+    input.value = e.detail.question;
+    setTimeout(function () { input.focus(); input.setSelectionRange(input.value.length, input.value.length); }, 40);
+  });
   scrimA.addEventListener("click", close);
   document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !panel.hidden) close(); });
 
