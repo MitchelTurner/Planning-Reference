@@ -58,7 +58,7 @@ Everything in `docs/` goes to Claude on every question. The current set is about
 | Each question while cached | $0.03 |
 | Each question with no cache | $0.50 |
 
-A two-hour meeting with 30 questions comes to roughly $2. Set a monthly spend limit in the Anthropic Console. The server stays on the newest Opus: when Anthropic ships a later one, the next restart uses it. Set `CLAUDE_MODEL=claude-opus-5-5` to stay on this release.
+A two-hour meeting with 30 questions comes to roughly $2. Set a monthly spend limit in the Anthropic Console. The server stays on the newest Opus: when Anthropic ships a later one, the next restart uses it. `CLAUDE_MODEL=claude-opus-5-5` is the same floor. Set `CLAUDE_MODEL` to any other id to pin that model.
 
 ## Things to know
 

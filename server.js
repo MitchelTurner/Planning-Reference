@@ -21,7 +21,7 @@ const API_KEY = process.env.ANTHROPIC_API_KEY || "";
 const client = API_KEY ? new Anthropic({ apiKey: API_KEY }) : null;
 
 // Opus 5.5 is the floor. A newer claude-opus-* id from the Models API replaces it.
-// CLAUDE_MODEL pins one id and skips that check. Anthropic does not publish a floating "latest" alias.
+// Any CLAUDE_MODEL other than claude-opus-5-5 pins that id. Anthropic does not publish a floating "latest" alias.
 const PINNED_OPUS = "claude-opus-5-5";
 
 function opusRank(id) {
@@ -38,10 +38,14 @@ function isNewerOpus(candidate, current) {
 }
 
 async function resolveModel() {
-  if (process.env.CLAUDE_MODEL) return process.env.CLAUDE_MODEL;
-  if (!client) return PINNED_OPUS;
+  const requested = process.env.CLAUDE_MODEL;
+  // A pin other than Opus 5.5 is used as written. Opus 5.5, including an explicit
+  // CLAUDE_MODEL=claude-opus-5-5, stays the floor and still yields to a newer Opus.
+  if (requested && requested !== PINNED_OPUS) return requested;
+  const floor = requested || PINNED_OPUS;
+  if (!client) return floor;
   try {
-    let best = PINNED_OPUS;
+    let best = floor;
     for await (const model of client.models.list({}, { timeout: 10_000 })) {
       if (!opusRank(model.id)) continue;
       if (model.capabilities?.citations?.supported === false) continue;
