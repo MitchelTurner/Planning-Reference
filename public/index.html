@@ -387,6 +387,34 @@ footer.foot { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--r
 .ask-note { font-size: 12px; color: var(--muted); }
 @media (max-width: 720px) { .btn-ask span { display: none; } }
 
+/* Print: the hearing card on paper is the point, so drop the chrome and flatten the dark panels. */
+@media print {
+  .topbar, .chips, .rail, .scrim, .drawer, .ask, .toast, .qa-tools, .btn, .match-count, .empty { display: none !important; }
+  body { background: #fff; font-size: 10.5pt; }
+  .shell { display: block; max-width: none; padding: 0; }
+  main { padding-top: 0; }
+  section.sec { padding-block: 14pt 0; }
+  h1 { font-size: 21pt; }
+  h2 { font-size: 15pt; }
+  h2, h3, .sec-head { break-after: avoid; }
+  figure, .tbl-wrap, .case, details.q, .callout, .lane, .srs-card, .hcard, tr { break-inside: avoid; }
+  a { color: inherit; }
+  .sources a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 7.5pt; color: #555; word-break: break-all; }
+  .hcard { background: #fff; color: #000; border: 1px solid #000; }
+  .hcard h3, .hcard .formula, .hcard .formula em, .hcard .script { color: #000; }
+  .hcard .formula { background: #f2f2f2; border-color: #999; }
+  .hcard .src { color: #444; }
+  .hcard ul li::marker { color: #666; }
+  #card { break-before: page; }
+
+  body.print-card .shell, body.print-card footer.foot { display: none !important; }
+  body.print-card .drawer {
+    display: block !important; position: static; width: auto; overflow: visible;
+    background: #fff; color: #000; box-shadow: none; padding: 0;
+  }
+  body.print-card .drawer-head { color: #000; border-bottom: 1px solid #000; padding-bottom: 8pt; }
+}
+
 </style>
 </head>
 <body>
