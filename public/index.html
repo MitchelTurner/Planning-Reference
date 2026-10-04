@@ -93,7 +93,8 @@ body { margin: 0; }
 .rail a.dim { opacity: .35; }
 .chips { display: none; }
 main { min-width: 0; padding-top: 36px; }
-.col { max-width: 860px; }
+/* Prose keeps its own character-based measure, so tables and figures take the full column. */
+.col { max-width: 100%; }
 
 /* Hero */
 .hero { display: grid; gap: 14px; padding-bottom: 28px; border-bottom: 1px solid var(--rule); margin-bottom: 8px; }
@@ -117,10 +118,17 @@ h2 { font-family: var(--f-display); font-weight: 700; font-size: clamp(25px, 3.4
 h3 { font-family: var(--f-display); font-weight: 600; font-size: 18px; line-height: 1.3; margin: 8px 0 0; letter-spacing: -.005em; }
 .point { font-size: 17.5px; line-height: 1.5; margin: 0; max-width: 64ch; }
 p { margin: 0; max-width: 68ch; }
+/* Inside a card the card is the measure, so text fills it instead of leaving a second ragged edge. */
+.case p, details.q .ans p, .callout p, figure p { max-width: none; }
 .prose { display: grid; gap: 12px; }
 ul.list { margin: 0; padding-left: 20px; display: grid; gap: 8px; max-width: 68ch; }
 ul.list li::marker { color: var(--faint); }
-.ref { font-family: var(--f-mono); font-size: 12px; font-weight: 500; color: var(--muted); background: var(--paper); border: 1px solid var(--rule); border-radius: 5px; padding: 1px 6px; white-space: nowrap; }
+.ref {
+  display: inline-block; font-family: var(--f-mono); font-size: 12px; font-weight: 500; line-height: 1.5;
+  color: var(--muted); background: var(--paper); border: 1px solid var(--rule); border-radius: 5px;
+  padding: 1px 6px; white-space: nowrap; text-decoration: none; cursor: pointer;
+}
+.ref:hover { border-color: var(--tide); color: var(--tide); background: var(--tide-tint); }
 td .ref, li .ref, p .ref { vertical-align: 1px; }
 .note { font-size: 13.5px; color: var(--muted); }
 .callout { border-radius: 10px; padding: 14px 16px; display: grid; gap: 6px; font-size: 15px; }
@@ -145,7 +153,9 @@ td.num, th.num { font-variant-numeric: tabular-nums; }
   .stack tr { background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; padding: 12px 14px; margin-bottom: 10px; }
   .stack td { padding: 3px 0; border: 0; }
   .stack td:first-child { font-size: 15.5px; padding-bottom: 6px; }
-  .stack td:not(:first-child)::before { content: attr(data-label); display: block; font-family: var(--f-mono); font-size: 10.5px; letter-spacing: .07em; text-transform: uppercase; color: var(--faint); margin-top: 6px; }
+  /* Label beside the value, not above it: a 16-row table is a long scroll on a phone. */
+  .stack td:not(:first-child) { display: grid; grid-template-columns: 74px minmax(0, 1fr); gap: 10px; align-items: baseline; padding: 4px 0; }
+  .stack td:not(:first-child)::before { content: attr(data-label); font-family: var(--f-mono); font-size: 10.5px; letter-spacing: .07em; text-transform: uppercase; color: var(--faint); line-height: 1.7; }
 }
 
 /* Figures */
@@ -295,6 +305,11 @@ footer.foot { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--r
   html { scroll-padding-top: calc(var(--bar-h) + 70px); }
 }
 @media (max-width: 720px) {
+  /* The search box gets its own row; sharing one with the brand and two buttons left it ~120px wide. */
+  :root { --bar-h: 106px; }
+  .topbar-in { height: auto; flex-wrap: wrap; padding-block: 9px; row-gap: 8px; }
+  .brand { margin-right: auto; }
+  .search { order: 3; flex: 1 0 100%; max-width: none; margin-left: 0; }
   .brand-name small { display: none; }
   .search kbd { display: none; }
   .btn-hc span { display: none; }
