@@ -1,0 +1,3410 @@
+2035 Ketchikan Gateway Borough Comprehensive Plan - Core Plan (adopted February 2, 2026). Page markers [Page N] are PDF page numbers.
+
+[Page 1]
+Ketchikan Gateway Borough
+2035 Comprehensive Plan
+CORE PLAN
+
+Adopted
+February
+2, 2026
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+
+Page 1
+
+
+[Page 2]
+ACKNOWLEDGEMENTS
+Thank you to all Ketchikan Gateway Borough residents, businesses, Tribes, organizations, and other local,
+regional, state, and federal partners who have contributed to the Ketchikan Gateway Borough
+Comprehensive Plan development process, including Ketchikan Gateway Borough staff and Ketchikan
+Gateway Borough Assembly and Planning Commission members.
+Key individuals and contributors are listed in the Appendices.
+Photos are courtesy of Hall Anderson, Ketchikan Gateway Borough, City of Saxman, Ketchikan Wellness
+Coalition, Agnew::Beck Consulting, and Adobe Stock Photography.
+
+This plan was produced by Agnew::Beck Consulting with support from Northern Economics Inc.
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+
+Page 2
+
+
+[Page 3]
+TABLE OF CONTENTS
+Acknowledgements ................................................................................................ 2
+Table of Contents ................................................................................................... 3
+Table of Figures ...................................................................................................... 5
+Introduction ........................................................................................................... 6
+Role of a Comprehensive Plan ..................................................................................... 7
+How does this plan relate to other community plans?................................................... 8
+Who Uses a Comprehensive Plan? .............................................................................. 9
+Focus Areas ................................................................................................................ 9
+Plan Organization .......................................................................................................10
+How Was This Plan Developed? ..................................................................................10
+Implementation and Reporting ...................................................................................11
+Our Vision and Values ................................................................................................12
+Project Area ...............................................................................................................13
+Land Use and Environment ..................................................................................... 14
+Land Use and Environment Themes ............................................................................15
+How Does This Plan Relate to Zoning?.........................................................................17
+Land Use and Environment Goals ...............................................................................17
+Land Use and Environment Strategies and Actions ......................................................18
+Transportation ...................................................................................................... 24
+Transportation Themes ..............................................................................................25
+Transportation Goals..................................................................................................28
+Transportation Strategies and Actions ........................................................................28
+Public Facilities and Services ................................................................................. 32
+Public Facilities and Services Themes .........................................................................33
+Public Facilities and Services Goals ............................................................................35
+Public Facilities and Services Strategies and Actions ...................................................35
+Housing Themes ........................................................................................................39
+Housing ................................................................................................................ 39
+Housing Goals ...........................................................................................................42
+Housing Strategies and Actions ..................................................................................42
+Economic Development ......................................................................................... 47
+Economic Development Themes ................................................................................48
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+
+Page 3
+
+
+[Page 4]
+Economic Development Goals ...................................................................................52
+Economic Development Strategies and Actions ..........................................................52
+Health and Wellness.............................................................................................. 57
+Health and Wellness Themes .....................................................................................58
+Health and Wellness Goals ........................................................................................59
+Health and Wellness Strategies and Actions ...............................................................60
+Education and Culture ........................................................................................... 62
+Education and Culture Themes...................................................................................63
+Education and Culture Goals ......................................................................................64
+Education and Culture Strategies and Actions.............................................................64
+Governance .......................................................................................................... 67
+Governance ...............................................................................................................68
+Governance Themes ..................................................................................................72
+Governance Goals .....................................................................................................73
+Governance Strategies and Actions ............................................................................73
+Annual implementation Report Template Example .................................................. 77
+Executive Summary....................................................................................................77
+Implementation Progress by Chapter ..........................................................................78
+Data and Trends Update .............................................................................................79
+Stakeholder Engagement ...........................................................................................80
+Ketchikan Gateway Borough Assembly Adoption Ordinance. .................................... 82
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+
+Page 4
+
+
+[Page 5]
+TABLE OF FIGURES
+Figure 1: Implementation Table Example .........................................................................11
+Figure 2: Ketchikan Gateway Borough Map ......................................................................13
+Figure 3: Land Use Map, Map 1: Area Overview ................................................................20
+Figure 4: Examples of Easily Accessible Housing Indicators from Public Sources ..............45
+Figure 5: Question #7 from 2025 Community Survey ........................................................49
+Figure 6: Question #2 from 2025 Community Survey ........................................................51
+Figure 7: Ketchikan Gateway Borough Community Net Position Over Time, 2015–2024 .....69
+Figure 8: Ketchikan Gateway Borough Revenues and Expenses, 2015– 2024 ....................70
+Figure 9: Ketchikan Gateway Borough Sales Tax Revenues 2015 – 2024 ............................71
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+
+Page 5
+
+
+[Page 6]
+INTRODUCTION
+The Ketchikan Gateway Borough Comprehensive Plan
+2035 is a forward-looking, community-guided roadmap
+for the next 10 years. It reflects a shared vision for the
+Borough’s future and outlines goals and strategies
+across a range of key focus areas, from land use and
+infrastructure to housing, economic development, and
+community wellbeing. Developed through public input
+and grounded in data, the plan is designed to support
+thoughtful decision-making, responsible growth, and
+long-term community resilience.
+This plan does not replace or override other adopted
+community plans. Rather, existing planning documents
+were reviewed to inform the development of the
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+and it complements them by offering a broad, long-range
+lens through which to coordinate policies, projects, and
+investments. It builds on the foundation set by the 2009
+Comprehensive Plan and other strategic initiatives, while
+acknowledging how the community has changed, and
+may continue to change, in the years ahead.
+
+Alaska Statute, Title 29
+Title 29 of Alaska Statute requires that
+cities and boroughs engage in some form
+of land use regulation:
+AS 29.40.030(b). Comprehensive Plan.
+(a) The comprehensive plan is a
+compilation of policy statements, goals,
+standards, and maps for guiding the
+physical, social, and economic
+development, both private and public and
+may include, but is not limited to, the
+following:
+(1) statements of policies, goals, and
+standards;
+(2) a land use plan;
+(3) a community facilities plan;
+(4) a transportation plan; and
+(5) recommendations for implementation
+
+While the Borough is responsible for maintaining and updating the plan, it is not solely responsible for
+implementing every strategy and action it contains. Many priorities outlined in the plan are best advanced
+through shared leadership from both existing and new partnerships. Community organizations, Tribal
+governments, local nonprofits, regional agencies, and private sector partners all play a role in helping
+realize the vision laid out in the plan.
+References calling on the borough to be inclusive are intended to affirm longstanding Borough values and
+practices. Such language shall not be intended to imply that the Borough is presently exclusive or
+discriminatory in its service to residents.
+Statutory Authority Clarification: The Comprehensive Plan is a policy guidance document and does not
+expand the Borough’s statutory authority. The Borough’s role in health care, social services, housing, and
+related programs is limited to the powers granted by state statute or adopted by voters, and typically
+includes coordination, advocacy, planning, and support for partner-led efforts rather than direct service
+provision.
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Introduction
+
+Page 6
+
+
+[Page 7]
+Role of a Comprehensive Plan
+A Comprehensive Plan is a guiding policy document, providing a framework for future decisions made by
+the Borough Assembly, Planning Commission, and the community. Under Alaska Title 29, second class
+boroughs like Ketchikan Gateway Borough are required to adopt a Comprehensive Plan and implement it
+through zoning ordinances and other land use regulations.
+The plan serves several purposes:
+Establishes a long-term vision for community growth and development.
+Guides public policy related to land use, housing, infrastructure, and other services.
+Informs regulatory updates, including zoning, subdivision, and capital improvement plans.
+Provides a stable, coordinated approach to public and private development.
+Lays the groundwork for decisions that are fair, transparent, and aligned with public values.
+
+•
+•
+•
+•
+•
+
+The plan offers flexibility with strategies and actions that can evolve over time in response to new data and
+information, community needs, and opportunities.
+
+What a Comprehensive Plan DOES:
+•
+•
+•
+•
+•
+•
+
+Outlines a long-term vision for the community.
+Provides policy guidance for land use, housing,
+infrastructure, and development.
+Informs decisions by the Borough Assembly,
+Planning Commission, and staff.
+Encourages coordination between local
+governments, Tribes, organizations, and the
+public.
+Reflects community input, demographic data,
+and economic trends.
+Helps prioritize investments and capital projects.
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Introduction
+
+What a Comprehensive Plan DOES NOT:
+•
+•
+•
+•
+•
+•
+
+Create enforceable laws by itself.
+Regulate zoning or land use.
+Require property owners to change or
+develop land.
+Guarantee funding or construction of
+projects.
+Mandate that the Borough implement
+the strategies or actions listed.
+Replace the need for zoning
+ordinances, permit rules, or other
+regulations.
+
+Page 7
+
+
+[Page 8]
+How does this plan relate to other community plans?
+The Comprehensive Plan does not replace or supersede other current planning efforts – like the Borough’s
+Strategic Plan – but it is meant to complement those plans and provide a long-range lens to view those
+plans through and to develop others in the coming years.
+
+2035 Ketchikan Gateway Borough Comprehensive Plan Update
+
+Long-range
+(10+ years)
+
+Offers a basis and broad rationale to guide community
+and regional plans, policies, and actions.
+Area plans address specific sites (e.g., Herring Cove); specialized plans on
+topics such as housing, accessibility, and transportation.
+
+Borough ordinances,
+policies, and rezoning
+decisions.
+
+Projects carried out by
+the Ketchikan Gateway
+Borough, the State of
+Alaska, and other
+partners.
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Introduction
+
+Mid-range
+(5-10 years)
+
+Borough Strategic
+Plan, Capital
+Improvement Plan
+(CIP) list, and Borough
+budget.
+
+Near-term
+decisions
+(daily, monthly,
+annually)
+
+Page 8
+
+
+[Page 9]
+Who Uses a Comprehensive Plan?
+The Comprehensive Plan is a shared tool that can be used by different members of the community to guide
+decisions and align development plans. Here are some examples:
+
+Resident
+
+Ketchikan Gateway
+Borough Planner
+
+Use the plan as a tool to protect or
+Use the plan as a guide for decisionimprove the things they love about making about land use changes such
+the area (for example, to propose a
+as zoning and permitting, as well as
+trail connection or learn about where guidance for needed policy changes
+the community agreed future
+and enforcement priorities.
+development might occur and
+preservation should take place).
+
+Local Representative
+Use the plan as an official guiding
+document for Planning Commission
+and Assembly members when
+making decisions and rulings and
+creating policy in the project area.
+
+Housing Developer
+
+Business Owner
+
+Grant Writer
+
+Use the plan to identify areas where
+different types of growth are
+encouraged or discouraged and to
+better understand identified housing,
+transportation, and commercial
+needs.
+
+Use the plan to understand where
+their type of business may be best
+located or how community priorities
+could inform their business
+idea/plan.
+
+Use the plan to demonstrate
+communitywide support for key
+priorities in the project area when
+applying for funding from state,
+federal, and other sources.
+
+Focus Areas
+This plan addresses a broad range of interconnected topics that affect the quality of life in Ketchikan
+Gateway Borough. Focus areas include:
+•
+•
+•
+•
+•
+•
+•
+•
+
+Land Use and Environment
+Transportation
+Public Facilities and Services
+Housing
+Economic Development
+Health and Wellness
+Education and Culture
+Governance
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Introduction
+
+Page 9
+
+
+[Page 10]
+Plan Organization
+The Comprehensive Plan consists of three major components:
+
+Executive Summary
+Offers a condensed summary
+of the plan including the
+community’s vision, goals, and
+strategies for each element,
+and the Future Land Use Map.
+
+Core Plan
+(this document)
+Includes additional
+information on the process,
+area, key issues to inform the
+plan policies (goals and
+strategies), and
+implementation actions.
+
+Appendices
+Includes background
+information, context, and
+discussion used to inform the
+Future Land Use Map and
+related plan goals and
+strategies.
+
+Each chapter begins with a summary of current conditions and community perspectives, followed by goals
+and a clear set of strategies and actions. Actions are categorized by who might take the lead - either the
+Borough or a community partner - and may be cross-referenced across focus areas where applicable.
+How Focus Area Chapters are Organized
+
+Themes
+
+Goals
+
+Potential
+Borough-led
+Actions
+
+Strategies
+Potential
+Partner-led
+Actions
+
+Strategies
+and Actions
+are crossreferenced
+across focus
+areas when
+applicable.
+
+How Was This Plan Developed?
+This plan was developed with input from residents, organizations, and businesses, Borough leadership and
+staff, committees, Tribal partners, and other community leaders, as well as regional, state, and federal
+partners. It is also informed by a variety of sources such as demographic data, economic and housing
+trends, and environmental conditions. For a detailed summary of the project activities and inputs that
+contributed to the plan, see Appendix C.
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Introduction
+
+Page 10
+
+
+[Page 11]
+Implementation and Reporting
+The process for implementing this plan could include developing an annual work plan of “priority actions”
+that support the strategies identified in the plan. The Ketchikan Gateway Borough Strategic Plan may also
+assist in directing annual priorities to address in the Comprehensive Plan. An annual work plan may
+consider existing and anticipated resources and will provide direction to Borough leadership, staff, and
+their partners. Ketchikan residents should be regularly encouraged to share comments, questions, and
+concerns on plan contents and implementation, and more importantly, to get involved in plan
+implementation.
+The following tables outline a potential format for the annual work plan.
+Figure 1: Implementation Table Example
+
+SAMPLE
+Goal: What broad or long-term change do we want to make?
+Objective: What measurable change do we hope to achieve over the 5-10 years?
+Priority Strategy
+1.
+
+Actions
+(specific step)
+
+Lead
+(who)
+
+Timeline
+(when)
+
+a.
+b.
+
+2.
+
+a.
+b.
+
+3
+
+a.
+b.
+
+Equally important, the annual work plan will give Ketchikan elected officials, residents, businesses, and
+partners a detailed picture of how much progress is being made on the plan. A template for annual
+reporting on Comprehensive Plan strategies and actions is available at the end of the Governance chapter.
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Introduction
+
+Page 11
+
+
+[Page 12]
+Our Vision
+and Values
+Guided by History, Inspired by Community
+Rooted in the traditions and stories of those
+who came before us, we look forward with
+intention. Ketchikan Gateway Borough will
+be a place where decisions reflect shared
+values, celebrate cultural diversity, and
+balance economic growth while respecting
+our environment and creating a thriving
+community for all.
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Introduction
+
+Page 12
+
+
+[Page 13]
+Project Area
+The Ketchikan Gateway Borough is in Southeast Alaska, at the southern end of the Inside Passage. It
+includes the city of Ketchikan, the city of Saxman, and several outlying residential areas. The Borough is
+bordered by the Prince of Wales–Hyder Census Area to the west and north, the Canadian province of
+British Columbia to the east, and the open waters of Clarence Strait to the south and west. It is accessible
+by air and sea only, with no road connections to the rest of the state or Canada.
+The Borough spans approximately 6,880 square miles, including about 4,899 square miles of land and
+1,981 square miles of water. The area is characterized by rugged coastal mountains, dense temperate
+rainforests, island shorelines, and rich marine ecosystems. Steep terrain, heavy rainfall, and dramatic
+fjords define the landscape, with Tongass National Forest, the largest national forest in the United States,
+covering much of the Borough. Approximately 97 percent of the Borough is federally owned land.
+Figure 2: Ketchikan Gateway Borough Map
+
+The region is the traditional territory of
+the Tlingit and Haida peoples, who
+have lived in the area for thousands of
+years. Kichxáan (Ketchikan) is Lingít
+Aaní (Tlingit land), the territory of the
+Taant’a Kwáan (Sea Lion Tribe) of the
+Tongass Tlingit and Saanya Kwaan
+(People of the Southeast Wind). The
+present-day Revillagigedo Island
+community is home to two federally
+recognized and sovereign Tribes: The
+Organized Village of Saxman and
+Ketchikan Indian Community.
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Introduction
+
+Page 13
+
+
+[Page 14]
+LAND USE AND ENVIRONMENT
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Land Use and Environment Chapter
+
+Page 14
+
+
+[Page 15]
+Land Use and Environment Themes
+Strategic growth protects land and serves community needs.
+Ketchikan geography, combined with seasonal tourism pressures,
+makes it critical to guide growth in ways that serve residents long-term
+needs while managing visitor impacts. In the 2025 Community Survey,
+89 percent of respondents expressed support for a more deliberate
+balance between the needs of residents and visitors. A substantial
+portion of the Borough's urbanized land base is located on steep slopes
+or in areas vulnerable to hazards, which limits the amount of land
+suitable for safe and efficient development. Aligning zoning and
+subdivision policies with land suitability, infrastructure capacity, and
+neighborhood context will reduce risk, protect natural systems, and
+promote growth that strengthen communities rather than amplifying
+seasonal strain.
+
+Consistent and modernized code revisions can
+unlock development goals.
+A unified, modern code will improve transparency, support infill
+development, and help staff and applicants navigate the permitting
+process more efficiently. Outdated and inconsistent development
+regulations - including subdivision, hazard, and design standards undermine the Borough’s ability to support resilient, site-appropriate
+growth. Misaligned rules contribute to avoidable project delays, legal
+ambiguity, and a reliance on case-by-case Borough discretion. These
+issues limit housing diversity, create legal risk, and complicate longrange planning.
+
+Diverse areas require place-based planning.
+Ketchikan Gateway Borough’s communities vary widely in geography,
+land ownership, infrastructure access, and development history. From
+rural South Tongass to growing hubs like Ward Cove, land use conflicts
+arise where zoning and policy tools fail to reflect the specific needs,
+constraints, and character of each area. Residents consistently voice
+support for neighborhood-level planning efforts that reflect local values
+and resolve tensions, such as mismatches between allowable uses and
+actual site conditions. Place-based strategies, including sub-area plans
+and revitalization efforts, guide change in ways that reflect current uses
+and support the long-term vision of each community.
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Land Use and Environment Chapter
+
+Page 15
+
+
+[Page 16]
+Historic preservation strengthens community identity.
+Ketchikan’s buildings, environment, and landscape tell the story of the
+community shaped by its history. With more than 400 recorded heritage
+resources and 13 National Register–listed properties (plus multiple
+eligible ones), Ketchikan is rich with places that embody the region’s
+identity and economy. In the 2025 Community Survey, 30 percent of
+residents named culture, history, and arts as what they valued most
+about the Borough, underscoring the importance of preservation in local
+planning. Integrating preservation into land use and redevelopment
+decisions, through policies, design standards and incentives, can help
+maintain Ketchikan’s character and respect for its history by also
+supporting housing, tourism, and small business growth.
+
+Land use decisions reflect community values.
+Land use policies in the Borough have long been guided by a
+commitment to addressing present-day needs while respecting
+established community and neighborhood priorities. For example,
+Clam Cove Hamlet Plan shows how the Borough worked with local
+residents to support neighborhood goals and character. The Borough's
+support in reconsidering Ketchikan's federal subsistence designation
+demonstrates its dedication to supporting traditional subsistence
+lifestyles and honoring Indigenous practices. Future land use planning
+must continue to honor Ketchikan’s natural and cultural landscapes by
+balancing recreation, subsistence, and historic preservation.
+
+Collaboration catalyzes effective
+implementation.
+In a region with overlapping jurisdictions and fragmented land
+ownership, successful planning and implementation depend on
+coordination across departments and with Tribal, municipal, state and
+federal partners and agencies. Strong collaboration allows the Borough
+to modernize development regulations, align zoning with infrastructure
+capacity, and deliver more consistent, community-supported outcomes
+on issues like housing, hazard mitigation, and traditional land use.
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Land Use and Environment Chapter
+
+Page 16
+
+
+[Page 17]
+How Does This Plan Relate to Zoning?
+“Zoning” is a regulatory framework or policy that describes how land can be used in the present; it provides
+some overarching restrictions to ensure land uses within a designated area do not conflict. “Zoning codes”
+are a way to implement and enforce land use within a specified area. Alternatively, the “Future Land Use
+Map” (FLUM) identifies broad future intentions for an area that does not immediately result in zoning
+changes; rather, the proposed land use categories and recommended zoning improvements in this plan
+provide categories and tools to guide land use decisions in the Borough in a way that aligns with the vision
+for the area, promotes planning best practices, and considers local context. If there are proposed changes
+to zoning in the project area, the Future Land Use Map will guide the zoning actions. Boundary lines in the
+Future Land Use Map are approximate. It is not the intent to divide lots or specific uses by these boundary
+lines.
+
+Like the 2009 plan, the centerpiece of the Ketchikan Gateway Borough Comprehensive Plan 2035 is a
+Future Land Use Map (see Land Use and Environment chapter for details).
+A Future Land Use Map DOES:
+•
+•
+•
+•
+•
+•
+
+A Future Land Use Map DOES NOT:
+
+Anticipate development needs.
+Identify development issues, opportunities, constraints.
+Identify suitable/unsuitable types of development.
+Propose recommendations for how an area should develop.
+Establish policies and standards to guide development.
+Recommend improvements to zoning codes.
+
+•
+•
+•
+
+Act as a regulatory or zoning
+document.
+Make changes to existing
+zoning codes.
+Apply retroactively.
+
+Land Use and Environment Goals
+Goal A
+
+Goal B
+
+Guide growth through coordinated,
+predictable, and place-based land use
+planning approaches.
+
+Plan for safe and adaptive use of land in
+the face of natural hazards and changing
+conditions.
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Land Use and Environment Chapter
+
+Page 17
+
+
+[Page 18]
+Land Use and Environment Strategies and Actions
+Strategy 1: Implement a future land use map that guides future decisions about land use and
+growth.
+Future Land Use Map General Categories
+
+The land use categories defined on the map cover areas with different uses, but with similar underlying characteristics. For
+example, the “Urban Residential” designation includes multiple housing types that have access to public sewer.
+
+Land Use
+Category
+
+Intended Land Uses
+
+Application
+Areas
+
+Use Examples
+
+Downtown
+Core
+
+High-intensity mixed-use areas focused on infill
+and redevelopment in walkable districts with
+existing infrastructure.
+
+Expansion of
+Central
+Commercial
+zone
+
+Medical or professional
+office, restaurant, grocery
+store, mixed-use
+commercial buildings,
+cultural facilities
+
+Urban
+Residential
+
+Residential areas that support a mix of high- and
+low-density housing types located near core
+services, transit, and infrastructure to promote
+efficient land use and walkability.
+
+Residential
+areas with
+access to sewer
+infrastructure
+
+Fourplex, townhome, livework units, group living
+facilities, single family
+units, corner store, cafe
+
+Rural
+Residential
+
+Residential areas outside of core service areas
+that may have limits to infrastructure or lot size
+minimums and where development patterns are
+shaped by access, terrain, and the capacity of
+on-site water and wastewater systems.
+
+Residential
+areas outside
+the City of
+Ketchikan
+vicinity
+
+Single-family home,
+duplex, accessory
+dwelling, manufactured
+home, cabin, small-scale
+farm, home occupation
+
+Rural Mixed
+Use
+
+A variety of uses are allowed, including
+residential, commercial, and light industrial with
+the general goal of preserving the residential
+character of surrounding neighborhoods.
+
+Remote areas or
+neighborhood
+communities
+outside of
+municipal areas
+
+Single-family home,
+cottage industry, lodge,
+general store, boat repair,
+storage yard
+
+Commercial
+
+Areas intended for retail, service, office, and
+automotive uses that support both residents and
+visitors, typically located along major corridors or
+highway-accessible sites.
+
+Areas near the
+downtown core
+and some areas
+along Tongass
+highway
+
+Retail, office, restaurant,
+grocery, hotel, gas station,
+auto repair shop, school,
+community facility
+
+Industrial
+
+Areas reserved for light and heavy industrial uses,
+including manufacturing, processing, storage,
+marine services, and other activities that require
+separation from residential or commercial uses
+due to noise, traffic, or operational intensity.
+
+Light Industrial
+and Heavy
+Industrial zones
+
+Warehouse, processing
+plant, freight terminal,
+construction yard, salvage
+operation, material
+storage area
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Land Use and Environment Chapter
+
+Page 18
+
+
+[Page 19]
+Land Use
+Category
+
+Intended Land Uses
+
+Application
+Areas
+
+Use Examples
+
+Commercial
+Waterfront
+
+Waterfront dependent uses that combine light
+industrial, recreation, and commercial uses,
+balancing working waterfronts with community
+spaces. Residential uses are accessory.
+
+Areas along
+harbors
+
+Boat harbors, docks,
+retail, parks, canneries.
+
+Industrial
+Waterfront
+
+Marine related waterfront dependent uses that
+are industrial in nature.
+
+Areas west of
+A&P, Fuel Dock,
+Coast Guard
+Docks, Ward
+Cove
+
+Freight docks, Ferry
+docks, cruise ship docks.
+
+Airport
+
+Lands supporting aviation-related uses,
+transportation facilities, and compatible
+commercial or industrial activities essential to
+regional mobility and freight access.
+
+Airport District
+zone
+
+Aviation uses and
+accessory uses
+
+Institutional
+
+Sites owned by municipal entities generally
+intended for public works purposes.
+
+Ketchikan Creek,
+Carlanna Creek
+
+Water treatment facilities
+and storage areas, utility
+fields
+
+Recreation
+and Open
+Space
+
+Areas designated for parks, conservation, and
+recreation as principal uses, not managed by
+State or Federal governments.
+
+Parks, harbors
+
+Playground, sports field,
+trailhead, beach access,
+picnic area, natural area
+
+Public
+Management
+
+State, federal, and other lands with multiple
+uses, including but not limited to flood
+protection, habitat value, traditional use, cultural
+and heritage protection by Tribal governments,
+recreation, tourism, and timber extraction.
+
+Tongass
+National Forest,
+State lands,
+State Historic
+Preservation
+Sites
+
+Uses designated by State
+and Federal agencies and
+Land Trusts
+
+Unspecified
+Future Use
+
+Large, vacant private lands where no specific
+future land use pattern has been identified at this
+time.
+
+Remote areas
+borough-wide
+
+None
+
+Future Land Use Map Overlay Categories
+
+The overlays defined on the map cover areas with base land use designations but identify special provisions in addition to the
+base designation.
+
+Category
+
+Description
+
+Application Areas
+
+Area Plan
+
+Areas where further planning efforts may be needed and/or
+where additional development regulations may apply.
+
+Downtown, Ward Cove,
+Herring Cove, Creek Street,
+Hopkins Alley, Settlers Cove,
+Gravina Island
+
+Environmental
+Constraints
+
+Known areas of environmental constraints, such as steep
+slopes and flood areas, to help identify places where more
+detailed site analysis may be warranted if areas are to be
+developed or improved.
+
+See Land Use and
+Environment Appendix.
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Land Use and Environment Chapter
+
+Page 19
+
+
+[Page 20]
+Figure 3: Land Use Map, Map 1: Area Overview
+
+Wóotsáagháa
+X’áayi
+
+Géinaks’
+
+Kichxháan
+
+Detailed area maps of
+Ketchikan, North Tongass, and
+South Tongass are available in
+Appendix A: Land Use and
+Environment Background.
+
+Kichxháan Ka
+
+Future Land Use Map
+Area Overview
+
+T’èesh Kwáan
+Xagu
+
+Chachkw
+
+Prepared by Agnew::Beck, October 2025
+
+Base Designation
+Downtown Core
+
+Industrial Waterfront
+
+Urban Residential
+
+Airport
+
+Rural Residential
+
+Institutional
+
+Rural Mixed Use
+
+Recreation and Open Space
+
+Commercial
+
+Public Management
+
+Industrial
+
+Unspecified Future Use
+
+Commercial Waterfront
+
+Area Planning Overlay
+
+What is a Future Land Use Map?
+Future land use maps anticipate
+development needs and
+constraints, identify suitable types
+of development, and establish
+policies to guide development.
+They do not act as regulatory
+zoning documents or make
+changes to existing code.
+
+This map incorporates information from Haa Léelk’u Has Aani Saax’ú Kudzítee (Saanya & Taant’a Place Names), a community-based project mapping traditional Tlingit placenames and
+territories. It is shared here for reference only. For the full map and source context, please visit: https://www.google.com/maps/d/viewer?mid=1CgaYbgGaeojaYXZsImsWfSiW1VUuYKM&ll
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Land Use and Environment Chapter
+
+Page 20
+
+
+[Page 21]
+Icon Key:
+ Priority: Emerging priority for implementation
+ Capital: An action that includes a potential capital project
+ Code: An action that recommends a specific code revision
+ 2009: A strategy adapted from/carried over from the 2009 Comprehensive Plan
+
+Strategy 2: Update and improve the Borough's zoning and subdivision code to better respond
+to existing and future issues and opportunities. 
+Potential Borough-led Actions (See Appendix A for additional details on each of these actions.)
+a) Replace discretionary permits with administrative permit processes where feasible. 
+b) Introduce flexible zoning tools, such as form-based standards or mixed-use overlays in areas
+targeted for infill and redevelopment. (Cross reference with Housing chapter.) 
+c) Reform the use of special limitation (SL) zoning to improve zoning consistency and reduce
+precedent-driven spot zoning. 
+d) Evaluate the feasibility and community support for adopting site plan requirements in all Borough
+areas outside the City of Ketchikan limits to enhance life safety, structural integrity, and resilience,
+while considering local needs and capacities.
+e) Continue to improve the usability, applicability, and accessibility of Ketchikan Gateway Borough
+Code, Titles 17 Subdivisions and 18 Planning and Zoning. 
+Potential Partner-led Actions
+f)
+
+Coordinate with the City of Ketchikan to promote infill and redevelopment of underutilized
+properties.
+
+Strategy 3: Reduce risks from landslides, flooding, erosion, and other natural hazards by
+improving maps, updating land use policies, and investing in resilient infrastructure. 
+Potential Borough-led Actions
+a) Implement and conduct regular updates of the Ketchikan Gateway Borough Multi-Jurisdictional
+Hazard Mitigation Plan (MJHMP) to ensure development decisions, infrastructure investments, and
+emergency preparedness efforts reflect the Borough’s latest risk assessments. (Cross reference
+with Transportation chapter.) 
+b) Strengthen floodplain management policies through code updates, interagency coordination, and
+community outreach. (More information in Appendix A.)  
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Land Use and Environment Chapter
+
+Page 21
+
+
+[Page 22]
+Potential Partner-led Actions
+c) Coordinate with local, Tribal, State of Alaska, and utility partners to close data gaps in hazard
+mapping, improve flood and landslide alert systems, and identify priority upgrades to emergency
+access routes in high-risk areas.
+d) Create a transportation infrastructure vulnerability map to guide capital investment decisions.
+e) Support development of a Ketchikan Creek Master Plan to address potential damage,
+infrastructure failure and economic impacts from flooding.
+
+Strategy 4: Promote coordinated area and neighborhood planning to guide future
+development, infrastructure investment, and zoning updates in priority locations.
+Potential Borough-led Actions
+a) Develop and implement a Ketchikan Gateway Borough Land Management Plan to guide the
+acquisition, disposition, leasing, and use of Borough-owned lands in alignment with land use,
+housing, recreation, and conservation goals. (More information in Appendix A.) 
+b) Update and implement a consistent framework for area/neighborhood plans in the Borough,
+building on past policy commitments to guide development, public investments, and community
+character in neighborhoods and areas identified on the Future Land Use Map Area Planning
+Overlay. (More information in Appendix A.) 
+c) Develop an area plan for Herring Cove to guide land use, infrastructure improvements, and visitor
+management strategies that balance tourism activities with resident quality of life, public safety,
+and habitat protection. (More information in Appendix A.)
+d) Explore the creation of guidelines or agreements with tour companies to limit commercial tour
+activities in residential areas and protect non-commercial recreation areas. (Cross reference with
+Economic Development chapter.)
+Potential Partner-led Actions
+e) Collaborate with property owners, the business community, the City of Ketchikan, and the State of
+Alaska to develop a Downtown Ketchikan sub-area plan that strengthens the district as a yearround hub of community life. The plan should build from existing conceptual and master planning
+efforts to identify strategies that balance resident-serving and visitor-serving uses, support cultural
+vitality, and address parking management. Implementation may include zoning updates, incentives
+for year-round businesses, and coordination with property owners to encourage diverse, locally
+serving tenants.
+f) Subject to Borough priorities and funding availability, collaborate with partners to develop an area
+plan for Ward Cove that addresses land use, infrastructure, and redevelopment opportunities, with
+a focus on improving access, coordinating utilities, supporting compatible mixed-use
+development, and guiding reinvestment in the former industrial site. (More information in
+Appendix A.)
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Land Use and Environment Chapter
+
+Page 22
+
+
+[Page 23]
+Case Study: Chilkoot River Corridor Strategic Planning – The Chilkoot River Corridor in Haines, Alaska faced a
+similar challenge as Herring Cove: growing visitation concentrated in an area with limited infrastructure next to
+residential neighborhoods and critical habitat. Increased traffic, user conflicts, and human-wildlife interactions
+created safety concerns and strained the capacity of local stakeholders to manage the area effectively. In
+response, the community initiated the Chilkoot River Corridor Strategic Planning Project, a collaborative effort
+involving the State of Alaska, Chilkoot Indian Association, the Haines Borough, neighbors, and tourism operators.
+The plan created a shared vision for the corridor and introduced targeted strategies, including improved parking and
+circulation, interpretive signage, designated viewing areas, and limits on commercial access.
+
+Strategy 5: Preserve cultural, environmental, and recreational resources through land use
+planning and partnerships.
+Potential Borough-led Actions
+a) Implement the Ketchikan Gateway Borough Recreation, Parks, and Playground Plan and Trails Plan
+by prioritizing capital projects, land acquisition, and maintenance partnerships. 
+b) Establish a recreation zone in the Borough zoning code to preserve designated parklands and
+community open spaces. 
+c) Where feasible, apply the land use guidance from the Hopkins Alley/Newtown Planning
+Framework. 
+d) Engage with the U.S. Forest Service and other partners during the Tongass National Forest Plan
+revision to advocate for Borough priorities, including the protection of cultural resources,
+recreational access, and sustainable land use practices.
+e) Continue to implement the Creek Street Historic District Plan through zoning coordination,
+infrastructure improvements, and funding alignment.
+Potential Partner-led Actions
+f)
+
+Support the creation of community-wide plans, such as historic preservation plans and cultural
+plans, that build on previous community planning efforts and will be developed in partnership with
+local organizations. 
+g) Advocate for City of Ketchikan enforceable code to protect Ketchikan's historic buildings and
+cultural sites.
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Land Use and Environment Chapter
+
+Page 23
+
+
+[Page 24]
+TRANSPORTATION
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Transportation Chapter
+
+Page 24
+
+
+[Page 25]
+Transportation Themes
+Residents emphasize the need for resilient,
+hazard-mitigating infrastructure.
+The 2024-2027 State Transportation Improvement Plan (STIP) outlines
+more than $50 million in regional investments but emphasizes that local
+advocacy is essential to ensure timely implementation. In recent
+community discussions, Ketchikan residents raised concerns about
+landslide risks cutting off road access and other vulnerable corridors.
+Transportation facilities and infrastructure in Ketchikan, including the
+Tongass Avenue and Water Street viaduct, ferry terminals, and bridges,
+are aging and in need of investment. About 80 percent of 2025
+Community Survey participants said preparing for ad addressing the
+effects of natural disasters and hazards was a top community priority.
+
+Investment in marine transportation supports critical links between
+communities and regional economies.
+Marine access remains essential for inter-island travel, commerce, and
+community resilience. Aging marine vessels, high freight costs, and
+limited ferry availability have eroded reliability. The 2021 Coordinated
+Transportation Plan identifies ferry service between Ketchikan and
+Prince of Wales communities as a critical link for residents and regional
+economies. Participants in the April 2025 Partner Discussion meeting
+highlighted the need to reactivate emergency water routes, improve
+Americans with Disabilities Act (ADA) ferry access, and reduce marine
+shipping costs by encouraging backhaul cargo opportunities.
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Transportation Chapter
+
+Page 25
+
+
+[Page 26]
+Strengthening airport infrastructure and access
+supports regional connectivity.
+Ketchikan International Airport, located on Gravina Island, is a vital
+economic and transportation hub. The terminal was identified in the
+Terminal Area Plan (adopted in 2022) as undersized for peak-season
+demand, and Phase 1 terminal expansion is underway with completion
+expected in 2027. The airport's unique reliance on a ferry system for
+access makes redundancy and modernization crucial. A new airport
+operating lease was renegotiated between the Borough and the State of
+Alaska, extending the agreement to 2079 to sustain long-term airport
+operations. Work is ongoing, and recent actions reflect steady progress
+toward previously identified issues.
+
+Improvements to mobility during tourist season
+ensures access for residents.
+Downtown Ketchikan congestion during cruise ship season creates
+safety concerns, limits mobility, and impacts residents’ lives. Residents
+in the 2025 Community Survey and the February 2025 Open House
+described difficulties navigating crowded streets, crossing safely, and
+accessing services during peak months. The surge in summer tourism,
+with more than 1.5 million cruise passengers annually, places strain on
+infrastructure built for a year-round population of about 13,500.
+
+Multimodal and ADA-accessible transportation
+systems improve livability.
+Community members and transportation partners voiced support for a
+“Complete Streets” approach to design infrastructure that safely
+accommodates drivers, pedestrians, cyclists, and people living with
+disabilities. However, many sidewalks remain inaccessible or
+disconnected, particularly outside of downtown. The 2025 April Partner
+Discussions emphasized the need for integrated pedestrian paths, safer
+crossings, and ADA-compliant design as part of all major street
+upgrades.
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Transportation Chapter
+
+Page 26
+
+
+[Page 27]
+Scaled and accessible public transit service
+keeps the community connected.
+Ketchikan’s public transit system is valued by many and is expanding
+access for residents with mobility challenges and for outlying
+neighborhoods. In 2024, the Borough brought paratransit operations inhouse as Bus +, with ridership growing significantly in FY25 and real-time
+bus tracking now available to riders. Accessible services were strengthened
+further when three new ADA vans were added to the fleet in 2025. Despite
+progress, coverage and reliability gaps remain in some neighborhoods and
+time periods. The Borough’s continued implementation of the Coordinated
+Transportation Plan, Strategic Plan, and updates to the Transit Development
+Plan are expected to expand span, frequency, and capacity.
+
+Improving access to Gravina Island is essential for
+long-term development.
+Gravina Island hosts key public infrastructure, including the airport and
+potential industrial and residential opportunities, but access currently
+relies on the airport ferry. With the Gravina Access Project nearly complete
+and no additional state funds identified for new access improvements, the
+near-term priority is maintaining
+reliable ferry service through vessel and
+1
+terminal reinvestment. The Borough should intensify efforts to replace
+aging vessels and secure stable, multi-year funding for capital and
+operations. Clarifying the appropriate funding pathway, including eligibility
+through state and federal programs, will be critical for long-term reliability and unlocking new development
+opportunities on the island while also expressing the Borough’s long-term vision of exploring and
+advancing a permanent, fixed, year-round transportation connection between the City of Ketchikan and
+Ketchikan International Airport. (Gravina Island development and connectivity is also discussed in Public
+Facilities and Services chapter, Strategy 5.)
+
+Transportation access affects food security
+and cost of living.
+More than 60 percent of participants in the 2025 Community Survey
+identified food costs and availability as one of their top challenges. Local
+freight and shipping limitations - particularly the cost of marine cargo impact grocery prices and food imports. Participants in the February 2025
+Open House suggested enhancing support for local agriculture and food
+delivery services, including transportation solutions for farmers markets,
+fish distribution, and groceries to outlying communities.
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Transportation Chapter
+
+Page 27
+
+
+[Page 28]
+Transportation Goals
+Goal A
+
+Goal B
+
+Goal C
+
+Build and maintain a safe,
+resilient, and accessible
+transportation network.
+
+Strengthen regional and interisland connectivity.
+
+Enable growth and development
+through infrastructure
+investment.
+
+Transportation Strategies and Actions
+Icon Key:
+ Priority: Emerging priority for implementation
+ Capital: An action that includes a potential capital project
+ Code: An action that recommends a specific code revision
+ 2009: A strategy adapted from/carried over from the 2009 Comprehensive Plan
+
+Strategy 1: Advocate for hazard-resilient transportation infrastructure. 
+Potential Borough-led Actions
+a) Prioritize and advocate for full funding of high-risk infrastructure projects, including the Tongass
+
+Avenue and Water Street Viaducts.
+b) Maintain and regularly update the borough-wide hazard mitigation plan with transportation assets,
+identifying routes vulnerable to landslides, flooding, and storm surge. (Cross reference with Land
+Use and Environment chapter.
+Potential Partner-led Actions
+c) Collaborate with Alaska Department of Transportation and Public Facilities (AKDOT&PF) to
+integrate ADA-compliant upgrades into major projects and retrofits.
+d) Explore the creation of a transportation infrastructure vulnerability map to guide capital investment
+decisions.
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Transportation Chapter
+
+Page 28
+
+
+[Page 29]
+Strategy 2: Strengthen marine and inter-island connectivity. 
+Potential Borough-led Actions
+a) Continue advocacy and support for implementation of the AMHS South Tongass Ferry Terminal
+improvements as identified in the 2024-2027 STIP.
+b) Advocate for the Inter-Island Ferry Authority and Alaska Marine Highway System to address the
+aging ferry fleet and staffing needs to maintain essential passenger and freight service.
+c) Explore developing emergency marine access routes for disaster response and community
+resilience.
+d) Explore the long-term feasibility, potential benefits, and environmental considerations of improved
+overland connections between Ketchikan, mainland Alaska, and Canada, in coordination with
+state and federal partners.
+Potential Partner-led Actions
+e) Convene public, Tribal, and private logistics partners to develop a community-wide freight
+coordination and cost-reduction strategy to evaluate options such as backhaul, schedule
+alignment, and shared facilities, and to expand shipping options and encourage competition.
+
+Strategy 3: Continue to improve airport access and modernize infrastructure. 
+Potential Borough-led Actions
+a) Complete Phase 1 of the airport terminal expansion project. 
+b) Pursue terminal site expansion to improve public parking and traffic flow at the airport terminal. 
+c) Pursue expansion of the ramp and associated grounds to accommodate increased aircraft
+
+operations and growth of aviation-related business at the airport. 
+d) Coordinate airport ferry schedules with Borough transit and shuttle service to ensure year-round
+resident and visitor access.
+e) Develop and pursue a funding plan for Gravina ferry vessels and terminal assets that identifies
+eligible state and federal funding pathways in coordination with ADOT&PF.
+f) Include airport infrastructure in Borough ADA planning and capital improvement programs in
+coordination with FAA ADA requirements. (Cross reference with Public Facilities and Services
+chapter.) 
+Potential Partner-led Actions
+g)
+
+Collaborate with any non-Borough transit and shuttle services to coordinate airport ferry schedules
+to ensure year-round resident and visitor access.
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Transportation Chapter
+
+Page 29
+
+
+[Page 30]
+Strategy 4: Expand public transit reach and efficiency. 
+Potential Borough-led Actions
+a) Pursue funding to expand service coverage to areas not currently served, especially outlying
+neighborhoods and development zones on North Tongass and South Tongass.
+b) Pilot and scale demand-responsive service (Bus +) to reach underserved populations, including
+seniors and people living with disabilities.
+c) Improve coordination with non-Borough paratransit providers.
+d) Strive to regularly update the Transit Development Plan to incorporate changing demographics and
+emerging needs.
+Note: At the time of this plan update, the Borough had budgeted and scoped an update to the Transit
+Development Plan (last revised in 2003) to evaluate service design, coverage, technology, and funding
+strategies. The comprehensive plan’s transit strategies should be implemented in coordination with the
+TDP update and subsequent recommendations.
+
+Strategy 5: Address accessibility and traffic congestion by designing safer, inclusive streets
+that serve residents of all ages and abilities.
+Potential Borough-led Actions
+a) Align Borough transportation planning with the State of Alaska’s ADA and pedestrian infrastructure
+guidance. (Cross reference with Health and Wellness chapter.)
+Potential Partner-led Actions
+b) Improve pedestrian crossings, sidewalks, and
+bicycle facilities (including protected bicycle
+lanes where feasible) in high-traffic areas,
+especially downtown and along Tongass
+Avenue, and develop continuous multi-use
+trail connections that link neighborhoods,
+schools, harbors, and downtown. 
+c) Expand ADA-compliant curb ramps and
+crossings in underserved areas and near
+public services. 
+d) Coordinate with visitor-industry partners to
+stagger coach arrivals at high-conflict
+locations during peak hours to reduce
+bottlenecks.
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Transportation Chapter
+
+The Ketchikan Gateway Borough Transit Department was
+selected as the 2025 Community Transportation System of
+the Year - Small System by the Community Transportation
+Association of America (CTAA). The national award
+recognizes outstanding achievement in rural and small
+urban transportation systems.
+
+Page 30
+
+
+[Page 31]
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Transportation Chapter
+
+Page 31
+
+
+[Page 32]
+PUBLIC FACILITIES AND SERVICES
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Public Facilities and Services Chapter
+
+Page 32
+
+
+[Page 33]
+Public Facilities and Services Themes
+Expanded utility infrastructure can unlock development opportunities and
+stabilize neighborhoods.
+Expanded utilities - predominantly water, sewer, and roads - are needed
+to support new housing development and keep pace with community
+needs. Participants in the 2025 Community Survey indicate that
+developing utilities that lead to housing (e.g., roads, utilities) is the
+second-highest housing priority, and “creating development incentives
+through public-private partnerships” is in the top five housing priorities.
+Extending utility infrastructure is both costly and complex. The process
+is further complicated by multi-jurisdictional ownership. Proactive
+planning and flexible standards will be needed to unlock development in
+steep or high-cost areas, including exploring development opportunities
+on Gravina Island.
+
+Wastewater planning efforts are needed to
+modernize systems and expand capacity.
+Wastewater systems are nearing or exceeding capacity in several
+service areas, most notably at the Charcoal Point plant, which has little
+1 Financial and land constraints limit options for
+room for expansion.
+expanding or upgrading treatment facilities. Without a coordinated,
+long-term wastewater plan across Borough and municipal systems, it
+will be difficult to support growth or protect water quality.
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Public Facilities and Services Chapter
+
+Page 33
+
+
+[Page 34]
+Ongoing emergency management efforts are
+improving coordination and readiness.
+Emergency management is the community’s most trusted public
+service, with 88 percent of participants in the 2025 Community Survey
+agree or strongly agree they have access to quality emergency
+response services. Multi-jurisdictional coordination is improving
+through the ongoing development of the Greater Ketchikan MultiJurisdictional Emergency Operations Plan (MJEOP), which outlines
+shared responsibilities across agencies.
+
+Investments in public facilities and harbors
+support transportation and commerce.
+Port and harbor infrastructure is central to Ketchikan’s transportation
+network and economy but requires upgrades to maintain safety,
+1
+accommodate demand,
+and reduce emissions. Shore power, corrosion
+protection, and waterfront access improvements are needed alongside
+long-term port planning. Expanded facilities in Saxman and Gravina
+Island would enhance development opportunities, equity, and
+connectivity.
+
+New and diversified waste management
+solutions are in demand.
+Expanded outreach, enforcement, and partnerships, such as recycling
+fishing nets or lithium batteries, can help address growing waste
+management pressures. Concerns about illegal dumping and poor
+waste management practices were voiced during the 2025 April
+Partner Discussions, particularly in remote areas and among seasonal
+or short-term residents. While there is growing interest in composting
+and recycling, broader implementation is limited by logistics, funding,
+and public education about those efforts.
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Public Facilities and Services Chapter
+
+Page 34
+
+
+[Page 35]
+Public Facilities and Services Goals
+Goal A
+
+Goal B
+
+Goal C
+
+Enable sustainable growth
+through strategic utility and
+infrastructure investment.
+
+Enhance regional connectivity
+and access through investment
+in harbors, ports, and public
+facilities.
+
+Maintain, improve, and
+modernize public facilities and
+infrastructure to support
+access, equity, and long-term
+community use.
+
+Public Facilities and Services Strategies and
+Actions
+Icon Key:
+ Priority: Emerging priority for implementation
+ Capital: An action that includes a potential capital project
+ Code: An action that recommends a specific code revision
+ 2009: A strategy adapted from/carried over from the 2009 Comprehensive Plan
+
+Strategy 1: Support coordinated utility infrastructure expansion to enable new housing
+development. 
+Potential Borough-led Actions
+a) Consider incentivizing utility development in new growth areas by exploring reimbursement
+b)
+c)
+d)
+
+e)
+
+models, tax incentives, or other tools that encourage private investment. 
+Establish a clear and consistent framework for deciding when and how public funds will be used for
+utility expansion, based on development readiness, community benefit, and cost-efficiency.
+Explore adopting flexible or graduated infrastructure standards to reduce early-stage development
+costs in steep or high-cost areas. 
+Improve inter-agency coordination across municipalities, the State of Alaska, and developers by
+aligning priorities, clarifying roles and responsibilities, and seeking funding for needed utility
+infrastructure.
+Prioritize strategic road and utility investments in areas identified for housing development to
+reduce uncertainty and encourage construction.  (Cross reference with Housing chapter.)
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Public Facilities and Services Chapter
+
+Page 35
+
+
+[Page 36]
+Strategy 2: Address challenges to wastewater capacity. 
+Potential Borough-led Actions
+a) Identify opportunities to consolidate plans from City of Saxman, City of Ketchikan, and the
+Ketchikan Gateway Borough to create a long-term wastewater treatment plan that addresses
+current capacity issues and guides current and future development. (Cross reference with
+Governance chapter.)
+b) Improve compliance and operational reliability at the Mountain Point Wastewater Treatment Plant
+by implementing system upgrades, expanding SCADA monitoring, and establishing a regular
+maintenance schedule. 
+c) Upgrade Forest Park’s wastewater system and roads to replace leaking sewer mains and improve
+drainage and pedestrian safety. 
+d) Plan for wastewater collection in emerging development areas.
+e) Explore alternative infrastructure solutions such as modular systems or decentralized utilities in
+hard-to-reach areas.
+f) Support upgrades to the City of Ketchikan Wastewater Treatment Plant to comply with the
+wastewater discharge permit, including funding and implementation of a study, design, and
+construction of a major capital improvement. 
+
+Strategy 3: Modernize core infrastructure to improve resilience. 
+Potential Borough-led Actions
+a) Replace aging Borough water, sewer, and road infrastructure in priority areas to prevent
+environmental contamination and improve safety. 
+b) Support municipalities' efforts in providing safe, reliable drinking water by advocating for project
+resources and seeking partnership opportunities.
+c) Identify strategies to replace aging diesel generators and support grid resilience through new
+infrastructure and backup systems.
+d) Support municipalities and partners in pursuing projects related to energy efficiency, for example,
+Green Star ratings.
+Potential Partner-led Actions
+e) Encourage partnerships with Canadian and northern providers to improve fiber optic system
+resiliency by developing redundant broadband routes.
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Public Facilities and Services Chapter
+
+Page 36
+
+
+[Page 37]
+Strategy 4: Enhance and maintain port and harbor infrastructure to support safe
+transportation, economic development, and community access.
+Potential Partner-led Actions
+a) Install corrosion protection along the Port of Ketchikan berth face to preserve structural integrity
+and prevent long-term damage. 
+b) Conduct feasibility studies, including the impacts to existing electrical infrastructure and any
+potential necessary upgrades, for port berth electrification to reduce emissions and support shore
+power for cruise ships.
+c) Collaborate with public and private entities for strategic waterfront commerce.
+d) Align Ketchikan’s port planning with Southeast Alaska’s regional transportation strategy.
+e) Rehabilitate the Ketchikan Waterfront Promenade to maintain pedestrian access and support
+tourism. 
+f) Support the development of a site plan, design, and permitting for Totem Harbor in Saxman to
+support economic development and subsistence access.
+
+Strategy 5: Improve connectivity and development readiness on Gravina Island.
+Potential Borough-led Actions
+a) Determine if an updated Gravina Island Plan (2005) or Gravina Island Access study (2017) may be
+needed to examine and facilitate the necessary road, water, sewer, and energy infrastructure
+required for development.
+b) Explore further integrating road accessible portions of Gravina Island into the infrastructure assets
+of the broader community. (Cross reference with Transportation chapter.)
+c) Collaborate with the Alaska Department of Transportation & Public Facilities, the City of Ketchikan,
+and other partners to periodically evaluate the feasibility, costs, and community benefits or
+impacts of a bridge and/or tunnel connection to increase access to Gravina Island, as part of longrange transportation planning efforts.
+
+Strategy 6: Equip emergency and public safety services to meet evolving community needs.
+Potential Borough-led Actions
+a) Continue collaborations between the Borough, City of Ketchikan, City of Saxman, Ketchikan Indian
+Community, and the State of Alaska to update the Borough’s multi-jurisdictional hazard mitigation
+plan and launch a public disaster education campaign.
+b) Prioritize investments in new construction and major facility upgrades at South Tongass and North
+Tongass fire stations to address structural issues, improve safety, and expand emergency
+response capacity. 
+c) Support efforts to replace the Saxman Public Safety Building with a modern facility that meets
+current emergency service needs, supports equipment storage, and ensures the health and safety
+of responders and the community.
+d) Seek funding to install emergency standby generators in all critical infrastructure facilities.
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Public Facilities and Services Chapter
+
+Page 37
+
+
+[Page 38]
+e) Ensure all new utility systems are designed to support emergency services by adopting standard
+water system standards including consistent hydrant types.
+Potential Partner-led Actions
+f)
+
+Increase annual fire inspection enforcement for commercial buildings, especially those with
+outdated sprinkler systems.
+g) Expand fire prevention education, including outreach to short-term rental hosts.
+
+Strategy 7: Promote cleaner communities through education, outreach, and responsible
+solid waste management.
+Potential Borough-led Actions
+a) Support efforts to install and promote the use of bear-proof trash containers in parks and
+neighborhoods.
+b) Continue Junk Vehicle Program and identify barriers to participation.
+c) Partner with regional and nonprofit programs to pilot expanded recycling for items like fishing nets
+or lithium batteries.
+Potential Partner-led Actions
+d) Expand public education on proper waste disposal, landfill use, and available services.
+e) Strengthen enforcement against illegal dumping, particularly in high-risk areas.
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Public Facilities and Services Chapter
+
+Page 38
+
+
+[Page 39]
+HOUSING
+
+Ketchikan Gateway 2035 Borough Comprehensive Plan
+Housing Chapter
+
+Page 39
+
+
+[Page 40]
+Housing Themes
+Improving housing affordability and availability are key to unlocking
+economic growth.
+Across all community engagement inputs during the Comprehensive Plan
+process - the 2025 Community Survey, interviews, February 2025 Open
+House, and 2025 April Partner Discussions - the lack of attainable,
+available housing was consistently identified as the most pressing issue
+for residents. Rent and homeownership costs in Ketchikan have increased
+faster than regional averages, with Ketchikan experiencing a 9.4 percent
+rise in average rents in 2023 alone, the highest increase among Southeast
+Alaska communities, according to Southeast Alaska by the Numbers 2024
+report from Southeast Conference. Residents and housing developers
+also noted that construction costs, limited developable land, and high
+land prices are significant barriers to addressing the housing challenges.
+
+Workforce housing and options beyond single
+family homes are in high demand.
+At the 2025 April Partner Discussions, business and economic
+development representatives underscored that the lack of workforce
+housing is one of the top barriers to economic growth in the community.
+1
+There is a growing need for flexible housing types, such as triplexes,
+ADUs, and shared living arrangements, that support extended families
+and younger workers. Additionally, stakeholders highlighted opportunities
+to modernize zoning to allow for more creative housing forms and to
+encourage development of multi-generational housing that meets the
+needs of Ketchikan's aging population and diverse family structures.
+
+Accessible housing enables community stability for
+residents of all ages and abilities.
+Much of Ketchikan’s housing inventory is aging and not designed to meet
+the needs of seniors and Elders or individuals living with disabilities.
+Participants at the 2025 April Partner Discussions reported that lack of
+accessible units is prompting some residents to leave the community.
+Accessibility concerns include proximity to services and mobility within
+neighborhoods. While some Borough investments have supported
+accessibility improvements (e.g., ADA features in parks and facilities),
+there remains a need for strategies that enable aging in place and people
+living with disabilities.
+Ketchikan Gateway 2035 Borough Comprehensive Plan
+Housing Chapter
+
+Page 40
+
+
+[Page 41]
+Opportunities exist for innovative partnerships
+and housing strategies.
+While challenges exist, there is strong interest in pursuing
+collaborative housing solutions. Stakeholders at the April 2025
+Housing Partners discussed land trust models, working closely with
+Tribal housing authorities such as the Ketchikan Indian Community,
+and forming cross-sector partnerships with nonprofits and developers.
+Adaptive reuse of existing structures, modular housing, and
+streamlining permitting processes were also recommended. Several
+partners called for improved housing data, like tracking vacancies,
+short-term rentals, and derelict properties, to help inform strategies.
+
+More information is needed about the effects of
+short-term rentals on housing supply.
+The growth of short-term rentals (STRs), fueled by Ketchikan’s
+expanding tourism industry, is driving the perception that STRs may be
+impacting the year-round housing market. Participants in 2025 April
+Partner Discussions and community members during1the February
+2025 Open House voiced concerns that homes are being converted
+into STRs, reducing availability for local workers and families. During
+the Partner Discussions, it was suggested that the Borough continue
+tracking the numbers of STRs and share that data more widely to help
+the community to understand the true impacts of STRs and if
+additional strategies are necessary.
+
+Ketchikan Gateway 2035 Borough Comprehensive Plan
+Housing Chapter
+
+Page 41
+
+
+[Page 42]
+Housing Goals
+Goal A
+
+Goal B
+
+Goal C
+
+Increase the supply and
+diversity of housing to meet
+current and future needs.
+
+To support the development
+and preservation of housing
+options that are affordable and
+accessible to the needs of
+current and future Borough
+residents.
+
+Foster collaboration and
+innovation to expand housing
+solutions.
+
+Housing Strategies and Actions
+Icon Key:
+ Priority: Emerging priority for implementation
+ Capital: An action that includes a potential capital project
+ Code: An action that recommends a specific code revision
+ 2009: A strategy adapted from/carried over from the 2009 Comprehensive Plan
+
+Strategy 1: Accelerate housing development through policies. 
+Potential Borough-led Actions
+a) Consider development of a Housing Action Plan with additional housing data collected to support
+action planning and next steps.
+b) Track and update easily accessible housing indicators (suggested in the chart at the end of this
+chapter in Figure 4 to annually to track housing issues, constraints, needs, and opportunities.
+c) Identify, inventory, and prioritize Borough owned land suitable for housing development,
+particularly parcels near utilities, services, and transportation. (This action could also be
+undertaken by the City for City-owned land.)
+d) Evaluate the potential for issuing Requests for Proposals (RFPs) to establish public-private
+partnerships for housing development on Borough properties designated for housing projects.
+(Cross reference with Land Use and Environment chapter)
+e) Continue to support construction of “missing middle” housing (e.g., duplexes, triplexes, “tiny”
+homes, small multifamily developments) through code updates and streamlined permitting. (Cross
+reference with Land Use and Environment chapter) 
+f) Continue to monitor data on short-term rentals and their impact on the housing market.
+Potential Partner-led Actions
+g) Host a developer roundtable to identify specific barriers to constructing small-scale infill housing
+in Ketchikan.
+Ketchikan Gateway 2035 Borough Comprehensive Plan
+Housing Chapter
+
+Page 42
+
+
+[Page 43]
+Case Study: The North Slope Borough convened a Housing Summit in Anchorage in January 2025 to
+explore solutions for expanding housing opportunities across the North Slope. The Borough published a
+summit report with an overview of presentations, discussions, next steps and detailed information on
+key topics including financing and funding, land ownership, contractors, skilled labor, and training,
+supplies, materials, and logistics and a tool kit of resources for residents - https://www.northslope.org/housing-summit-2025/.
+
+Strategy 2: Partner with employers on workforce housing solutions. 
+Potential Borough-led Actions
+a) Develop pre-approved plans for small-scale, affordable workforce housing to reduce permitting
+time and costs.
+b) Continue to promote mixed-use development in walkable areas to integrate housing with jobs,
+transportation, and services. (Cross reference with Land Use and Environment chapter.)
+c) Explore offering density bonuses or relaxed parking standards for developments that include
+guaranteed workforce or seasonal housing.
+Potential Partner-led Actions
+d) Develop a pilot employer-assisted housing program in collaboration with PeaceHealth, the school
+district, or other major employers. For example, explore a shared investment model where
+employers co-own seasonal or transitional housing units. (Cross reference with Economic
+Development chapter.)
+
+Ketchikan Gateway 2035 Borough Comprehensive Plan
+Housing Chapter
+
+Page 43
+
+
+[Page 44]
+Strategy 3: Improve housing accessibility and safety through rehabilitation and infill
+development.
+Potential Borough-led Actions
+a) Support outreach and promotion of Housing and Urban Development (HUD) programs for
+rehabilitation grants or low-interest loan programs that help owners upgrade older homes,
+especially for seniors and people living with disabilities.
+b) Incentivize universal design in new housing projects to ensure long-term accessibility for residents
+of all ages and abilities.
+c) Include universal design as a scoring criterion in any housing funding application reviewed by the
+Borough.
+d) Collaborate with healthcare providers and nonprofits to develop assisted living or senior-friendly
+housing in proximity to essential services.
+Potential Partner-led Actions
+e) Support infill development on underused or vacant lots in older neighborhoods with existing
+infrastructure. (Cross reference with Land Use and Environment chapter.)
+f) Explore partnerships with utility providers to better understand patterns of long-term disuse or
+vacancy and use that information to guide outreach for housing rehabilitation.
+g) Advocate for building code updates and design incentives that support accessibility, such as
+encouraging ground-floor or elevator-access housing units, particularly for seniors and people
+living with disabilities.
+h) Collaborate with cities and housing partners to identify opportunities for promoting accessible
+design in new housing, such as ground-level entrances or elevator-equipped buildings.
+
+Strategy 4: Leverage local partnerships and new models to deliver diverse housing solutions.
+Potential Borough-led Actions
+a) Support partners in efforts to identify and develop resources and services to assist unhoused
+residents and those in danger of becoming unhoused.
+b) Partner with Tribal housing authorities on joint developments and infrastructure funding strategies.
+c) Educate and promote information about the zoning policies that allow modular units.
+Potential Partner-led Actions
+d) Assess the feasibility of modular or manufactured housing development pilot programs to lower
+construction costs and shorten project timelines; pursue partnerships with regional builders or
+modular manufacturers for a demonstration project.
+e) Support efforts of the Ketchikan Community Land Trust to expand housing in the community.
+
+Ketchikan Gateway 2035 Borough Comprehensive Plan
+Housing Chapter
+
+Page 44
+
+
+[Page 45]
+Figure 4: Examples of Easily Accessible Housing Indicators from Public Sources
+
+Indicator
+
+Description
+
+What it tells us
+
+Sources
+
+New Housing
+Units
+
+Quarterly report of new
+single family, multifamily, and mobile home
+units
+
+Tracking the number of new
+housing units added to the
+market can help track how
+well the market is responding
+to demand and track
+progress towards new
+housing goals.
+
+AHFC Alaska Housing Market Indicators
+Report (available at https://www.ahfc.us/
+efficiency/education-and-events/
+research-information-center/
+alaska-housing-market-indicators
+or https://live.laborstats.alaska.gov/
+housing/new.html)
+
+Housing
+Occupancy
+and Vacancy
+Rates
+
+Total occupied/vacant
+housing units,
+homeowner vacancy
+rate, rental vacancy rate
+
+Vacancy rates below 5% are
+an indication of a tight
+housing market that could
+limit housing mobility and is
+often a sign of pent-up
+demand. A growing number
+of vacant units can also be
+an indication that the
+housing supply is not
+meeting the needs of
+residents and the existing
+housing stock is not being
+used to its full potential.
+
+U.S. Census Bureau, American
+Community Survey (ACS) 5-Year
+Estimates: Table DP04 SELECTED
+HOUSING CHARACTERISTICS (available
+at https://data.census.gov/)
+
+Housing
+Tenure
+
+Owner-occupied housing The relative demand or need
+units, renter-occupied
+for ownership versus rental
+housing units, and
+housing in your community.
+average household size
+for both owner-occupied
+and renter-occupied
+units
+
+U.S. Census Bureau, American
+Community Survey (ACS) 5-Year
+Estimates: Table DP04 SELECTED
+HOUSING CHARACTERISTICS (available
+at https://data.census.gov/)
+
+Overcrowding Occupants per room
+
+Often an indication of pentup demand within a
+community. Overcrowding is
+defined as more than 1.0
+person per room. Severe
+overcrowding is defined as
+1.5 or more people per room.
+
+U.S. Census Bureau, American
+Community Survey (ACS) 5-Year
+Estimates: Table DP04 SELECTED
+HOUSING CHARACTERISTICS (available
+at https://data.census.gov/)
+
+Population
+Estimates/
+Components
+of Change
+
+Helpful information about
+how a community is
+changing/growing and what
+role housing could play in
+population dynamics moving
+forward.
+
+Alaska Department of Labor and
+Workforce, Alaska Population Estimates
+(available at
+https://live.laborstats.alaska.gov/datapages/alaska-population-estimates)
+
+Components of change
+include births, deaths,
+and net migration.
+
+Ketchikan Gateway 2035 Borough Comprehensive Plan
+Housing Chapter
+
+Page 45
+
+
+[Page 46]
+Indicator
+
+Description
+
+What it tells us
+
+Sources
+
+Affordability
+
+Selected monthly
+ownership costs as a
+percentage of household
+income (SMOCAPI) and
+gross rent as a
+percentage of household
+income (GRAPI)
+
+Households that spend more
+than 30 percent of their total
+income on housing costs are
+considered to be cost
+burdened. Spending a larger
+portion of household income
+on housing limits the amount
+of income available for other
+non-discretionary spending,
+such as food, clothing, and
+transportation.
+
+U.S. Census Bureau, American
+Community Survey (ACS) 5-Year
+Estimates: Table DP04 SELECTED
+HOUSING CHARACTERISTICS (available
+at https://data.census.gov/)
+
+Median
+Family
+Income
+
+Median family income
+and HUD income limits
+broken down by persons
+in family and income
+limit category
+
+The Department of Housing
+and Urban Development
+(HUD) sets income limits
+that determine eligibility for
+assisted housing programs
+including the Public Housing,
+Section 8 project-based,
+Section 8 Housing Choice
+Voucher, Section 202
+housing for the elderly, and
+Section 811 housing for
+persons with disabilities
+programs.
+
+The Department of Housing and Urban
+Development, FY 2023 Income Limits
+Summary (available at
+https://www.huduser.gov/
+portal/datasets/il.html#query_2023)
+
+Data that describe current
+building activity in the
+community can help track
+how well the market is
+responding to demand and
+progress towards new
+housing goals.
+
+KGB Planning Access database
+
+Local Building Data collected by local
+Permit
+assessors on the number
+Activity
+and or type of building
+activity occurring in the
+community
+
+Housing
+Wage
+
+Housing wage is an
+Illustrates the gap between
+estimate of the hourly
+renters’ wages and the cost
+wage a full-time worker
+of rental housing.
+must earn to afford a
+modest rental home at
+HUD’s fair market rent
+(FMR) without spending
+more than 30% of their
+income on housing costs
+
+Ketchikan Gateway 2035 Borough Comprehensive Plan
+Housing Chapter
+
+National Low Income Housing Coalition,
+Out of Reach Dashboards (available at
+https://nlihc.org/oor/state/ak)
+
+Page 46
+
+
+[Page 47]
+ECONOMIC DEVELOPMENT
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Economic Development Chapter
+
+Page 47
+
+
+[Page 48]
+Economic Development Themes
+Economic diversification is necessary for Ketchikan’s long-term stability.
+According to the results of the 2025 Community Survey, the industries
+where growth is generally supported are industries that also have
+potential for growth including mariculture and value-added seafood
+processing, healthcare, marine trades, construction, and small-scale
+manufacturing. The nonprofit sector, including arts, culture, and
+community services, serve as both an employer and an economic driver,
+reinforcing diversification and quality of life. Ketchikan’s historical
+reliance on timber and commercial fishing has shifted toward a more
+singular industry - tourism - creating economic vulnerability but residents
+broadly agree that diversifying the economy and seeking moderate
+growth in population and jobs is important.
+
+Emerging workforce development programs are
+attempting to address skills gaps.
+Ketchikan employers report difficulty recruiting and retaining skilled
+workers. Gaps in career pathways and training programs were
+highlighted in the 2025
+April Partner Discussions and the 2025
+1
+Community Survey as key barriers for development, especially in the
+construction field, limiting the capacity for new housing development.
+At the time this plan was published, the Borough is exploring potential
+partnerships with University of Alaska Southeast Ketchikan campus on
+workforce development initiatives.
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Economic Development Chapter
+
+Page 48
+
+
+[Page 49]
+Sustainable tourism strategies offer solutions that contribute to
+Ketchikan’s fiscal health and improve year-round livability.
+Cruise ship tourism remains a major economic engine for Ketchikan, as
+the second most visited port in Alaska (according to Alaska Travel
+Industry Association’s Alaska Visitor Volume report for summer 2024).
+There is also interest from the community to develop more non-cruise
+related tourism and sustainable tourism strategies that include cultural
+awareness. At the same time, residents express concern in the 2025
+Community Survey (see Figure 5) about over-tourism and its impact on
+livability especially regarding infrastructure strain and seasonal crowding.
+These survey results also illustrate that community character is an
+important area of concern for residents. To address these concerns,
+economic development strategies should aim to incorporate measures
+that protect community well-being and ensure that the benefits of tourism are reinvested locally to sustain
+residents’ quality of life.
+
+Figure 5: Question #7 from 2025 Community Survey
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Economic Development Chapter
+
+Page 49
+
+
+[Page 50]
+Commercial fishing remains core to
+Ketchikan’s identity.
+While the industry faces headwinds, commercial fishing remains a
+defining pillar of Ketchikan’s identity and resilience, sustaining
+families, local businesses, and the broader coastal economy. The
+industry across Alaska is experiencing an aging workforce and high
+barriers to entry for younger participants. In Sea Grant Alaska’s
+report, “Graying of the Fleet in Alaska's Fisheries: Defining the
+Problem and Assessing Alternatives” shows that the average age of
+fishermen in Alaska’s fisheries has increased by 10 years over the
+past generation. Environmental shifts and global market volatility
+are also contributing to uncertainty in the industry but ongoing
+statewide initiatives are working to strengthen opportunity and long-term stability in the sector.
+
+Strengthening local food systems can improve food
+security and economic resilience.
+There is a strong community desire to expand local agriculture, invest in
+infrastructure for local food production and processing, like commercial
+kitchens and cold storage, and partnering with schools, Tribes, and
+1
+nonprofits for food production, distribution, and education. Subsistence
+activities, including fishing, hunting, and gathering, remain an important
+part of Ketchikan’s food system and local economy. These practices
+supplement household food supplies, support cultural traditions, and help
+offset high grocery costs at a time when residents express concern about
+food costs and availability in Ketchikan.
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Economic Development Chapter
+
+Page 50
+
+
+[Page 51]
+Infrastructure improvements can spur growth and
+increase livability.
+Aging infrastructure including roads, water and sewer, and public transit
+were frequently mentioned in community feedback as barriers to
+economic development (see Figure 6). These include needing ferry
+system improvements, road repairs, water and wastewater system
+upgrades, and site development standards that support sustainable
+housing and industrial growth. Lack of housing affordability and
+availability is also undermining the workforce and community economic
+stability.
+
+Figure 6: Question #2 from 2025 Community Survey
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Economic Development Chapter
+
+Page 51
+
+
+[Page 52]
+Economic Development Goals
+Goal A
+
+Goal B
+
+Goal C
+
+Diversify and strengthen the
+local, year-round economy.
+
+To advance economic
+development efforts that are
+responsive to community
+values, support quality of life,
+and encourage community
+engagement.
+
+Invest in people and
+infrastructure to build and retain
+a skilled, inclusive, and futureready work force.
+
+Economic Development Strategies and Actions
+Icon Key:
+ Priority: Emerging priority for implementation
+ Capital: An action that includes a potential capital project
+ Code: An action that recommends a specific code revision
+ 2009: A strategy adapted from/carried over from the 2009 Comprehensive Plan
+
+Strategy 1: Diversify the local economy to expand beyond tourism and address cost of living
+burdens. 
+Potential Borough-led Actions
+a) Support development in current emerging industries and emerging industries identified in future
+planning documents such as marine trades, construction, value-added seafood processing, smallscale manufacturing, technology sectors, and the arts economy.
+b) Reassess the current sales tax cap on large purchases to reduce disproportionate burdens on
+lower-income residents. (Cross reference with Governance chapter.)
+c) Support local business development support services to small business owners.
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Economic Development Chapter
+
+Page 52
+
+
+[Page 53]
+Strategy 2: Align tourism activities and management with community values and residents’
+quality of life. 
+Potential Borough-led Actions
+a) Explore the creation of guidelines or agreements with tour companies to limit commercial tour
+activities in residential areas and protect non-commercial recreation areas. (Cross reference with
+Land Use and Environment Chapter.)
+b) Support the promotion of Indigenous cultural tourism experiences in collaboration with local Tribes
+to diversify the visitor economy and enhance cultural education.
+c) Explore community tourism models that aim to improve the quality of life for residents, improve
+visitor experiences, support business growth, increase sales tax revenue, and foster community
+collaboration and coordination in conjunction with tourism industry. (Cross reference with Health
+and Wellness chapter.)
+d) Assess the cumulative impacts of visitor activity on community infrastructure, including
+transportation, utilities, broadband capacity, and public spaces. (Cross reference with Public
+Facilities and Services chapter.)
+e) Implement or continue implementing elements of the 2023 Ketchikan Tourism Strategy with
+Borough resources or providing funding to the Ketchikan Visitors Bureau, specifically the following
+Strategies:
+• 1.3 Increase enrollment of the tourism operators in the Tourism Best Management
+Practices (TBMP)
+• 1.4 Support full roll-out and strengthening of the TBMP
+• 3.2 Build and maintain community engagement around tourism
+• 3.3 Develop an educational strategy to influence responsible and respectful behavior in the
+community and on public lands
+• 4.1 Build robust tourism workforce pipeline
+• 4.2 Improve recruitment and retention of workers
+• 5.1 Support development of a KGB transit plan
+• 5.3 Improve pedestrian, single occupancy vehicle, and tour operator mobility
+• 5.4 Increase transit options and hop-on-hop-off shuttle stops/access
+• 6.1 Foster public-private partnerships for workforce housing
+• 6.2 Identify and incentivize creative options for seasonal and long-term housing
+• 6.3 Create community education campaign to support housing development
+• 7.1 Establish a holistic and regularly updated destination data bank
+• 7.2 Publish an annual indicator report
+Potential Partner-led Actions
+f) Invest in tourism infrastructure improvements, including traffic management, signage, and transit
+upgrades related to visitor mobility. (Cross reference with Transportation chapter.)
+g) Collaborate with local utilities and telecommunications providers to increase capacity during peak
+visitor seasons.
+h) Support implementation of shore power and port electrification projects that reduce noise and
+emissions, improving both visitor experience and livability for nearby residents.
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Economic Development Chapter
+
+Page 53
+
+
+[Page 54]
+Strategy 3: Build a skilled and resilient local workforce. 
+Potential Borough-led Actions
+a) Support employers offering apprenticeships, internships, or on-the-job training in high-need
+sectors like construction and healthcare.
+Potential Partner-led Actions
+b) Expand vocational and career-technical education (CTE) programs in schools focused on trades,
+marine careers, healthcare, and technology.
+c) Support training and certification programs through partnerships with local unions, University of
+Alaska Southeast, and the Department of Labor.
+
+Strategy 4: Strengthen commercial fishing and mariculture economies.
+Potential Borough-led Actions
+a) Support regulatory stability and science-based fisheries management through Borough advocacy
+and partnerships with federal, state and Tribal agencies.
+b) Facilitate value-added processing opportunities by supporting facility upgrades, commercial
+kitchens, and market access programs.
+c) Promote mariculture expansion by supporting and advocating for infrastructure investments (e.g.,
+cold storage, hatcheries, and processing facilities) and workforce support, working with Southeast
+Conference and Alaska Mariculture Alliance. 
+Potential Partner-led Actions
+d) Expand access and support for young and new fishermen, including mentoring programs,
+equipment-sharing cooperatives, and capital assistance.
+e) Promote mariculture training programs (e.g., kelp and oyster farming) through partnerships.
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Economic Development Chapter
+
+Page 54
+
+
+[Page 55]
+Strategy 5: Strengthen growth of local food systems to expand food security and help
+address high living costs.
+Potential Borough-led Actions
+a) Support community gardens, small scale farming, gardening support and mentoring programs, and
+culturally relevant gardening initiatives (e.g., Alaska Native, Filipino, and traditional food practices).
+b) Evaluate and consider revising local codes or zoning regulations that may restrict small-scale
+greenhouse or food production efforts. 
+c) Explore sales tax exemptions or reductions on grocery items sold locally to improve food
+affordability.  (Cross reference with Governance chapter.)
+d) Work with residents and local Tribes to identify and document key subsistence areas to consider in
+future planning efforts.
+Potential Partner-led Actions
+e) Invest in cold storage and freight capacity to prevent shortages and spoilage during high-demand
+periods.
+f) Support and expand on the work Ketchikan Agricultural Producers Association (KAPA) is doing to
+develop shared-use commercial kitchens and food processing spaces for small-scale producers
+and value-added businesses.
+g) Encourage coordination of a centralized food donation and redistribution network in partnership
+with nonprofits, schools, and Tribal organizations.
+h) Collaborate with the Food Bank of Alaska and local grocers to expand purchasing power for lowincome households.
+i) Develop public outreach campaigns and create a “Food Access Map” to help residents locate
+available resources and food programs.
+j) Develop partnerships with schools, Tribes, nonprofits, and/or the University of Alaska Cooperative
+Extension Service to offer food preparation and preservation classes, with a focus on health and
+cultural foods.
+k) Support educational and intergenerational programs that promote subsistence harvesting skills
+and food preservation methods.
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Economic Development Chapter
+
+Page 55
+
+
+[Page 56]
+Strategy 6: Continue support for local nonprofit, arts, community services, and cultural
+activities and initiatives. (Cross reference with Health and Wellness and Education and Culture chapters.)
+Potential Borough-led Actions:
+a)
+
+b)
+
+Continue support for funding grants and technical assistance for nonprofit organizations to
+strengthen their financial sustainability and local hiring capacity to ensure continued provision
+of critical community services.
+Promote volunteerism and civic engagement through nonprofit events and programs,
+strengthening community ties while supporting organizational capacity.
+
+Potential Partner-led Actions:
+c)
+d)
+e)
+f)
+
+Support local activities and cultural events that target community participation.
+Expand year-round programming that draws both residents and visitors, helping stabilize the
+economy outside of peak tourism months.
+Encourage collaboration between nonprofits and local businesses (e.g., restaurants, retail,
+hospitality) to maximize the “multiplier effect” of event participation on the local economy.
+Track and report economic impacts of local nonprofit programming and events as part of the
+community’s broader economic development monitoring.
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Economic Development Chapter
+
+Page 56
+
+
+[Page 57]
+HEALTH AND WELLNESS
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Health and Wellness Chapter
+
+Page 57
+
+
+[Page 58]
+Health and Wellness Themes
+Affordability of basic needs contributes to
+community health and well-being.
+Ketchikan residents are facing increased cost-of-living that directly
+impacts their physical and mental health. According to the 2025
+Community Health Need Assessment (CHNA), the average Borough
+household budget is roughly $7,000 per month, nearly double the state
+average of $4,300, and housing and food make up nearly half of that
+total. Over 60 percent of 2025 Community Survey participants cited
+housing and food affordability as significant barriers to living well in the
+Borough. These pressures correlate with increased mental health
+strain, as families are forced to make difficult trade-offs around essentials like housing, childcare, food,
+transportation, and healthcare. Local providers emphasized that many residents earn too much to qualify
+for assistance but not enough to afford basic needs. Partners in the community roundtables shared that
+financial stress may also contribute to elevated rates of anxiety, depression, and substance misuse across
+the region.
+
+Community connectivity programs support
+mental health.
+Partners like Ketchikan Wellness Coalition, PeaceHealth, Ketchikan
+Indian Community, Resilient Youth & Community, Community
+Connections, and others have all invested in programming to find
+solutions through community connectivity. Youth in the Ketchikan
+Gateway Borough are experiencing serious mental health
+1
+challenges. According to the 2024 Alaska Youth Risk Behavior
+Survey, 41 percent of Ketchikan High School students and nearly 55
+percent of Revilla students reported experiencing a major depressive
+episode in the past year. In the same period, 17 percent of Ketchikan students and 21 percent of Revilla
+students reported attempting suicide. Adults in the area also experience high levels of distress,
+compounded by economic strain and a lack of affordable care. These challenges are also impacting drug
+and substance abuse. Nonprofit arts and cultural programs also provide safe spaces for connection,
+creativity, and mental health support, giving youth and adults constructive outlets.
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Health and Wellness Chapter
+
+Page 58
+
+
+[Page 59]
+Indoor recreation and activities support
+physical and mental health.
+In Ketchikan’s climate, indoor spaces like the Ketchikan Public
+Library, the Gateway Recreation Center, and others are important
+for staying active, reducing isolation, and supporting emotional
+wellness. Across all community inputs, residents repeatedly called
+for expanding the Gateway Recreation Center, a current strategy in
+the Borough’s 2024-2028 Strategic Plan. Of students who took the
+2025 Youth Survey, 80 percent say Ketchikan is missing more indoor
+recreational space. Comments at the February 2025 Open House
+emphasized the need for expanded recreation center space, indoor
+playgrounds, and after-school programming linked to wellness. Health service providers at the 2025 April
+Partner Discussions suggested more holistic behavioral health interventions are needed, and that indoor
+facilities could support mental health and community connectivity during winter months.
+
+Health and Wellness Goals
+Goal A
+
+Goal B
+
+Goal C
+
+Promote community well-being
+by improving access to health,
+housing, and support services.
+
+Support prevention, recovery,
+and community resilience
+through coordinated behavioral
+health and substance misuse
+response.
+
+Support planning and
+investment decisions that
+improve access to healthy
+environments, recreational
+amenities, and active
+transportation options across
+the borough.
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Health and Wellness Chapter
+
+Page 59
+
+
+[Page 60]
+Health and Wellness Strategies and Actions
+Icon Key:
+ Priority: Emerging priority for implementation
+ Capital: An action that includes a potential capital project
+ Code: An action that recommends a specific code revision
+ 2009: A strategy adapted from/carried over from the 2009 Comprehensive Plan
+
+Strategy 1: Consider access to housing, childcare, food, and health care as essential
+components of community health. 
+Potential Borough-led Actions
+a) Support and enhance high quality K-12 education programs by partnering with other education
+institutions and organizations.
+b) Review existing tax policies. Evaluate potential tax strategies that support long-term community
+affordability and reduce burdens on working families, while still funding public needs. (Cross
+reference with Economic Development and Governance chapters.) 
+c) Implement targeted housing strategies such as zoning flexibility, incentives for long-term rentals,
+and support for ADA-accessible and age-in-place housing. (Cross reference with Housing chapter.)
+d) Collaborate with employers, early childhood providers, and nonprofits to increase access to
+affordable, reliable childcare.
+e) Collaborate with educational institutions and healthcare providers to create workforce
+development programs aimed at training and retaining healthcare professionals, addressing the
+shortage of providers in the region. (Cross reference with Economic Development chapter.)
+f) Collaborate with community partners to establish a food security plan and local food systems
+plan.
+Potential Partner-led Actions
+g) Strengthen food security and local food systems by supporting development of community gardens
+and considering sales tax exemptions for grocery items. (Cross reference with Economic
+Development chapter.)
+h) Support efforts to create new housing and food assistance programs.
+i) Partner with local service providers to expand emergency, supportive, and transitional housing for
+residents experiencing homelessness.
+j) Explore collaborations with healthcare and nonprofit partners to increase access to opioid
+treatment programs, including treatment and recovery housing.
+k) Support wraparound services that integrate mental health care, substance abuse treatment, and
+housing assistance for at-risk populations.
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Health and Wellness Chapter
+
+Page 60
+
+
+[Page 61]
+Strategy 2: Promote physical and mental wellness across generations by strengthening
+support in schools, homes, and shared community spaces.
+Potential Borough-led Actions
+a) Explore ways the Borough can support social service efforts, within its existing statutory authority.
+b) Continuing collaboration through Borough community grants program with social service providers
+and school leaders to promote the Icelandic Prevention Model, emphasizing youth protective
+factors, family engagement, and community accountability.
+c) Continue efforts to expand access to safe, youth-centered spaces and invest in indoor recreation,
+arts, and social-emotional learning programs through Borough community grants program.
+d) Advocate for increased sustained funding to expand access to local behavioral health services and
+provider capacity.
+Potential Partner-led Actions
+e) Develop community-based education, outreach, and prevention programs targeting substance
+abuse, including opioids, in partnership with healthcare providers and nonprofits.
+f) Collaborate with local health and wellness organizations to expand school and community based
+nutrition and physical activity programs in accordance with generally accepted medical standards.
+g) Advocate support for Ketchikan Indian Community to deliver culturally responsive behavioral
+health outreach in schools, community hubs, and remote neighborhoods.
+
+Strategy 3: Develop inclusive indoor recreation and gathering spaces.
+Potential Borough-led Actions
+a) Plan for additional facility space at the Gateway Recreation Center to provide additional fitness,
+classroom, and emergency shelter that serve youth, families, and Elders year-round.
+b) Pursue state and federal grants to fund indoor recreation infrastructure, including the Ketchikan
+Public Library and museums, that is accessible, culturally inclusive, and climate resilient.
+c) Support the restoration of the historic buildings to ensure continued community access, public
+programming, and cultural preservation.
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Health and Wellness Chapter
+
+Page 61
+
+
+[Page 62]
+EDUCATION AND CULTURE
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Education and Culture Chapter
+
+Page 62
+
+
+[Page 63]
+Education and Culture Themes
+A strong, supported public education system builds stable communities.
+Ketchikan’s public schools are central to the community’s long-term
+stability, workforce development, and quality of life. Families consistently
+identify access to strong K-12 education as a key factor in deciding
+whether to live and remain in the Borough. In the 2025 Community Survey,
+advocating for stable K-12 education funding was one of the top 10-year
+community priorities, with 88 percent of participants indicating it was
+important or very important. At the same time, public education is facing
+multiple pressures, including limited financial resources, gaps in early
+academic support, and a need for stronger partnerships between schools
+and the broader community.
+
+Cultural identity and belonging are central to community well-being.
+Cultural identity, connection to place, and a sense of belonging are
+foundational to community well-being. Many cultures call the
+Borough home, including a significant Filipino population. The
+community’s cultural foundation is rooted in the traditions of the
+original stewards1 of Southeast Alaska - the Tlingit, Haida, and
+Tsimshian peoples. Uplifting Indigenous values, language, and
+knowledge systems strengthens health, education, and quality of life
+for Alaska Native people while also enhancing connection,
+understanding, and shared purpose for the broader community.
+Residents have voiced a desire to see Indigenous names, languages,
+and histories reflected in public signage, parks, and planning.
+
+Arts, history, and cultural expression strengthen
+community identity and quality of life.
+Ketchikan’s identity is deeply shaped by its vibrant arts scene, rich history,
+and enduring cultural traditions. The community’s artists, performers, and
+cultural organizations help preserve local heritage while fostering
+creativity, belonging, and connection across generations. Public art,
+cultural events, and heritage programming not only celebrate Ketchikan’s
+diverse stories but also contribute to education, tourism, and the local
+economy. Supporting opportunities for artistic and cultural expression
+enhances quality of life and helps maintain Ketchikan’s reputation as a
+uniquely creative and culturally rich place to live and visit.
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Education and Culture Chapter
+
+Page 63
+
+
+[Page 64]
+Education and Culture Goals
+Goal A
+
+Goal B
+
+Goal C
+
+Strengthen education systems
+through sustained investment,
+support, and youth engagement.
+
+Celebrate cultural identity and
+promote a connected, inclusive,
+and welcoming community.
+
+Support access to arts, career
+technical training, and cultural
+opportunities, for the economic
+benefit of borough residents.
+
+Education and Culture Strategies and Actions
+Icon Key:
+ Priority: Emerging priority for implementation
+ Capital: An action that includes a potential capital project
+ Code: An action that recommends a specific code revision
+ 2009: A strategy adapted from/carried over from the 2009 Comprehensive Plan
+
+Strategy 1: Ensure capital, planning, and advocacy efforts reflect desire for stable, highquality K–12 education. 
+Potential Borough-led Actions
+a) Foster a positive and collaborative working relationship between the Borough and the Ketchikan
+Gateway Borough School District (KGBSD) to align shared education goals, funding priorities, and
+community needs.
+b) Assess the current and projected funding needs of the Local Education Fund and evaluate the
+Borough’s capacity to support stable, long-term contributions through its budgeting, advocacy,
+and capital planning processes. 
+c) Advocate against actions by the State of Alaska to shift costs of its constitutional obligation to
+maintain a system of public schools open to all children of the State, advocating for consistent,
+multi-year K–12 education funding.
+d) Maintain and consider investments in school facilities through Borough capital planning and
+bonding efforts, ensuring learning environments remain safe, functional, and adaptable.
+e) Coordinate with the KGBSD on population and enrollment trends during the Borough's
+comprehensive planning and housing development processes.
+f) Support improvements to school facilities that address safety hazards, modernize outdated
+systems, and ensure ADA compliance to create healthy, accessible learning environments for all
+students.
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Education and Culture Chapter
+
+Page 64
+
+
+[Page 65]
+Strategy 2: Empower youth to participate in local government and shape the future of their
+community.
+Potential Borough-led Actions
+a) Continue collaboration with the KGBSD to include attendance at a Borough Assembly or Planning
+Commission meeting as a graduation requirement or credit-eligible civic engagement activity.
+Potential Partner-led Actions
+b) Partner with local schools, Tribes, and nonprofits to offer civic education opportunities such as
+tours, mock assemblies, or guest speakers from local governments.
+c) Support the development of internships or fellowship programs that places high school or college
+students in governmental organizations to learn about public service and local decision-making.
+d) Support opportunities for youth to provide input to government organizations and to elected
+officials or through partnership with the student council.
+
+Strategy 3: Strengthen collaboration between the Borough, Tribes, Filipino community, and
+other cultural connections and service providers to support culturally rooted wellness,
+awareness, and education.
+Potential Borough-led Actions
+a) Strive to include Indigenous representatives and cultural knowledge holders in Borough planning
+and advisory processes related to health, recreation, and education.
+b) Collaborate with Tribal health entities and cultural leaders to support public health initiatives,
+including behavioral health outreach and prevention efforts led by appropriate providers.
+c) Promote land-based healing programs, cultural mentorship, and intergenerational learning
+opportunities through shared-use agreements, coordinated programming, and supporting the
+expansion of cultural spaces.
+d) Coordinate with the Ketchikan Indian Community Tribal Health Clinic as feasible to identify
+infrastructure or facility needs that could be supported through Borough advocacy, or capital
+planning coordination consistent with Borough authority.
+e) Support local healthcare workforce attraction and retention through housing access, shared
+recruitment efforts, and Borough-Tribal-Service Provider coordination on provider retention
+strategies.
+f) Support local nonprofits and organizations as key partners in advancing cultural identity,
+connectedness, and inclusion.
+Potential Partner-led Actions
+g) Collaborate with Tribes and cultural organizations to incorporate Indigenous languages and
+histories into signage, maps, and public spaces.
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Education and Culture Chapter
+
+Page 65
+
+
+[Page 66]
+Strategy 4: Support local arts and cultural programming as important components of our
+community. (Cross reference with Land Use and Environment chapter, Strategy 5.)
+Potential Partner-led Actions
+a) Support partnerships such as the Ketchikan Area Arts and Humanities Council, Tribes, Ketchikan
+Wellness Coalition and the Filipino community, and nonprofits to expand public art, cultural
+events, and arts education.
+b) Encourage integration of arts and cultural learning into youth and adult education programs.
+c) Encourage partnerships with schools, museums, and other groups to develop curriculum or
+exhibits celebrating local culture.
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Education and Culture Chapter
+
+Page 66
+
+
+[Page 67]
+GOVERNANCE
+
+
+[Page 68]
+Governance
+Understanding Ketchikan Gateway Borough’s (KGB) fiscal position - its revenues, expenditures, and
+economic capacity - is essential for informed and effective comprehensive planning. Municipal budgets
+are the foundation of local government operations. Like many Alaska communities, Ketchikan faces
+ongoing fiscal uncertainty that requires careful planning and prioritization of resources. This chapter
+begins with an overview of KGB’s revenues and expenses as well as some of the challenges contributing to
+an uncertain fiscal environment.
+
+Overview
+The Borough, incorporated in 1963, operates under an Assembly-Manager form of government, serving as
+the regional governing body for Revillagigedo Island and surrounding areas. KGB is governed by an elected
+seven-member Assembly and Mayor.
+
+Local Government Structure and Services
+As a Borough, KGB is responsible for public school education, regional land use planning and regulation,
+property assessment, and tax collection for both the Borough government and any cities within the
+Borough. KGB has also adopted areawide economic development powers and areawide parks and
+recreation powers. The Borough operates the airport, the bus systems, and the recreation and aquatic
+facilities.
+Services are delivered on three levels:
+•
+•
+•
+
+Areawide: Covers most core services including planning, tax collection, economic development,
+and public transit.
+Non-areawide: Includes services such as wastewater collection, treatment, and discharge, solid
+waste management, public library services, fireworks regulation, alcohol regulation
+Service Area-Based: Covers geographically-specific services like road maintenance, fire and
+emergency management, docks, and water utilities.
+
+The Borough collaborates with the City of Ketchikan and the City of Saxman, both incorporated within its
+boundaries; KGB is governed by laws and ordinances established by the Assembly.
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Governance Chapter
+
+Page 68
+
+
+[Page 69]
+Fiscal Health and Financial Trends
+Net Position and Budget Overview
+The Borough's financial standing has steadily improved over the past decade. As of FY 2024, its net
+position reached a ten-year high of $201.3 million (Figure 7). Between 2015 and 2024, revenues exceeded
+expenses in seven of 10 years, resulting in a cumulative surplus of $40.7 million (Figure 8). This trend
+reflects conservative budgeting, steady tourism recovery, and strong sales and property tax performance.
+The FY 2025 adopted budget authorizes $72.7 million in total expenditures, with $21.6 million allocated to
+the General Fund and $9.2 million to the Local Education Fund.
+Figure 7: Ketchikan Gateway Borough Community Net Position Over Time, 2015–2024 (Millions of 2024 dollars)
+250
+
+Millions of 2024 Dollars
+
+200
+
+150
+
+100
+
+50
+
+0
+2015
+
+2016
+
+2017
+
+2018
+
+2019
+
+2020
+
+2021
+
+2022
+
+2023
+
+2024
+
+Source: Ketchikan Gateway Borough Annual Comprehensive Financial Reports (FY14 to FY 24), Bureau of Economic Analysis,
+Table 1.1.9 Implicit Price Deflators for Gross Domestic Product, and Northern Economics, Inc., analysis.
+
+Key Borough revenue sources include:
+•
+•
+•
+
+Sales Taxes: $14.4 million in 2024, primarily from tourism-related activity.
+Property Taxes: $12.4 million in 2024, levied mostly for education.
+Charges for Services: $10.5 million from education services; $5.6 million from airport operations.
+
+Governmental activities make up approximately 85 percent of KGB’s total revenue. Tourism plays an
+essential role, as the cruise industry contributes significantly to sales tax and passenger fee revenues.
+Charges for services and periodic grants also supplement revenue.
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Governance Chapter
+
+Page 69
+
+
+[Page 70]
+Figure 8: Ketchikan Gateway Borough Revenues and Expenses, 2015– 2024 (Millions of 2024 dollars)
+70
+
+Millions of 2024 Dollars
+
+60
+50
+40
+30
+20
+10
+0
+2015
+
+2016
+
+2017
+
+2018
+
+2019
+
+Total revenues
+
+2020
+
+2021
+
+2022
+
+2023
+
+2024
+
+Total expenses
+
+Source: Ketchikan Gateway Borough Annual Comprehensive Financial Reports (FY14 to FY 24), Bureau of Economic Analysis,
+Table 1.1.9 Implicit Price Deflators for Gross Domestic Product, and Northern Economics, Inc., analysis.
+
+Taxation Structure
+The Borough levies a 2.5 percent areawide sales tax (Figure 9). The City of Ketchikan adds a city sales tax
+that fluctuates by season (between 3 percent and 5.5 percent). The Borough collects both taxes and sends
+the city its share. The City of Saxman levies a 4 percent sales tax. Property taxes are set at 4.85 mills (as of
+June 2025) and dedicated entirely to the Local Education Fund. An increase in property assessments in
+2024 allowed the mill rate to decrease from 5.2 to 4.75 without reducing revenue.
+The City of Ketchikan collects 5.5 percent tax on residential rents, capped at the first $1,000 of rent.
+Transient Occupancy Tax and the State’s Commercial Passenger Vessel (CPV) tax provide additional
+tourism-based revenues. CPV funds are restricted to harbor, safety, and cruise-related improvements.
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Governance Chapter
+
+Page 70
+
+
+[Page 71]
+Figure 9: Ketchikan Gateway Borough Sales Tax Revenues 2015 – 2024 (Millions of 2024 dollars)
+16
+
+Millions of 2024 Dollars
+
+14
+12
+10
+8
+6
+4
+2
+0
+2015
+
+2016
+
+2017
+
+2018
+
+2019
+
+2020
+
+2021
+
+2022
+
+2023
+
+2024
+
+Source: Source: Ketchikan Gateway Borough Annual Comprehensive Financial Reports (FY14 to FY 24), Bureau of Economic
+Analysis, Table 1.1.9 Implicit Price Deflators for Gross Domestic Product, and Northern Economics, Inc., analysis.
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Governance Chapter
+
+Page 71
+
+
+[Page 72]
+Governance Themes
+Strong financial management practices provide a
+foundation for stability.
+The Borough has maintained stable fiscal performance through
+financial management, long-range forecasting, and internal controls.
+These practices have enabled the Borough to deliver services, manage
+reserves, and respond to changing economic conditions. Continued
+emphasis on proactive capital planning and intergovernmental
+coordination will continue sustaining this foundation as the Borough
+addresses future infrastructure and service needs, positioning the
+Borough to weather economic fluctuations.
+
+Tourism-driven revenues create both opportunity
+and risk.
+Tourism, particularly cruise ship visitation, generates significant local
+revenue and underpins many Borough services. However, the Borough’s
+1
+fiscal health remains vulnerable to seasonal shifts and external
+conditions that affect visitor numbers. Strategic financial planning
+should account for this volatility by building flexible reserves, exploring
+revenue diversification, and leveraging strong tourism years to fund
+long-term investments.
+
+Infrastructure and service demands are growing.
+Reliable public infrastructure and essential services form the
+backbone of the Borough’s quality of life and economic vitality. As
+systems age and the population shifts, including a growing senior
+population, service costs are increasing and the tax base is affected
+through exemptions. These pressures require thoughtful prioritization
+of capital and operational spending. By adapting service delivery
+models, pursuing cost-saving innovations, and planning proactively for
+demographic change, the Borough can maintain service levels and
+strengthen long-term fiscal sustainability.
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Governance Chapter
+
+Page 72
+
+
+[Page 73]
+External funding and partnerships are critical for
+fiscal resilience.
+The Borough’s ability to leverage state and federal funding and build
+effective public-private partnerships strengthens its capacity to invest in
+infrastructure and community services. While reliance on sales and
+property taxes limits flexibility, particularly as economic and
+demographic shifts affect these sources, expanding access to grants and
+outside resources can help meet community needs without increasing
+the tax burden on residents. Long-term fiscal resilience will depend on
+continuing to diversify revenue tools, cultivate strategic partnerships,
+and align investments with shared community priorities.
+
+Governance Goals
+Goal A
+
+Goal B
+
+Goal C
+
+Maintain a stable and resilient
+fiscal foundation.
+
+Build transparent, inclusive, and
+collaborative governance.
+
+Strengthen government
+capacity.
+
+Governance Strategies and Actions
+Icon Key:
+ Priority: Emerging priority for implementation
+ Capital: An action that includes a potential capital project
+ Code: An action that recommends a specific code revision
+ 2009: A strategy adapted from/carried over from the 2009 Comprehensive Plan
+
+Strategy 1: Enhance government transparency and community engagement. 
+Potential Borough-led Actions
+a) Provide a transparent budget that shows revenues, expenditures, and major capital projects in
+plain language.
+b) Provide opportunities for the public to participate in the development of key projects and
+programs.
+c) Explore establishing a citizen financial advisory group to provide feedback on tax and investment
+strategies.
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Governance Chapter
+
+Page 73
+
+
+[Page 74]
+Strategy 2: Strengthen intergovernmental collaboration. 
+Potential Borough-led Actions
+a) Explore opportunities to open community dialogue about potential consolidation of City and
+Borough governments or services, including learning from models in other Alaska communities and
+assessing possible benefits and challenges, including gathering data and evaluating costs.
+b) Pursue joint grant applications for infrastructure or service improvements, especially in
+underserved or high-need areas.
+c) Update and expand service agreements or MOUs where overlapping jurisdiction or coordination is
+needed (e.g., road maintenance, solid waste, emergency services).
+
+Strategy 3: Strive for fiscal resilience through long-range planning.
+Potential Borough-led Actions
+a) Strive to build and maintain a five-year financial forecast model that includes various growth,
+decline, and inflation scenarios.
+b) Update the Capital Improvement Plan (CIP) annually based on long-range demographic and
+economic projections.
+c) Support local government agencies in establishing policies for financial reserves and regular
+financial forecasting of revenues and expenditures.
+d) Expand use of performance-based budgeting to link spending to measurable outcomes in
+education, transportation, and public safety.
+e) Prioritize energy efficiency upgrades for Borough facilities and utilities, leveraging state or federal
+funding where possible. 
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Governance Chapter
+
+Page 74
+
+
+[Page 75]
+Strategy 4: Foster government workforce stability and capacity.
+Potential Borough-led Actions
+a) Analyze wage and benefit overview of Borough departments to address recruitment and retention
+gaps.
+b) Expand cross-training programs and professional development opportunities for Borough staff.
+c) Consider partnerships to develop internship and apprenticeship programs in collaboration with
+local schools, University of Alaska Southeast Ketchikan, and Tribal training initiatives.
+d) Develop a succession plan for key leadership and technical roles to ensure knowledge continuity.
+
+Strategy 5: Promote long-term fiscal stability through equitable tax policy and strategic
+investment.
+Potential Borough-led Actions
+a) Encourage partnerships that help eligible service providers pursue state and federal grant
+opportunities, particularly for infrastructure, housing, homelessness, and health initiatives.
+b) Continue updating Borough Strategic Plan and multi-year capital and operating plans with clear
+priorities and performance metrics for education, transportation, and utilities.
+c) Consider publishing an annual fiscal health report summarizing key trends in Borough revenues,
+expenditures, reserves, and debt service. Use dashboards or infographics to make information
+accessible to residents, including updates on major projects and funding sources. f
+
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Governance Chapter
+
+Page 75
+
+
+[Page 76]
+Ketchikan Gateway Borough 2035 Comprehensive Plan
+Governance Chapter
+
+Page 76
+
+
+[Page 77]
+ANNUAL IMPLEMENTATION REPORT
+TEMPLATE EXAMPLE
+For the 2035 Ketchikan Gateway Borough Comprehensive Plan
+Ketchikan Gateway Borough Comprehensive Plan 2035
+Reporting Year: [xxxx]
+
+Executive Summary
+This Annual Implementation Report provides Borough officials and the community with a yearly update on
+the status of implementing the 2035 Ketchikan Gateway Borough Comprehensive Plan.
+{Highlight major accomplishments and challenges from the reporting year, summarizing significant
+projects completed, progress on key goals, and any obstacles faced in implementation.}
+
+2035 Ketchikan Gateway Borough Comprehensive Plan
+Governance Chapter – Implementation Report Template Example
+
+Page 77
+
+
+[Page 78]
+Implementation Progress by Chapter
+This section provides an update on implementation progress for each chapter of the comprehensive plan.
+
+Summary of Activities
+Summary of Strategies and Actions: [Can be populated after comprehensive plan adopted by assembly
+with the strategies and actions from the plan that will be Borough led.]
+Strategy Implementation Status
+Focus
+Area/Strategy/Action
+
+Lead
+Agency
+
+Status
+
+Timeline
+
+Notes
+
+[Example: Land Use:
+Update zoning code to
+encourage mixed-use
+development]
+
+[Planning
+Dept.]
+
+[In Progress]
+
+[2024–2025]
+
+[Draft zoning revisions
+completed; awaiting
+Assembly adoption]
+
+[Example:
+Transportation: Expand
+public transit routes to
+underserved
+neighborhoods]
+
+[Transit
+[Completed]
+Department]
+
+[2025]
+
+[Two new bus routes
+launched in June 2025,
+increasing transit coverage
+borough-wide]
+
+[Example: Public
+Utilities and Facilities:
+Upgrade water
+treatment plant
+capacity]
+
+[Public
+Utilities
+Dept.]
+
+[2025–2027]
+
+[Engineering design
+completed; construction
+funding secured]
+
+[In Progress]
+
+Community feedback highlight or photos: [If applicable, include a notable community comment or
+achievements related to any of the activities (e.g. newspaper articles, notable public comments, etc.)]
+
+2035 Ketchikan Gateway Borough Comprehensive Plan
+Governance Chapter – Implementation Report Template Example
+
+Page 78
+
+
+[Page 79]
+Data and Trends Update
+EXAMPLE -Use Indicators that illustrate progress in strategies and actions.
+
+Indicator
+
+2024
+(Baseline)
+
+2025
+(Current)
+
+Change
+
+Trend
+
+Notes
+
+Housing Units
+Permitted
+
+85 units
+
+102 units
+
++20%
+
+� Increasing
+
+New infill zoning and
+utility incentives
+helped
+
+Median
+Monthly Wage
+
+$4,800
+
+$4,964
+
++3.4%
+
+� Stable
+
+Growth in healthcare
+and maritime retail
+
+Utility
+Connections
+
+47 hookups
+
+53 hookups
+
++13%
+
+� Increasing
+
+South Tongass
+expansion
+contributing
+
+Transit
+Ridership
+
+152,000
+
+165,000
+
++8.6%
+
+� Increasing
+
+Improved marketing,
+new route to Ward
+Cove
+
+Borough
+Population
+
+13,450
+
+13,410
+
+-0.3%
+
+� Slight decline
+
+Net out-migration
+exceeded births
+
+2035 Ketchikan Gateway Borough Comprehensive Plan
+Governance Chapter – Implementation Report Template Example
+
+Page 79
+
+
+[Page 80]
+Stakeholder Engagement
+Summarize the public outreach and stakeholder engagement efforts conducted during the reporting year,
+focusing on how the community and partners were involved in the plan’s implementation. In this section,
+Borough staff could document any community meetings, advisory committee sessions, inter-agency
+partner meetings, surveys, or other engagement activities that supported plan implementation during the
+year. For each major event or initiative, note the date, participants, and key outcomes. For example:
+•
+•
+
+•
+
+[Month Day, Year] – Public Workshop on Land Use: [Held at ___; ___ number of attendees. Briefly
+describe topics covered and feedback gathered.]
+[Month Day, Year] – Stakeholder Meeting (Transportation Partners): [Key agencies/organizations
+involved. Discussed progress on transit improvements; outcomes included improved coordination
+or next steps identified.]
+[Month Day, Year] – Online Survey: [Description of survey focus (e.g. housing needs); number of
+responses; summary of findings or community sentiments.]
+
+2035 Ketchikan Gateway Borough Comprehensive Plan
+Governance Chapter – Implementation Report Template Example
+
+Page 80
+
+
+[Page 81]
+2035 Ketchikan Gateway Borough Comprehensive Plan
+Governance Chapter – Implementation Report Template Example
+
+Page 81
+
+
+[Page 82]
+Ketchikan Gateway Borough Assembly Ordinance
+adopting the 2035 Ketchikan Gateway Borough Comprehensive Plan
+
+2035 Ketchikan Gateway Borough Comprehensive Plan
+
+Page 82
+
+

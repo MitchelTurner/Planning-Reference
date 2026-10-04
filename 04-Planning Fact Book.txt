@@ -1,0 +1,493 @@
+Ketchikan Planning Fact Book (reference compiled Oct 3, 2026 by Commissioner Mitchel Turner with research assistance). Secondary source: summarizes the comp plan, KGB code, and outside research with citations.
+
+KGB PLANNING COMMISSION REFERENCE
+Ketchikan Planning Fact Book
+
+The adopted 2035 Comprehensive Plan, the Borough code, and the Strong Towns evidence in one place, for answering questions and backing zoning decisions with sourced facts.
+
+As of Oct 3, 2026
+Plan adopted Feb 2, 2026
+Code through Ord. 2120
+0.5%
+of land in the Borough is Borough-owned
+Appx A p. 10
+−20%
+projected population change, 2023–2050
+Exec Sum p. 5
+71%
+of survey respondents put affordable housing first
+Appx C p. 82
+5,000 sq ft
+minimum lot in RM and RH zones today
+KGBC 18.60.020
+1.5M
+cruise passengers in 2024, on 13,500 residents
+Core Plan
+50%
+pedestrian death risk at a 42 mph impact
+Tefft 2011
+LEGAL FOOTING
+How to use this
+
+Every decision rests on two things: the adopted Borough code and the 2035 Comprehensive Plan. Strong Towns and Confessions of a Recovering Engineer explain why those rules make sense, and they help you write better rules. They are not the legal test for a permit.
+
+The legal footing. Under AS 29.40.040, the Assembly adopts land use regulations to carry out the comprehensive plan. The plan says the same: second-class boroughs must adopt a plan and implement it through zoning Exec Sum p. 2. The statute also bars variances for conditions the applicant created, for prohibited uses, or for financial hardship alone.
+
+DECISION TYPE	EXAMPLES	WHAT YOU CAN ARGUE
+Legislative (policy)	Code text amendments, area rezones, area plans, the work plan	Anything relevant: fiscal return, street safety, housing need, Strong Towns ideas
+Quasi-judicial (like a judge)	Conditional use permits, variances, plats, a single-parcel rezone	Only the code's approval criteria and the hearing record, plus plan consistency where the criteria call for it
+
+Routine permits could skip the hearing under a staff-decided Type II path
+
+Three ways a land use decision gets made in KGB
+
+Legislative
+Code text, area rezones
+Commission hearing
+Recommendation
+Assembly ordinance
+Discretionary
+CUPs, variances
+Staff review
+Commission hearing
+if appealed
+Assembly
+on appeal
+Type II
+Proposed, Land Use 2a
+Staff review
+Staff decision
+with public notice
+if appealed
+Commission
+on appeal
+Appendix A p. 4 · Core Plan Land Use 2a
+
+How to answer a challenge outside a hearing. Lead with a Ketchikan fact, then the outside evidence. Never discuss a pending application outside the hearing.
+
+KEEP OPEN AT THE DAIS
+Hearing card
+
+The finding formula, the five facts most worth having ready, and the scripts for the moments that trip people up. The same card opens from the button in the top bar.
+
+FINDING FORMULA
+Copy formula
+“The request meets [code section, criterion]. [Staff report or testimony] shows [fact]. It is consistent with the [Future Land Use designation] and advances [strategy and action].”
+FIVE FACTS
+The Borough owns 0.5% of the land in its boundaries. Appx A p. 10
+Population is projected to fall about 20% by 2050. Exec Sum p. 5
+71% put affordable housing first; 38% picked infrastructure that leads to housing. Appx C p. 82
+Dozens of setback variances a year, nearly all approved. Appx A p. 4
+Pedestrian death risk: 10% at 23 mph, 50% at 42 mph. Tefft 2011
+ASK BEFORE VOTING
+Which approval criterion does this testimony speak to?
+Is the request consistent with the Future Land Use Map designation?
+Has any commissioner had contact about this case outside the hearing? If so, disclose it now.
+IF SOMEONE ASKS ABOUT A PROJECT
+Copy script
+
+“Please talk to Planning staff. It may come before me, so I can't discuss specifics.” Then disclose the contact at the hearing.
+
+IF YOU HAVE A CONFLICT
+
+A property interest in the area, or the same project at another board you sit on: disclose it on the record and step down for that item.
+
+KETCHIKAN
+Ketchikan by the numbers
+
+The population is projected to shrink 20% by 2050, and only 0.5% of the land is Borough-owned. Every street and pipe built now will be paid for by fewer people. That is the strongest local case for building on the infrastructure we already have.
+
+FACT	FIGURE	SOURCE
+Borough population (2023)	13,475 (City: 7,803)	Exec Sum p. 5
+Projected population change, 2023–2050	About −20%	Exec Sum p. 5
+School enrollment, PK–12	2,095 in 2023–24, down from a 2,474 peak in 2014–15	Exec Sum p. 5
+Median home value	$379,000 (2019–23)	Appx B pp. 34–35
+Median household income	$86,370	Exec Sum p. 5
+Housing “vacancy”	16%, which counts seasonal homes and short-term rentals	Appx B p. 35
+Preferred growth	42% want moderate growth	Exec Sum p. 4
+Cruise passengers	About 1.5 million in 2024, on a year-round population of about 13,500	Core, Transportation
+Borough sales tax revenue	$14.4M in 2024, mostly tourism	Core, Governance pp. 69–70
+Property tax revenue	$12.4M in 2024, all to the Local Education Fund	Core, Governance pp. 69–70
+Mill rate	4.75 after 2024; the plan also states 4.85 as of June 2025 (confirm with Finance)	Core, Governance p. 70
+Setback variances	“Dozens” a year, nearly all approved	Appx A p. 4
+Special limitation zones	“Dozens,” with no consistent mapping	Appx A p. 5
+Road maintenance	Paid through service areas, not areawide	Core, Governance p. 68
+
+The Borough owns 0.5% of the land within its boundaries
+
+Share of 4,899 square miles by owner
+
+Federal 96.7%
+1.2%
+State
+1%
+Mental Health Trust
+0.7%
+Tribal corporation
+0.5%
+Borough
+
+The lower bar enlarges the 3.4% not owned by the federal government. Private and other lands make up a small remainder.
+
+Appendix A p. 10, Figure A-3
+
+With so little public land, most new housing has to fit on private lots that already have streets and pipes.
+
+Affordable housing is the top housing priority at 71%
+
+Share of 2025 survey respondents choosing each, up to three picks (N = 409)
+
+Increase affordable housing
+71%
+Infrastructure that leads to housing (roads, utilities)
+38%
+Housing and services for people experiencing homelessness
+34%
+Senior housing for aging in place
+29%
+Incentives through public-private partnerships
+23%
+Infill in existing neighborhoods or downtown
+21%
+Streamline permitting and zoning
+20%
+Appendix C p. 82 · 2025 Community Survey, Question 11
+
+Infrastructure that leads to housing ranked second, ahead of permitting changes. Two more facts carry weight: property tax funds schools, and road upkeep outside the City falls on service-area residents.
+
+THE FRAMEWORK
+Strong Towns: the core ideas and the evidence
+
+Spread-out growth produces tax revenue now but leaves long-term maintenance costs the tax base can’t cover. Compact, incremental growth on existing streets and pipes pays its way.
+
+IDEA	WHAT IT SAYS	EVIDENCE
+The growth Ponzi scheme	New roads and pipes bring revenue at first. Their replacement costs arrive decades later and exceed what the development pays in tax.	Lafayette, LA: $32B in infrastructure replacement liability against a $16B tax base. Maintenance alone would take about $3,300 a year from a median household paying about $1,500 in local tax. Strong Towns, 2017
+Value per acre	Judge development by tax value per acre, not per project. Land and infrastructure are the scarce, costly inputs.	Asheville, NC: a Super Walmart paid about $6,500/acre in property tax. A downtown mixed-use building with 19 condos paid about $634,000/acre. Urban3, 2016
+Next increment by right	Every neighborhood can take the next small step without special permission: a duplex, an ADU, a corner store.	“No neighborhood should experience radical change, but no neighborhood can be exempt from change.” Strong Towns
+Parking minimums	Required parking eats land and adds cost. Let builders and lenders decide how much to provide.	After Buffalo dropped minimums, 36 major projects built 21% fewer spaces than required. Mixed-use projects built 53% fewer. Hess & Rehler, JAPA 2021
+Small builders	Many small local builders make a resilient housing market. Rules sized for large developers shut them out.	In the plan: pre-approved small-house plans Housing 2a and a developer roundtable on infill barriers Housing 1g
+
+Growth that can’t pay for its own replacement needs more growth
+
+The Strong Towns growth Ponzi scheme, read left to right
+
+New roads and pipes are built
+Often paid by a developer or a grant
+New tax revenue arrives
+Upkeep costs stay low for years
+Repair and replacement come due
+Decades later, the full bill lands
+The tax base can’t cover it
+More growth is approved to fill the gap
+↺ back to the start
+After Strong Towns · 4 stages, one loop
+
+Why it fits Ketchikan. The Borough owns 0.5% of the land, the population is forecast to fall, and service-area residents pay for road maintenance. Building inward on sewered, paved, plowed streets is the cheapest way to add housing. It is also the only way that doesn’t grow the per-household maintenance bill.
+
+CODE TEST
+Would the older town be legal to build today?
+
+Downtown commercial blocks pass: Central Commercial has no minimum lot size and zero setbacks. The conflict is in the older residential neighborhoods, where historic lots are often smaller than today’s 5,000 sq ft and 50 ft minimums.
+
+STANDARD	RM (MEDIUM)	RH (HIGH)	CC (CENTRAL COMMERCIAL)
+Minimum lot area	5,000 sq ft	5,000 sq ft	None
+Minimum lot width	50 ft	50 ft	50 ft
+Front / side / rear setback	10 / 5 / 15 ft	10 / 5 / 5 ft	0 / 0 / 0 ft
+Maximum lot coverage	50%	100%	100%
+Dwellings per lot	4	No limit	No limit
+Off-street parking	1 per dwelling	1 per dwelling	1 per dwelling; in the central parking area a covenant not to oppose a parking district can substitute
+
+Sources: KGBC 18.60.020, 18.60.030, 18.70.020, 18.70.060. Code current through Ord. 2120 (Aug 3, 2026).
+
+The rebuild rule
+A nonconforming building damaged by accident can be rebuilt with a permit within a year. One torn down from ordinary wear “must be rebuilt in accordance with the development standards of the zone” (KGBC 18.30.030). An old house inside today’s setbacks can’t be replaced in its own footprint without a variance. That likely explains much of the dozens of setback variances heard each year.
+
+Commercial parking adds up. A restaurant needs 1 space per 5 seats plus half a space per employee. Retail needs 1 per 250 sq ft of display area plus half per employee KGBC 18.70.060. Few historic storefronts could supply that on site.
+
+The test to run. Ask staff for a GIS count of RM and RH parcels under 5,000 sq ft or 50 ft wide, and of buildings inside current setbacks. If a large share of the older town is nonconforming, that is the local case for smaller lots and a Juneau-style alternative standard.
+
+CONFESSIONS OF A RECOVERING ENGINEER
+Streets, roads, and stroads
+
+How a street is built, not its posted limit, sets how fast people drive. Where people walk, shop, and cross, design for slow speeds. Where you need to move fast between places, build a real road with few driveways.
+
+Build streets or roads, never the hybrid stroad
+
+Slower
+Design speed
+Faster
+BUILD
+Street
+Where wealth is built
+Slow, so people walk and cross
+Storefronts, homes, crossings
+Ketchikan: downtown, Newtown, Tongass Avenue in town
+AVOID
+Stroad
+Tries to do both, does neither
+Fast but full of driveways
+Wide lanes, turning traffic
+Ketchikan: don’t let town corridors widen into this
+BUILD
+Road
+Moves people between places
+Fast, with few driveways
+Few access points
+Ketchikan: North and South Tongass Highway
+After Strong Towns, 2018
+PRINCIPLE	WHAT IT MEANS	EVIDENCE
+Design speed drives behavior	Engineers pick a design speed first, then size lanes, curves, and sight lines for it. Drivers go the speed the street feels safe for.	Marohn, Confessions (2021), summarized
+Forgiving design fails in town	Wide lanes and clear zones suit rural highways. In town they invite speed. Make unsafe speeds feel uncomfortable.	Same source
+Narrow lanes are safer	Across 1,100+ urban street sections in 7 US cities, 12 ft lanes had about 50% higher crash rates than 9 ft lanes.	Johns Hopkins, 2023
+Widening doesn’t cure congestion	Driving rises in proportion to added highway lane miles.	Duranton & Turner, AER 2011
+
+Pedestrian death risk passes 50% at 42 mph
+
+Risk for an average pedestrian struck at each impact speed
+
+0%
+25%
+50%
+75%
+100%
+10
+20
+30
+40
+50
+60
+Impact speed (mph)
+25 mph limit
+35 mph limit
+Severe injury
+23 mph
+32 mph
+42 mph
+50 mph
+58 mph
+Death
+Tefft, AAA Foundation for Traffic Safety, 2011
+What it means in Ketchikan
+Downtown and Tongass Avenue are streets, not roads. They carry storefronts, crosswalks, and more than 1.5 million visitors each season. Transportation 5b already calls for better crossings, sidewalks, and protected bike lanes. Most of the corridor is state-managed (road jurisdiction map, Appx A p. 11), so the Borough’s tool is advocacy with DOT&PF and the STIP.
+North and South Tongass Highway are roads. Keep them fast and safe. Limit new driveways and strip commercial. Group development into nodes like Ward Cove and Herring Cove.
+Neighborhood streets should be narrow. Narrow streets cost less to build, plow, and repave. The infrastructure working group raised flexible road standards (Appx C p. 123). That is a Title 17 change.
+Cruise-season congestion is a reason to slow downtown, not widen it. There is no room to widen along the viaduct, and added capacity fills back up. Coach staggering Transportation 5d manages demand instead.
+CITE THE PLAN FIRST
+Where the adopted plan already backs this
+
+Most Strong Towns ideas are already in the adopted plan. When challenged, cite the plan first. It carries legal weight; Strong Towns does not.
+
+STRONG TOWNS IDEA	WHAT THE ADOPTED PLAN SAYS	WHERE
+Next increment by right	Urban Residential allows fourplexes, townhomes, live-work units, corner stores, and cafés	Exec Sum p. 8
+Next increment by right	Replace discretionary permits with administrative approval where feasible	Land Use 2a
+Next increment by right	Form-based standards and mixed-use overlays for infill areas	Land Use 2b
+Next increment by right	Keep supporting “missing middle” housing through code and permitting	Housing 1e
+Small builders	Pre-approved plans for small workforce housing	Housing 2a
+Small builders	Developer roundtable on barriers to small infill	Housing 1g
+Build where infrastructure exists	Urban Residential = areas on public sewer, “where smaller lots and higher housing densities are feasible”	Appx A p. 3
+Build where infrastructure exists	Downtown Core: “infill and redevelopment in walkable districts with existing infrastructure”	Exec Sum p. 8
+Build where infrastructure exists	Infill on vacant lots in older neighborhoods with existing infrastructure	Housing 3e Land Use 2f
+Don’t extend speculatively	Unspecified Future Use lands need “infrastructure feasibility studies before future land use decisions are made”	Appx A p. 3
+Parking	Relaxed parking standards for projects with workforce or seasonal housing	Housing 2c
+Parking	Downtown sub-area plan to “address parking management”	Land Use Strategy 4
+Streets, not stroads	Better crossings, sidewalks, protected bike lanes on Tongass Avenue; continuous trail links	Transportation 5b
+Streets, not stroads	Manage cruise-season demand by staggering coach arrivals	Transportation 5d
+Fiscal productivity	Update the Capital Improvement Plan yearly based on long-range demographic trends	Governance 3b
+Fiscal productivity	Transparent budget and an annual fiscal health report	Governance 1a Governance 5c
+Where the plan is weaker
+The plan also supports extending utilities and roads to open new land Public Facilities 1. The Strong Towns test is whether an extension’s tax base will cover its replacement cost. Ask for that number first. Also: Ward Cove’s action letter differs between the Core Plan (4f) and Appendix A (4e), so confirm letters before citing them in a motion.
+PEERS
+Alaska case studies
+
+Other Alaska communities have already made these changes. When someone says “that’s a Lower 48 idea,” point here.
+
+Juneau
+2017, updated 2022
+
+Created a downtown Alternative Development Overlay because most of downtown “was built before modern zoning standards.” The update allows 3,000 sq ft lots, 25 ft widths, and 3 ft setbacks if all setbacks add up to at least 20 ft.
+
+A Southeast town with steep, old, small-lot neighborhoods. The direct model for the rebuild-rule problem.
+CBJ Downtown Zoning Project
+·
+Ord. 2021-36
+Juneau
+2015 to present
+
+Pays homeowners to add an ADU, starting at $6,000 and now up to $13,500. 44 units built from 2015 to 2023 with $264,000 in grants.
+
+Allowing ADUs isn’t always enough. A small incentive helps get them built.
+CBJ, Aug 2023
+Anchorage
+Nov 22, 2022
+
+Eliminated parking minimums citywide, 12–0, while adding bike parking and accessible-space rules. Downtown already had none.
+
+One developer said minimums were “the difference between something working or not working financially.”
+Sightline, Nov 2022
+Sitka
+After 2017–18
+
+Expanded where ADUs are allowed, eased ADU rules, and moved toward 6,000 sq ft minimum lots in many areas and smaller setbacks.
+
+A Southeast peer with island land limits and a tourism economy. Confirm adoption dates with Sitka Planning.
+Smart Growth America
+Sitka
+Mar 10, 2020
+
+Allowed tiny houses on chassis as permanent homes in mobile home lots, 6–0.
+
+One of the first US cities to do so: a low-cost housing option.
+KCAW, Mar 2020
+ACTION LIST
+Things to build and try in Ketchikan
+
+Start with code changes the Commission can recommend directly. Then add street pilots the City and State can run, and data projects that make the case locally.
+
+Code changes · Commission recommends, Assembly adopts
+CHANGE	WHAT IT DOES	PLAN HOOK
+Cut the RM/RH minimum lot from 5,000 to 3,500 sq ft	More homes on existing sewer and streets	Housing 1e Appx C p. 134
+Confirm duplexes through fourplexes are allowed by right	RM already allows 4 dwellings per lot; check the use table for permit requirements	Exec Sum p. 8 Land Use 2a
+Allow corner stores and cafés in Urban Residential, with size caps	Neighborhood services within walking distance	Exec Sum p. 8
+Drop or cut parking minimums, starting downtown and for workforce housing	Frees land and lowers building cost	Housing 2c Land Use Strategy 4
+Move setback variances to staff approval	Ends near-automatic hearings	Land Use 2a Appx A p. 4
+A Juneau-style alternative standard for older neighborhoods	Lets owners rebuild in historic footprints	Land Use 2b KGBC 18.30.030
+Adopt a pre-approved small-house plan set	Faster, cheaper permits for small builders	Housing 2a
+Narrower street standards for new subdivisions	Lower build, plow, and repaving costs	Title 17 Appx C p. 123
+Lifecycle cost estimate for new roads and utility extensions	Shows whether the tax base will cover replacement	Governance 3b Public Facilities 1
+
+A 3,500 sq ft minimum fits 8 lots where today’s rule fits 6
+
+Illustration: one 300 × 100 ft block face
+
+Street side ↓
+Today
+5,000 sq ft, 50 ft wide
+6 lots
+Proposed
+3,500 sq ft, 35 ft wide
+8 lots
+
+Shaded = buildable area inside RM setbacks (10 ft front, 5 ft sides, 15 ft rear). Blue = lots added. Real blocks vary.
+
+KGBC 18.60.020 RM standards · hypothetical block
+
+On the same street, with no new pipe or pavement, the smaller minimum adds two homes per 300 ft of frontage: a third more lots on infrastructure the Borough already maintains.
+
+Street pilots · City and DOT&PF act, the Borough advocates
+Temporary curb extensions and high-visibility crosswalks downtown during cruise season, measured before and after
+A Tongass Avenue safety and lane-width study with DOT&PF, tied to Transportation 5b and the STIP
+A slow zone on downtown and Newtown residential streets
+Data projects · make the case with local numbers
+A value-per-acre map from the 2025 tax roll. The Borough already built an assessed-use map from it (Appx A p. 12).
+Infrastructure replacement liability by service area: miles of road and pipe, age, and replacement cost against the taxable value they serve
+Speed and crash data for Tongass Avenue from DOT&PF
+Q&A
+Answers to common challenges
+
+Lead with the Ketchikan fact or the plan citation, then the outside evidence. In a hearing, use only what is in the record and the code criteria.
+
+Expand all
+Collapse all
+“More housing will mean more traffic.”
+
+Summer congestion comes from about 1.5 million cruise visitors on a town of 13,500. A few dozen new homes don’t cause it. Homes near downtown make shorter trips, and many can be walked.
+
+Widening doesn’t fix congestion: driving grows in proportion to added lane miles (Duranton & Turner 2011). The plan manages demand instead Transportation 5d.
+“Where will everyone park?”
+
+The builder and the lender still decide how much parking a project needs. Ending the minimum only stops the code from forcing more than the market wants.
+
+In Buffalo, projects still built parking, just 21% less than the old code required (Hess & Rehler 2021). Anchorage dropped minimums citywide in 2022. The plan supports relaxed parking for workforce housing Housing 2c.
+“Apartments will hurt the neighborhood.”
+
+The adopted Future Land Use Map already lists fourplexes and townhomes for Urban Residential Exec Sum p. 8. The Strong Towns rule: no neighborhood sees radical change, and none is exempt from change.
+
+Research mostly measures rents, not values: new 50+ unit buildings in lower-income areas cut rents within about two blocks by 5–7% (Upjohn Institute, 2020).
+“Why not just open up more land out the road?”
+
+The Borough owns 0.5% of the land, population is projected to fall about 20% by 2050, and service-area residents pay for road upkeep. Every new mile of road is a permanent bill for fewer people.
+
+Lafayette, LA ended up with twice as much infrastructure liability as tax base (Strong Towns). The plan requires feasibility studies before deciding the future of large undeveloped tracts Appx A p. 3.
+“It will change the character of the neighborhood.”
+
+Character is mostly about building size, setbacks, and how buildings meet the street. A duplex can look like a house.
+
+The plan supports design standards that protect character while allowing housing Land Use 2b. Juneau’s downtown overlay was created to protect its historic pattern.
+“People said they want moderate growth.”
+
+They did, at 42% Exec Sum p. 4. Small infill on existing streets is moderate growth.
+
+The same survey ranked affordable housing first, at 71% Appx C p. 82.
+“Slower streets will hurt business or slow emergency response.”
+
+Downtown business runs on foot traffic. Emergency access is a real constraint: set narrow-street standards with the Fire Department, not around it.
+
+A pedestrian hit at 42 mph has a 50% risk of dying, against 10% at 23 mph (Tefft 2011).
+“Tongass Avenue is a State road. Why is this our business?”
+
+The plan directs the Borough to push for safer crossings and sidewalks there Transportation 5b.
+
+The 2024–2027 STIP lists more than $50 million in regional projects and “emphasizes that local advocacy is essential” (Core Plan, Transportation).
+“Government shouldn’t be in the housing business.”
+
+Agreed, and most of these changes remove rules rather than spend money. Larger lots, required parking, and hearings for routine setbacks are government requirements.
+
+The housing working group itself noted little appetite for government investment in housing (Appx C p. 134).
+CREDIBILITY
+Honest limits
+
+Strong Towns is a framework, not settled science. Naming where it strains in Ketchikan before a critic does makes the rest of the case more credible.
+
+LIMIT	WHY IT MATTERS HERE	HOW TO HANDLE IT
+Value per acre is a simplification	It counts revenue, not the cost of serving each acre. Sales tax is mostly tourism, so property value alone undercounts commercial land.	Show property and sales tax together. Pair revenue with service and replacement costs.
+Steep terrain and landslides	Infill on steep lots costs more and can raise hazard risk.	Hazards come before density. Use the Environmental Constraints overlay Appx A p. 19.
+Fire and emergency access	The International Fire Code generally calls for 20 ft of clear width on fire access roads (confirm locally).	Write narrow-street standards with the Fire Department. Use parking limits and turnouts, not just narrower pavement.
+The State controls Tongass Avenue	DOT&PF sets its design standards and budget.	Advocate through the STIP and Transportation 5b. Focus Borough effort on City and service-area streets.
+Allowing infill doesn’t guarantee it	Building costs are high and the market is small. The working group heard there are few attractive lots available in the City.	Pair code changes with the land inventory, pre-approved plans, and the developer roundtable Housing 1c 2a 1g.
+Sewer limits density	Urban Residential density depends on sewer, and the record conflicts on capacity.	Get a written capacity answer before upzoning Public Facilities 2.
+Population is projected to fall	Upzoning may produce less building if demand drops.	The shortage is current, and the 16% vacancy figure includes seasonal and short-term rentals. Track permits Housing 1b.
+Parking in a rainy, hilly town	Walking and transit have limits in winter; downtown parking is scarce in summer.	Start with downtown and workforce housing Housing 2c, then measure before going further.
+The speed data is a national average	Tefft’s curve is for an average pedestrian. Older pedestrians face higher risk at every speed.	This cuts in favor of slower streets. Say so.
+LOCAL EVIDENCE
+Local data to gather
+
+Outside studies persuade. Ketchikan’s own numbers settle arguments. Request these through staff so they become part of the public record.
+
+DATA	WHO HAS IT	WHAT IT PROVES
+Taxable value per acre by parcel (2025 tax roll)	Borough Assessor / GIS	Which development patterns fund the Borough
+Road and pipe miles, age, and replacement cost by service area	Public Works, City, KPU	Whether each area’s tax base covers its own upkeep
+RM and RH parcels under 5,000 sq ft or 50 ft wide; buildings inside setbacks	Planning staff / GIS	How much of the older town is nonconforming
+Setback variance count, approval rate, and processing time, 3–5 years	Planning staff	Whether variances can move to staff approval
+Sewer treatment capacity vs. line coverage	City / KPU	Whether the limit is capacity or installation
+Speeds and crashes on Tongass Avenue	DOT&PF, Ketchikan Police	Where design speed exceeds safe speed
+Building permits and units added per year	Borough and City building departments	Whether code changes produce housing Housing 1b
+REFERENCES
+Sources
+Ketchikan plan documents
+2035 KGB Comprehensive Plan: Core Plan, Executive Summary, Appendices A–D (adopted Feb 2, 2026)
+Law and Borough code
+AS 29.40.040, Land use regulation (edition viewed is older; confirm current text)
+KGBC 18.30.030, Nonconforming uses and structures
+KGBC 18.60.020, Residential development requirements
+KGBC 18.60.030, Commercial development requirements
+KGBC 18.70.020, Central parking area
+KGBC 18.70.060, Parking development requirements
+Strong Towns and fiscal productivity
+The Real Reason Your City Has No Money, Strong Towns (2017)
+Incremental Housing Overview, Strong Towns Action Lab
+What’s the value of a great downtown? Smart Growth America / Urban3 (2016)
+Hess & Rehler, Minus Minimums, JAPA (2021)
+Asquith, Mast & Reed, new apartments and nearby rents, Upjohn Institute (2020)
+Streets and safety
+What’s a Stroad and Why Does It Matter? Strong Towns (2018)
+The High Cost of Speed, on Marohn’s Confessions of a Recovering Engineer (2022)
+Tefft, Impact Speed and a Pedestrian’s Risk of Severe Injury or Death, AAA Foundation (2011)
+Johns Hopkins lane width study (2023), Streetsblog summary
+Duranton & Turner, The Fundamental Law of Road Congestion, AER (2011)
+Alaska case studies
+CBJ Downtown Zoning Project and Juneau Ord. 2021-36
+CBJ ADU grants increased to $13,500 (Aug 2023)
+Anchorage Assembly unites to end parking mandates, Sightline (Nov 2022)
+Since the workshop: Sitka tackles housing affordability, Smart Growth America
+Assembly makes room for tiny houses in city code, KCAW (Mar 2020)
+Prepared for use at the Ketchikan Gateway Borough Planning Commission. Not legal advice; confirm code text with the Borough Clerk before citing in a motion.

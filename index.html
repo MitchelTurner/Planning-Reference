@@ -1,0 +1,1144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Ketchikan Planning Fact Book</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;600;700;800&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: sticky search bar over a two-column reference layout, a section index rail on the left and a single reading column. Phone: the rail becomes a scrolling chip row. Light-only by design (civic reference). */
+:root {
+  --paper: #f3f6f6;
+  --surface: #ffffff;
+  --ink: #12222a;
+  --muted: #536870;
+  --faint: #8a9ba1;
+  --rule: #d8e1e1;
+  --rule-strong: #b9c7c8;
+  --tide: #1d5c8a;
+  --tide-deep: #164a70;
+  --tide-tint: #e3edf5;
+  --data: #b8c4c3;
+  --data-soft: #dfe6e5;
+  --critical: #b2382c;
+  --critical-tint: #f8e7e4;
+  --good: #2e7650;
+  --good-tint: #e2f0e7;
+  --caution: #94600f;
+  --caution-tint: #f8eedb;
+  --f-display: "Schibsted Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --f-body: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+  --bar-h: 60px;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { scroll-padding-top: calc(var(--bar-h) + 20px); }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+body { background: var(--paper); color: var(--ink); font-family: var(--f-body); font-size: 16px; line-height: 1.55; -webkit-font-smoothing: antialiased; }
+a { color: var(--tide); text-underline-offset: 2px; text-decoration-thickness: 1px; }
+a:hover { color: var(--tide-deep); }
+:focus-visible { outline: 2px solid var(--tide); outline-offset: 2px; border-radius: 3px; }
+mark { background: #fbe8a6; color: inherit; border-radius: 2px; padding: 0 1px; }
+
+/* Top bar */
+.topbar {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 40;
+  background: #ffffff;
+  border-bottom: 1px solid var(--rule);
+}
+.topbar-in { max-width: 1240px; margin: 0 auto; padding-inline: 20px; height: var(--bar-h); display: flex; align-items: center; gap: 16px; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); flex: 0 0 auto; }
+.brand-mark { width: 30px; height: 30px; border-radius: 7px; background: var(--ink); display: grid; place-items: center; }
+.brand-name { font-family: var(--f-display); font-weight: 700; font-size: 16px; letter-spacing: -.01em; line-height: 1.1; }
+.brand-name small { display: block; font-family: var(--f-body); font-weight: 500; font-size: 11.5px; color: var(--muted); letter-spacing: 0; }
+.search { flex: 1 1 auto; max-width: 520px; position: relative; margin-left: auto; }
+.search input {
+  width: 100%; height: 40px; border: 1px solid var(--rule-strong); border-radius: 9px; background: var(--surface);
+  padding: 0 70px 0 38px; font: inherit; font-size: 15px; color: var(--ink);
+}
+.search input::placeholder { color: var(--faint); }
+.search input::-webkit-search-cancel-button { -webkit-appearance: none; appearance: none; }
+body { margin: 0; }
+.search input:focus { outline: none; border-color: var(--tide); box-shadow: 0 0 0 3px var(--tide-tint); }
+.search svg { position: absolute; left: 12px; top: 12px; }
+.search kbd, .search .clear {
+  position: absolute; right: 8px; top: 8px; height: 24px; min-width: 24px; padding: 0 7px; border-radius: 6px;
+  font-family: var(--f-mono); font-size: 12px; color: var(--muted); background: var(--paper); border: 1px solid var(--rule);
+  display: grid; place-items: center;
+}
+.search .clear { cursor: pointer; font-family: var(--f-body); }
+.btn {
+  display: inline-flex; align-items: center; gap: 8px; height: 40px; padding: 0 14px; border-radius: 9px;
+  font: inherit; font-weight: 600; font-size: 14px; cursor: pointer; border: 1px solid transparent; white-space: nowrap;
+}
+.btn-primary { background: var(--ink); color: #fff; }
+.btn-primary:hover { background: #24363f; }
+.btn-ghost { background: var(--surface); border-color: var(--rule-strong); color: var(--ink); }
+.btn-ghost:hover { border-color: var(--ink); }
+.btn-sm { height: 32px; padding: 0 11px; font-size: 13px; border-radius: 7px; }
+
+/* Shell */
+.shell { max-width: 1240px; margin: 0 auto; padding-inline: 20px; padding-block: 0 80px; display: grid; grid-template-columns: 232px minmax(0, 1fr); gap: 48px; }
+.rail { position: sticky; top: calc(var(--bar-h) + 24px); align-self: start; max-height: calc(100vh - var(--bar-h) - 48px); overflow-y: auto; padding-block: 28px 20px; }
+.rail-group { margin-bottom: 18px; }
+.rail-label { font-family: var(--f-mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--faint); margin: 0 0 6px 10px; }
+.rail a { display: block; padding: 5px 10px; border-radius: 7px; color: var(--muted); text-decoration: none; font-size: 14px; line-height: 1.35; border-left: 2px solid transparent; }
+.rail a:hover { color: var(--ink); background: var(--surface); }
+.rail a.active { color: var(--ink); font-weight: 600; background: var(--surface); border-left-color: var(--tide); border-radius: 0 7px 7px 0; }
+.rail a.dim { opacity: .35; }
+.chips { display: none; }
+main { min-width: 0; padding-top: 36px; }
+.col { max-width: 860px; }
+
+/* Hero */
+.hero { display: grid; gap: 14px; padding-bottom: 28px; border-bottom: 1px solid var(--rule); margin-bottom: 8px; }
+.eyebrow { font-family: var(--f-mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--tide); }
+h1 { font-family: var(--f-display); font-weight: 800; font-size: clamp(34px, 5.4vw, 52px); line-height: 1.02; letter-spacing: -.025em; margin: 0; text-wrap: balance; }
+.lede { font-size: 18px; color: var(--muted); max-width: 62ch; margin: 0; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 13.5px; color: var(--muted); }
+.meta b { color: var(--ink); font-weight: 600; }
+.tiles { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: var(--rule); border: 1px solid var(--rule); border-radius: 12px; overflow: hidden; margin-top: 10px; }
+.tile { background: var(--surface); padding: 16px 18px 18px; display: grid; gap: 4px; align-content: start; }
+.tile .num { font-family: var(--f-display); font-weight: 700; font-size: 32px; letter-spacing: -.02em; line-height: 1.05; font-variant-numeric: tabular-nums; }
+.tile .lbl { font-size: 14px; color: var(--ink); line-height: 1.35; }
+.tile .src { font-size: 12px; color: var(--faint); }
+.tile.key .num { color: var(--tide); }
+
+/* Sections */
+section.sec { padding-block: 48px 8px; display: grid; gap: 18px; }
+.sec-head { display: grid; gap: 6px; }
+.sec-kicker { font-family: var(--f-mono); font-size: 11.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--faint); }
+h2 { font-family: var(--f-display); font-weight: 700; font-size: clamp(25px, 3.4vw, 31px); line-height: 1.12; letter-spacing: -.018em; margin: 0; text-wrap: balance; }
+h3 { font-family: var(--f-display); font-weight: 600; font-size: 18px; line-height: 1.3; margin: 8px 0 0; letter-spacing: -.005em; }
+.point { font-size: 17.5px; line-height: 1.5; margin: 0; max-width: 64ch; }
+p { margin: 0; max-width: 68ch; }
+.prose { display: grid; gap: 12px; }
+ul.list { margin: 0; padding-left: 20px; display: grid; gap: 8px; max-width: 68ch; }
+ul.list li::marker { color: var(--faint); }
+.ref { font-family: var(--f-mono); font-size: 12px; font-weight: 500; color: var(--muted); background: var(--paper); border: 1px solid var(--rule); border-radius: 5px; padding: 1px 6px; white-space: nowrap; }
+td .ref, li .ref, p .ref { vertical-align: 1px; }
+.note { font-size: 13.5px; color: var(--muted); }
+.callout { border-radius: 10px; padding: 14px 16px; display: grid; gap: 6px; font-size: 15px; }
+.callout.caution { background: var(--caution-tint); }
+.callout.caution b:first-child { color: var(--caution); }
+.callout.tide { background: var(--tide-tint); }
+
+/* Tables */
+.tbl-wrap { border: 1px solid var(--rule); border-radius: 12px; background: var(--surface); overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 14.5px; line-height: 1.45; }
+th { text-align: left; font-family: var(--f-mono); font-size: 11.5px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); padding: 11px 14px; background: #f8fafa; border-bottom: 1px solid var(--rule); white-space: nowrap; }
+td { padding: 12px 14px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+tr:last-child td { border-bottom: 0; }
+td:first-child { font-weight: 600; }
+td.num, th.num { font-variant-numeric: tabular-nums; }
+.tbl-cmp td:not(:first-child) { font-variant-numeric: tabular-nums; }
+.tbl-cmp th.hl, .tbl-cmp td.hl { background: var(--tide-tint); }
+@media (max-width: 680px) {
+  .tbl-wrap.stack { border: 0; background: none; overflow: visible; }
+  .stack table, .stack tbody, .stack tr, .stack td { display: block; width: 100%; }
+  .stack thead { display: none; }
+  .stack tr { background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; padding: 12px 14px; margin-bottom: 10px; }
+  .stack td { padding: 3px 0; border: 0; }
+  .stack td:first-child { font-size: 15.5px; padding-bottom: 6px; }
+  .stack td:not(:first-child)::before { content: attr(data-label); display: block; font-family: var(--f-mono); font-size: 10.5px; letter-spacing: .07em; text-transform: uppercase; color: var(--faint); margin-top: 6px; }
+}
+
+/* Figures */
+figure { margin: 0; background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; padding: 20px 20px 16px; display: grid; gap: 14px; }
+figure .fig-title { font-family: var(--f-display); font-weight: 600; font-size: 17px; line-height: 1.3; margin: 0; text-wrap: balance; }
+figure .fig-sub { font-size: 13.5px; color: var(--muted); margin: -10px 0 0; }
+figcaption { font-size: 12px; color: var(--faint); border-top: 1px solid var(--rule); padding-top: 10px; }
+.chart-box { width: 100%; min-width: 0; }
+.chart-box svg { display: block; width: 100%; height: auto; overflow: visible; }
+
+/* Decision paths */
+.paths { display: grid; gap: 10px; }
+.lane { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 14px; align-items: center; background: var(--paper); border-radius: 10px; padding: 12px 14px; }
+.lane-name b { display: block; font-size: 15px; }
+.lane-name span { font-size: 12.5px; color: var(--muted); }
+.steps { display: flex; align-items: stretch; gap: 0; min-width: 0; }
+.step { flex: 1 1 0; min-width: 0; background: var(--surface); border: 1px solid var(--rule-strong); border-radius: 8px; padding: 9px 10px; font-size: 13.5px; text-align: center; display: grid; align-content: center; gap: 2px; }
+.step small { font-size: 11.5px; color: var(--muted); }
+.step.hl { border: 2px solid var(--tide); background: var(--tide-tint); font-weight: 600; }
+.arrow { flex: 0 0 26px; display: grid; place-items: center; color: var(--faint); position: relative; }
+.arrow em { position: absolute; top: -16px; white-space: nowrap; font-style: normal; font-size: 10.5px; color: var(--muted); }
+.arrow::before { content: ""; width: 14px; height: 1.5px; background: var(--faint); }
+.arrow::after { content: ""; position: absolute; right: 5px; width: 0; height: 0; border-left: 6px solid var(--faint); border-top: 4px solid transparent; border-bottom: 4px solid transparent; }
+
+/* Cycle */
+.cycle { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 26px; position: relative; padding-bottom: 34px; }
+.cyc { background: var(--surface); border: 1px solid var(--rule-strong); border-radius: 10px; padding: 12px 13px; display: grid; gap: 4px; align-content: start; position: relative; }
+.cyc b { font-size: 14.5px; line-height: 1.3; }
+.cyc span { font-size: 13px; color: var(--muted); line-height: 1.4; }
+.cyc.hl { border: 2px solid var(--tide); background: var(--tide-tint); }
+.cyc.hl span { color: var(--ink); }
+.cyc:not(:last-child)::after { content: "→"; position: absolute; right: -20px; top: 50%; transform: translateY(-50%); color: var(--faint); font-size: 16px; }
+.cycle-return { position: absolute; left: 12%; right: 12%; bottom: 0; height: 22px; border: 1.5px solid var(--faint); border-top: 0; border-radius: 0 0 10px 10px; }
+.cycle-return::before { content: ""; position: absolute; left: -6px; top: -2px; border-bottom: 7px solid var(--faint); border-left: 5px solid transparent; border-right: 5px solid transparent; }
+.cycle-return span { position: absolute; left: 50%; bottom: -9px; transform: translateX(-50%); background: var(--surface); padding: 0 8px; font-size: 11.5px; color: var(--muted); white-space: nowrap; }
+
+/* Street / stroad / road */
+.speed { display: flex; justify-content: space-between; font-size: 12.5px; color: var(--muted); position: relative; padding-bottom: 10px; }
+.speed::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 4px; border-radius: 2px; background: linear-gradient(90deg, var(--good) 0%, var(--data) 50%, var(--tide) 100%); opacity: .55; }
+.srs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.srs-card { border: 1px solid var(--rule-strong); border-radius: 10px; padding: 14px; display: grid; gap: 6px; align-content: start; font-size: 14px; }
+.srs-card h4 { margin: 0; font-family: var(--f-display); font-size: 19px; font-weight: 700; }
+.srs-card .tag { justify-self: start; font-family: var(--f-mono); font-size: 10.5px; letter-spacing: .06em; text-transform: uppercase; padding: 2px 7px; border-radius: 4px; }
+.srs-card.ok .tag { background: var(--good-tint); color: var(--good); }
+.srs-card.bad { border: 1.5px dashed var(--critical); background: var(--critical-tint); }
+.srs-card.bad .tag { background: #fff; color: var(--critical); }
+.srs-card ul { margin: 0; padding-left: 18px; display: grid; gap: 3px; }
+.srs-card .eg { color: var(--muted); font-size: 13px; border-top: 1px solid var(--rule); padding-top: 8px; margin-top: 4px; }
+.srs-card.bad .eg { border-top-color: #eccbc6; }
+
+/* HTML bar charts */
+.hbars { display: grid; gap: 9px; }
+.hbar { display: grid; grid-template-columns: minmax(0, 0.95fr) minmax(0, 1fr); gap: 12px; align-items: center; font-size: 14px; }
+.hbar .lab { text-align: right; color: var(--muted); line-height: 1.3; }
+.hbar .track { display: flex; align-items: center; gap: 8px; }
+.hbar .fill { height: 20px; border-radius: 3px; background: var(--data); }
+.hbar .val { font-variant-numeric: tabular-nums; color: var(--muted); font-weight: 600; font-size: 13.5px; }
+.hbar.top .lab, .hbar.top .val { color: var(--ink); font-weight: 600; }
+.hbar.top .fill { background: var(--tide); }
+
+.own { display: grid; gap: 10px; }
+.own-bar { display: flex; height: 42px; border-radius: 6px; overflow: hidden; }
+.own-bar .fed { background: var(--data); display: flex; align-items: center; padding-left: 14px; font-weight: 600; font-size: 14px; }
+.own-bar .rest { background: var(--tide); opacity: .4; }
+.own-zoom { position: relative; height: 34px; }
+.own-zoom svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.own-parts { display: flex; gap: 3px; }
+.own-part { display: grid; gap: 6px; min-width: 0; }
+.own-part i { display: block; height: 42px; border-radius: 4px; background: var(--data-soft); }
+.own-part.b i { background: var(--tide); }
+.own-part span { font-size: 12.5px; color: var(--muted); line-height: 1.3; }
+.own-part span b { display: block; font-size: 14px; color: var(--ink); font-variant-numeric: tabular-nums; }
+.own-part.b span, .own-part.b span b { color: var(--tide-deep); font-weight: 600; }
+
+/* Lot split */
+.lots { display: grid; gap: 18px; }
+.lot-row { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 16px; align-items: center; }
+.lot-row .who b { display: block; font-size: 15px; }
+.lot-row .who span { font-size: 12.5px; color: var(--muted); }
+.lot-row .who .count { font-family: var(--f-display); font-size: 28px; font-weight: 700; color: var(--ink); display: block; margin-top: 2px; }
+.lot-row.prop .who .count { color: var(--tide); }
+.block { display: flex; border: 1.5px solid var(--rule-strong); border-radius: 3px; aspect-ratio: 3 / 1; max-width: 100%; background: var(--surface); }
+.lot { flex: 1 1 0; border-right: 1px solid var(--rule-strong); padding: 6.7% 3.2% 10%; min-width: 0; }
+.lot:last-child { border-right: 0; }
+.lot i { display: block; width: 100%; height: 100%; border-radius: 2px; background: var(--data-soft); }
+.lot.add i { background: var(--tide); opacity: .55; }
+.street-label { font-size: 11.5px; color: var(--muted); margin-left: 166px; }
+
+/* Case cards */
+.cases { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.case { background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; padding: 16px; display: grid; gap: 8px; align-content: start; }
+.case-top { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+.case-top b { font-family: var(--f-display); font-size: 18px; }
+.case-top span { font-family: var(--f-mono); font-size: 11.5px; color: var(--muted); }
+.case p { font-size: 14.5px; }
+.case .why { font-size: 13.5px; color: var(--muted); border-top: 1px solid var(--rule); padding-top: 8px; }
+.case a { font-size: 13px; }
+
+/* Q&A */
+.qa { display: grid; gap: 8px; }
+details.q { background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; }
+details.q summary { list-style: none; cursor: pointer; padding: 14px 44px 14px 16px; font-weight: 600; font-size: 15.5px; position: relative; }
+details.q summary::-webkit-details-marker { display: none; }
+details.q summary::after { content: ""; position: absolute; right: 18px; top: 50%; width: 8px; height: 8px; border-right: 2px solid var(--muted); border-bottom: 2px solid var(--muted); transform: translateY(-70%) rotate(45deg); transition: transform .15s; }
+details.q[open] summary::after { transform: translateY(-30%) rotate(-135deg); }
+details.q[open] { border-color: var(--rule-strong); }
+details.q .ans { padding: 0 16px 16px; display: grid; gap: 10px; font-size: 15px; }
+details.q .ans .fact { background: var(--paper); border-radius: 8px; padding: 10px 12px; font-size: 14px; }
+.qa-tools { display: flex; gap: 8px; flex-wrap: wrap; }
+
+/* Hearing card */
+.hcard { background: var(--ink); color: #e9eff0; border-radius: 14px; padding: 22px; display: grid; gap: 18px; }
+.hcard h3 { color: #fff; margin: 0; font-size: 15px; font-family: var(--f-mono); font-weight: 500; letter-spacing: .07em; text-transform: uppercase; }
+.hcard .formula { background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.14); border-radius: 10px; padding: 14px; font-size: 16px; line-height: 1.5; color: #fff; }
+.hcard .formula em { font-style: normal; color: #9fc7e6; }
+.hcard ul { margin: 0; padding-left: 18px; display: grid; gap: 7px; font-size: 15px; }
+.hcard ul li::marker { color: #6f8a93; }
+.hcard .src { color: #8ea4ab; font-size: 12.5px; }
+.hcard .grid2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.hcard .btn-copy { background: rgba(255,255,255,.1); color: #fff; border: 1px solid rgba(255,255,255,.2); }
+.hcard .btn-copy:hover { background: rgba(255,255,255,.18); }
+.hcard .row { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+.hcard .script { font-size: 15px; color: #fff; }
+
+/* Drawer */
+.scrim { position: fixed; inset: 0; background: rgba(12,24,30,.35); z-index: 60; }
+.drawer { position: fixed; top: 0; right: 0; bottom: 0; width: min(560px, 100%); z-index: 61; background: var(--ink); overflow-y: auto; padding: calc(env(safe-area-inset-top, 0px) + 18px) 20px calc(env(safe-area-inset-bottom, 0px) + 24px); box-shadow: -10px 0 30px rgba(0,0,0,.18); }
+.drawer .hcard { padding: 0; }
+.drawer-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; color: #fff; }
+.drawer-head b { font-family: var(--f-display); font-size: 20px; }
+
+.empty { background: var(--surface); border: 1px dashed var(--rule-strong); border-radius: 12px; padding: 28px; text-align: center; color: var(--muted); }
+.match-count { font-size: 13.5px; color: var(--muted); padding-top: 18px; }
+.toast { position: fixed; left: 50%; bottom: calc(env(safe-area-inset-bottom, 0px) + 22px); transform: translateX(-50%); background: var(--ink); color: #fff; padding: 9px 16px; border-radius: 8px; font-size: 14px; z-index: 80; }
+.sources { display: grid; gap: 18px; }
+.sources h3 { font-size: 15px; margin: 0 0 6px; }
+.sources ul { margin: 0; padding-left: 18px; display: grid; gap: 5px; font-size: 14.5px; }
+footer.foot { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--rule); font-size: 13px; color: var(--muted); display: grid; gap: 4px; }
+
+@media (max-width: 1000px) {
+  .shell { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .rail { display: none; }
+  .chips { display: flex; gap: 6px; overflow-x: auto; padding: 10px 20px; border-bottom: 1px solid var(--rule); background: var(--surface); scrollbar-width: none; position: sticky; top: calc(env(safe-area-inset-top, 0px) + var(--bar-h)); z-index: 35; }
+  .chips::-webkit-scrollbar { display: none; }
+  .chips a { flex: 0 0 auto; font-size: 13px; padding: 5px 11px; border-radius: 999px; border: 1px solid var(--rule); color: var(--muted); text-decoration: none; background: var(--surface); }
+  .chips a.active { background: var(--ink); color: #fff; border-color: var(--ink); }
+  html { scroll-padding-top: calc(var(--bar-h) + 70px); }
+}
+@media (max-width: 720px) {
+  .brand-name small { display: none; }
+  .search kbd { display: none; }
+  .btn-hc span { display: none; }
+  .tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .tile .num { font-size: 27px; }
+  .lane { grid-template-columns: minmax(0, 1fr); gap: 8px; }
+  .cycle { grid-template-columns: minmax(0, 1fr); gap: 22px; padding-bottom: 0; }
+  .cyc:not(:last-child)::after { content: "↓"; right: auto; left: 50%; top: auto; bottom: -21px; transform: translateX(-50%); }
+  .cycle-return { position: static; height: auto; border: 0; text-align: center; }
+  .cycle-return::before { display: none; }
+  .cycle-return span { position: static; transform: none; padding: 0; }
+  .srs { grid-template-columns: minmax(0, 1fr); }
+  .cases { grid-template-columns: minmax(0, 1fr); }
+  .hcard .grid2 { grid-template-columns: minmax(0, 1fr); }
+  .lot-row { grid-template-columns: minmax(0, 1fr); gap: 8px; }
+  .street-label { margin-left: 0; }
+  .hbar { grid-template-columns: minmax(0, 1fr); gap: 4px; }
+  .hbar .lab { text-align: left; }
+  .steps { flex-direction: column; }
+  .arrow { flex: 0 0 22px; }
+  .arrow::before { width: 1.5px; height: 12px; }
+  .arrow::after { right: auto; bottom: 2px; border-left: 4px solid transparent; border-right: 4px solid transparent; border-top: 6px solid var(--faint); border-bottom: 0; }
+  .arrow em { top: auto; left: calc(50% + 12px); }
+}
+@media (max-width: 460px) {
+  .brand-name { display: none; }
+  .topbar-in { gap: 10px; padding-inline: 16px; }
+  .shell { padding-inline: 16px; }
+  .chips { padding-inline: 16px; }
+}
+
+/* Ask panel */
+.btn-ask { background: var(--tide); color: #fff; }
+.btn-ask:hover { background: var(--tide-deep); }
+.ask { position: fixed; top: 0; right: 0; bottom: 0; width: min(620px, 100%); z-index: 61; background: var(--surface); display: flex; flex-direction: column; box-shadow: -10px 0 30px rgba(0,0,0,.16); border-left: 1px solid var(--rule); }
+.ask-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: calc(env(safe-area-inset-top, 0px) + 14px) 18px 12px; border-bottom: 1px solid var(--rule); }
+.ask-head b { font-family: var(--f-display); font-size: 19px; white-space: nowrap; }
+.ask-head .tools { display: flex; gap: 6px; }
+.ask-status { padding: 10px 18px; font-size: 13px; color: var(--muted); border-bottom: 1px solid var(--rule); background: #f8fafa; display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; }
+.ask-status .dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; margin-right: 6px; background: var(--faint); vertical-align: 1px; }
+.ask-status .dot.ok { background: var(--good); }
+.ask-status .dot.bad { background: var(--critical); }
+.ask-status details { width: 100%; }
+.ask-status summary { cursor: pointer; color: var(--tide); }
+.ask-status ul { margin: 6px 0 0; padding-left: 18px; }
+.ask-thread { flex: 1 1 auto; overflow-y: auto; padding: 16px 18px; display: grid; gap: 16px; align-content: start; }
+.ask-empty { color: var(--muted); font-size: 14.5px; display: grid; gap: 10px; }
+.ask-empty b { color: var(--ink); }
+.ask-suggest { display: flex; flex-wrap: wrap; gap: 6px; }
+.ask-suggest button { font: inherit; font-size: 13px; padding: 6px 10px; border-radius: 999px; border: 1px solid var(--rule-strong); background: var(--surface); color: var(--ink); cursor: pointer; text-align: left; }
+.ask-suggest button:hover { border-color: var(--tide); color: var(--tide); }
+.msg-q { justify-self: end; max-width: 88%; background: var(--ink); color: #fff; padding: 10px 13px; border-radius: 12px 12px 3px 12px; font-size: 15px; white-space: pre-wrap; }
+.msg-a { display: grid; gap: 10px; font-size: 15px; line-height: 1.55; }
+.msg-a .body { white-space: pre-wrap; }
+.msg-a sup { font-family: var(--f-mono); font-size: 10.5px; color: var(--tide); font-weight: 600; margin-left: 1px; cursor: pointer; }
+.msg-a .srcs { border-top: 1px solid var(--rule); padding-top: 8px; display: grid; gap: 6px; }
+.msg-a .srcs-label { font-family: var(--f-mono); font-size: 10.5px; letter-spacing: .07em; text-transform: uppercase; color: var(--faint); }
+.msg-a details.src { font-size: 13px; background: var(--paper); border-radius: 8px; padding: 6px 10px; }
+.msg-a details.src summary { cursor: pointer; color: var(--ink); }
+.msg-a details.src summary b { font-family: var(--f-mono); font-size: 11px; color: var(--tide); margin-right: 6px; }
+.msg-a details.src blockquote { margin: 6px 0 2px; padding-left: 10px; border-left: 2px solid var(--rule-strong); color: var(--muted); white-space: pre-wrap; }
+.msg-a .meta-line { font-size: 12px; color: var(--faint); }
+.msg-a .err { background: var(--critical-tint); color: var(--critical); border-radius: 8px; padding: 10px 12px; font-size: 14px; }
+.typing { display: inline-flex; gap: 4px; }
+.typing i { width: 6px; height: 6px; border-radius: 50%; background: var(--faint); animation: blink 1s infinite; }
+.typing i:nth-child(2) { animation-delay: .15s; } .typing i:nth-child(3) { animation-delay: .3s; }
+@keyframes blink { 0%, 100% { opacity: .25; } 50% { opacity: 1; } }
+.ask-form { border-top: 1px solid var(--rule); padding: 12px 18px calc(env(safe-area-inset-bottom, 0px) + 14px); display: grid; gap: 8px; }
+.ask-form textarea { width: 100%; min-height: 64px; max-height: 180px; resize: vertical; border: 1px solid var(--rule-strong); border-radius: 10px; padding: 10px 12px; font: inherit; font-size: 15px; color: var(--ink); background: var(--surface); }
+.ask-form textarea:focus { outline: none; border-color: var(--tide); box-shadow: 0 0 0 3px var(--tide-tint); }
+.ask-form .row { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; }
+.ask-form .hint { font-size: 12px; color: var(--faint); }
+.pass { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.pass input { height: 34px; border: 1px solid var(--rule-strong); border-radius: 8px; padding: 0 10px; font: inherit; font-size: 14px; flex: 1 1 160px; min-width: 0; }
+.ask-note { font-size: 12px; color: var(--muted); }
+@media (max-width: 720px) { .btn-ask span { display: none; } }
+
+</style>
+</head>
+<body>
+
+
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="#top" aria-label="Ketchikan Planning Fact Book, back to top">
+      <span class="brand-mark" aria-hidden="true">
+        <svg width="18" height="18" viewBox="0 0 18 18"><path d="M2 12.5c2.2-1.4 4.4-1.4 6.6 0s4.4 1.4 6.6 0" fill="none" stroke="#9fc7e6" stroke-width="1.6" stroke-linecap="round"/><path d="M4 9.5 9 3l5 6.5" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg>
+      </span>
+      <span class="brand-name">Planning Fact Book<small>Ketchikan Gateway Borough</small></span>
+    </a>
+    <div class="search" role="search">
+      <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="5" fill="none" stroke="#8a9ba1" stroke-width="1.6"/><path d="m11 11 3.5 3.5" stroke="#8a9ba1" stroke-width="1.6" stroke-linecap="round"/></svg>
+      <input id="q" type="search" placeholder="Search facts, code, answers… try “parking”" autocomplete="off" aria-label="Search the fact book">
+      <kbd id="kbd">/</kbd>
+      <button class="clear" id="clear" type="button" hidden aria-label="Clear search">Clear</button>
+    </div>
+    <button class="btn btn-ask" id="openAsk" type="button" aria-haspopup="dialog">
+      <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 3.5h11v7h-6l-3 2.5v-2.5h-2z" fill="none" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      <span>Ask</span>
+    </button>
+    <button class="btn btn-primary btn-hc" id="openCard" type="button" aria-haspopup="dialog">
+      <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><rect x="2" y="2.5" width="12" height="11" rx="2" fill="none" stroke="#fff" stroke-width="1.5"/><path d="M5 6h6M5 9h4" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/></svg>
+      <span>Hearing card</span>
+    </button>
+  </div>
+</header>
+<nav class="chips" id="chips" aria-label="Sections"></nav>
+
+<div class="shell" id="top">
+  <aside class="rail" id="rail" aria-label="Sections"></aside>
+  <main>
+    <div class="col" id="content"></div>
+    <div class="col"><div class="empty" id="empty" hidden>No matches. Try a shorter word, such as “lot”, “speed” or “Juneau”.</div></div>
+  </main>
+</div>
+
+<div class="scrim" id="scrim" hidden></div>
+<div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Hearing card" hidden>
+  <div class="drawer-head"><b>Hearing card</b><button class="btn btn-sm btn-copy" id="closeCard" type="button" style="background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.2)">Close</button></div>
+  <div id="drawerBody"></div>
+</div>
+<div class="scrim" id="askScrim" hidden></div>
+<section class="ask" id="ask" role="dialog" aria-modal="true" aria-label="Ask the plan" hidden>
+  <div class="ask-head"><b>Ask the plan</b><div class="tools"><button class="btn btn-sm btn-ghost" id="warmBtn" type="button" title="Load the documents into Claude's cache before the meeting starts">Preload</button><button class="btn btn-sm btn-ghost" id="newChat" type="button">New</button><button class="btn btn-sm btn-ghost" id="closeAsk" type="button">Close</button></div></div>
+  <div class="ask-status" id="askStatus">Checking the server…</div>
+  <div class="ask-thread" id="askThread" aria-live="polite"></div>
+  <form class="ask-form" id="askForm">
+    <div class="pass" id="passRow" hidden><input id="passInput" type="password" placeholder="Passcode" autocomplete="current-password" aria-label="Passcode"><button class="btn btn-sm btn-ghost" id="savePass" type="button">Save passcode</button></div>
+    <textarea id="askInput" placeholder="Ask about the comp plan, code, or Fact Book…" aria-label="Your question"></textarea>
+    <div class="row"><span class="hint">Enter to send · Shift+Enter for a new line</span><button class="btn btn-primary" id="askSend" type="submit">Ask</button></div>
+  </form>
+</section>
+<div class="toast" id="toast" role="status" hidden></div>
+
+<script>
+(function () {
+  "use strict";
+  var ext = function (url, text) { return '<a href="' + url + '" target="_blank" rel="noopener">' + text + '</a>'; };
+  var R = function (t) { return '<span class="ref">' + t + '</span>'; };
+  var esc = function (s) { return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;"); };
+
+  var SRC = {
+    statute: "https://law.justia.com/codes/alaska/title-29/chapter-29-40/section-29-40-040/",
+    lafayette: "https://www.strongtowns.org/journal/2017-1-9-the-real-reason-your-city-has-no-money",
+    asheville: "https://www.smartgrowthamerica.org/knowledge-hub/news/whats-the-value-of-a-great-downtown-joe-minicozzi-can-tell-you-exactly-in-dollars-and-cents/",
+    incr: "https://actionlab.strongtowns.org/hc/en-us/articles/11668956072340-Incremental-Housing-Overview",
+    buffalo: "https://permitbulletin.mercerisland.gov/public/2024%20Comp%20Plan%20Periodic%20Review%20Admin%20Record/Exhibits%20301-350/ex%20316%20minus%20minimums%20development%20response%20to%20the%20removal%20of%20minimum%20parking%20requirements%20in%20buffalo.pdf",
+    upjohn: "https://www.upjohn.org/research-highlights/new-apartment-buildings-low-income-areas-decrease-nearby-rents",
+    stroad: "https://archive.strongtowns.org/journal/2018/3/1/whats-a-stroad-and-why-does-it-matter",
+    speedcost: "https://www.resilience.org/stories/2022-06-16/the-high-cost-of-speed/",
+    tefft: "https://aaafoundation.org/impact-speed-pedestrians-risk-severe-injury-death/",
+    jhu: "https://cal.streetsblog.org/2023/11/13/study-wide-are-deadlier-so-why-do-many-dots-build-them-anyway",
+    duranton: "https://repository.upenn.edu/real-estate_papers/3",
+    k1830: "https://ketchikangateway.borough.codes/KGBC/18.30.030",
+    k1860: "https://ketchikangateway.borough.codes/KGBC/18.60.020",
+    k1860c: "https://ketchikangateway.borough.codes/KGBC/18.60.030",
+    k1870: "https://ketchikangateway.borough.codes/KGBC/18.70.020",
+    k1870f: "https://ketchikangateway.borough.codes/KGBC/18.70.060",
+    jnuOverlay: "https://juneau.org/?p=277628",
+    jnuOrd: "https://juneau.org/wp-content/uploads/2022/07/2021-36_v9_final.pdf",
+    jnuAdu: "https://juneau.org/newsroom-item/cbj-accessory-dwelling-unit-grants-increased-to-13500",
+    anc: "https://www.sightline.org/2022/11/23/anchorage-assembly-unites-to-end-parking-mandates/",
+    sitka: "https://www.smartgrowthamerica.org/since-the-workshop-sitka-ak-tackles-housing-affordability/",
+    sitkaTiny: "https://www.kcaw.org/2020/03/12/assembly-makes-room-for-tiny-houses-in-city-code/"
+  };
+
+  function table(heads, rows, opts) {
+    opts = opts || {};
+    var h = '<div class="tbl-wrap' + (opts.stack === false ? '' : ' stack') + '"><table class="' + (opts.cls || '') + '"><thead><tr>' +
+      heads.map(function (x, i) { return '<th' + (opts.hl === i ? ' class="hl"' : '') + '>' + x + '</th>'; }).join('') + '</tr></thead><tbody>';
+    rows.forEach(function (r) {
+      h += '<tr class="s-unit">' + r.map(function (c, i) { return '<td data-label="' + esc(heads[i]) + '"' + (opts.hl === i ? ' class="hl"' : '') + '>' + c + '</td>'; }).join('') + '</tr>';
+    });
+    return h + '</tbody></table></div>';
+  }
+  function fig(title, sub, body, cap, id) {
+    return '<figure class="s-unit"' + (id ? ' id="' + id + '"' : '') + '><p class="fig-title">' + title + '</p>' + (sub ? '<p class="fig-sub">' + sub + '</p>' : '') + body + '<figcaption>' + cap + '</figcaption></figure>';
+  }
+  function list(items) { return '<ul class="list">' + items.map(function (x) { return '<li class="s-unit">' + x + '</li>'; }).join('') + '</ul>'; }
+  function P(t) { return '<p class="s-unit">' + t + '</p>'; }
+
+  /* ---------- Hearing card ---------- */
+  var FORMULA = 'The request meets [code section, criterion]. [Staff report or testimony] shows [fact]. It is consistent with the [Future Land Use designation] and advances [strategy and action].';
+  var SCRIPT = "Please talk to Planning staff. It may come before me, so I can't discuss specifics.";
+  function hearingCard() {
+    return '<div class="hcard">' +
+      '<div class="row"><h3>Finding formula</h3><button class="btn btn-sm btn-copy" type="button" data-copy="formula">Copy formula</button></div>' +
+      '<div class="formula">“The request meets <em>[code section, criterion]</em>. <em>[Staff report or testimony]</em> shows <em>[fact]</em>. It is consistent with the <em>[Future Land Use designation]</em> and advances <em>[strategy and action]</em>.”</div>' +
+      '<div class="grid2"><div><h3>Five facts</h3><ul style="margin-top:10px">' +
+      '<li>The Borough owns <b>0.5%</b> of the land in its boundaries. <span class="src">Appx A p. 10</span></li>' +
+      '<li>Population is projected to fall about <b>20%</b> by 2050. <span class="src">Exec Sum p. 5</span></li>' +
+      '<li><b>71%</b> put affordable housing first; <b>38%</b> picked infrastructure that leads to housing. <span class="src">Appx C p. 82</span></li>' +
+      '<li><b>Dozens</b> of setback variances a year, nearly all approved. <span class="src">Appx A p. 4</span></li>' +
+      '<li>Pedestrian death risk: <b>10%</b> at 23 mph, <b>50%</b> at 42 mph. <span class="src">Tefft 2011</span></li>' +
+      '</ul></div><div><h3>Ask before voting</h3><ul style="margin-top:10px">' +
+      '<li>Which approval criterion does this testimony speak to?</li>' +
+      '<li>Is the request consistent with the Future Land Use Map designation?</li>' +
+      '<li>Has any commissioner had contact about this case outside the hearing? If so, disclose it now.</li>' +
+      '</ul></div></div>' +
+      '<div><div class="row"><h3>If someone asks about a project</h3><button class="btn btn-sm btn-copy" type="button" data-copy="script">Copy script</button></div>' +
+      '<p class="script" style="margin-top:10px">“' + SCRIPT + '” Then disclose the contact at the hearing.</p></div>' +
+      '<div><h3>If you have a conflict</h3><p style="margin-top:10px;font-size:15px">A property interest in the area, or the same project at another board you sit on: disclose it on the record and step down for that item.</p></div>' +
+      '</div>';
+  }
+
+  /* ---------- Charts ---------- */
+  var PED = [
+    { s: "Severe injury", k: "injury", pts: [[16, 10], [23, 25], [31, 50], [39, 75], [46, 90]] },
+    { s: "Death", k: "death", pts: [[23, 10], [32, 25], [42, 50], [50, 75], [58, 90]] }
+  ];
+  function pedChart(w) {
+    var narrow = w < 520, H = narrow ? 300 : 340, L = narrow ? 40 : 48, Rt = narrow ? 70 : 96, T = 34, B = H - 40;
+    var x = function (v) { return L + (v - 10) / 55 * (w - L - Rt); };
+    var y = function (v) { return B - v / 100 * (B - T); };
+    var s = '<svg viewBox="0 0 ' + w + ' ' + H + '" role="img" aria-label="Pedestrian death risk passes 50% at 42 mph" style="font-family:var(--f-body)">';
+    [0, 25, 50, 75, 100].forEach(function (t) {
+      s += '<line x1="' + L + '" x2="' + (w - Rt + 20) + '" y1="' + y(t) + '" y2="' + y(t) + '" stroke="#e3e9e9"/>' +
+        '<text x="' + (L - 8) + '" y="' + (y(t) + 4) + '" text-anchor="end" font-size="12" fill="#536870">' + t + '%</text>';
+    });
+    [10, 20, 30, 40, 50, 60].forEach(function (t) {
+      s += '<text x="' + x(t) + '" y="' + (B + 20) + '" text-anchor="middle" font-size="12" fill="#536870">' + t + '</text>';
+    });
+    s += '<text x="' + (w - Rt + 20) + '" y="' + (B + 36) + '" text-anchor="end" font-size="12" fill="#536870">Impact speed (mph)</text>';
+    [25, 35].forEach(function (r) {
+      s += '<line x1="' + x(r) + '" x2="' + x(r) + '" y1="' + (T - 14) + '" y2="' + B + '" stroke="#8a9ba1" stroke-dasharray="4 4"/>' +
+        '<text x="' + (x(r) + 5) + '" y="' + (T - 18) + '" font-size="12" fill="#536870">' + r + ' mph limit</text>';
+    });
+    PED.forEach(function (sr) {
+      var death = sr.k === "death", col = death ? "#1d5c8a" : "#b8c4c3";
+      s += '<path d="' + sr.pts.map(function (p, i) { return (i ? "L" : "M") + x(p[0]) + " " + y(p[1]); }).join(" ") + '" fill="none" stroke="' + col + '" stroke-width="2.5"/>';
+      sr.pts.forEach(function (p) {
+        s += '<circle cx="' + x(p[0]) + '" cy="' + y(p[1]) + '" r="4.5" fill="' + col + '"><title>' + sr.s + ': ' + p[1] + '% risk at ' + p[0] + ' mph</title></circle>';
+        if (death && !narrow) s += '<text x="' + (x(p[0]) + 9) + '" y="' + (y(p[1]) + 15) + '" font-size="12" fill="#12222a">' + p[0] + ' mph</text>';
+      });
+      var last = sr.pts[sr.pts.length - 1];
+      s += '<text x="' + (x(last[0]) + 9) + '" y="' + (y(last[1]) - 8) + '" font-size="13" font-weight="600" fill="' + (death ? "#1d5c8a" : "#7f8f8e") + '">' + sr.s + '</text>';
+    });
+    if (narrow) {
+      var d = PED[1].pts[2];
+      s += '<text x="' + (x(d[0]) + 9) + '" y="' + (y(d[1]) + 15) + '" font-size="12" fill="#12222a">42 mph</text>';
+    }
+    return s + '</svg>';
+  }
+
+  var PRIORITIES = [
+    ["Increase affordable housing", 71], ["Infrastructure that leads to housing (roads, utilities)", 38],
+    ["Housing and services for people experiencing homelessness", 34], ["Senior housing for aging in place", 29],
+    ["Incentives through public-private partnerships", 23], ["Infill in existing neighborhoods or downtown", 21],
+    ["Streamline permitting and zoning", 20]
+  ];
+  function priorities() {
+    var max = PRIORITIES[0][1];
+    return '<div class="hbars">' + PRIORITIES.map(function (p, i) {
+      return '<div class="hbar' + (i === 0 ? ' top' : '') + '"><div class="lab">' + p[0] + '</div><div class="track"><div class="fill" style="width:' + (p[1] / max * 82) + '%"></div><span class="val">' + p[1] + '%</span></div></div>';
+    }).join('') + '</div>';
+  }
+
+  var OWN = [["State", 1.2], ["Mental Health Trust", 1.0], ["Tribal corporation", 0.7], ["Borough", 0.5]];
+  function ownership() {
+    var rest = OWN.reduce(function (a, b) { return a + b[1]; }, 0);
+    var fedPct = 96.7 / (96.7 + rest) * 100;
+    return '<div class="own"><div class="own-bar"><div class="fed" style="width:' + fedPct + '%">Federal 96.7%</div><div class="rest" style="flex:1"></div></div>' +
+      '<div class="own-zoom" aria-hidden="true"><svg viewBox="0 0 100 34" preserveAspectRatio="none"><path d="M' + fedPct + ' 0 L0 34 M100 0 L100 34" stroke="#8a9ba1" stroke-width="1" vector-effect="non-scaling-stroke" stroke-dasharray="3 3" fill="none"/></svg></div>' +
+      '<div class="own-parts">' + OWN.map(function (o) {
+        return '<div class="own-part' + (o[0] === "Borough" ? ' b' : '') + '" style="flex:' + o[1] + '"><i></i><span><b>' + o[1] + '%</b>' + o[0] + '</span></div>';
+      }).join('') + '</div><p class="note">The lower bar enlarges the 3.4% not owned by the federal government. Private and other lands make up a small remainder.</p></div>';
+  }
+
+  function lotSplit() {
+    var block = 300, rows = [["Today", 5000, 50], ["Proposed", 3500, 35]];
+    var base = Math.floor(block / 50);
+    return '<div class="lots"><div class="street-label">Street side ↓</div>' + rows.map(function (r, k) {
+      var n = Math.floor(block / Math.max(r[2], r[1] / 100)), cells = '';
+      for (var i = 0; i < n; i++) cells += '<div class="lot' + (i >= base ? ' add' : '') + '" title="' + (i >= base ? 'Lot added by the smaller minimum' : 'Lot allowed today') + '"><i></i></div>';
+      return '<div class="lot-row' + (k ? ' prop' : '') + '"><div class="who"><b>' + r[0] + '</b><span>' + r[1].toLocaleString('en-US') + ' sq ft, ' + r[2] + ' ft wide</span><span class="count">' + n + ' lots</span></div><div class="block" role="img" aria-label="' + n + ' lots">' + cells + '</div></div>';
+    }).join('') + '<p class="note">Shaded = buildable area inside RM setbacks (10 ft front, 5 ft sides, 15 ft rear). Blue = lots added. Real blocks vary.</p></div>';
+  }
+
+  function paths() {
+    var lane = function (name, sub, steps) {
+      var h = '<div class="lane"><div class="lane-name"><b>' + name + '</b><span>' + sub + '</span></div><div class="steps">';
+      steps.forEach(function (st, i) {
+        if (i) h += '<div class="arrow" aria-hidden="true">' + (st.ap ? '<em>if appealed</em>' : '') + '</div>';
+        h += '<div class="step' + (st.hl ? ' hl' : '') + '">' + st.t + (st.s ? '<small>' + st.s + '</small>' : '') + '</div>';
+      });
+      return h + '</div></div>';
+    };
+    return '<div class="paths">' +
+      lane("Legislative", "Code text, area rezones", [{ t: "Commission hearing" }, { t: "Recommendation" }, { t: "Assembly ordinance" }]) +
+      lane("Discretionary", "CUPs, variances", [{ t: "Staff review" }, { t: "Commission hearing" }, { t: "Assembly", s: "on appeal", ap: true }]) +
+      lane("Type II", "Proposed, " + R("Land Use 2a"), [{ t: "Staff review" }, { t: "Staff decision", s: "with public notice", hl: true }, { t: "Commission", s: "on appeal", ap: true }]) +
+      '</div>';
+  }
+
+  function cycle() {
+    return '<div class="cycle">' +
+      '<div class="cyc"><b>New roads and pipes are built</b><span>Often paid by a developer or a grant</span></div>' +
+      '<div class="cyc"><b>New tax revenue arrives</b><span>Upkeep costs stay low for years</span></div>' +
+      '<div class="cyc hl"><b>Repair and replacement come due</b><span>Decades later, the full bill lands</span></div>' +
+      '<div class="cyc"><b>The tax base can’t cover it</b><span>More growth is approved to fill the gap</span></div>' +
+      '<div class="cycle-return" aria-hidden="true"><span>↺ back to the start</span></div></div>';
+  }
+
+  function srs() {
+    return '<div class="speed" aria-hidden="true"><span>Slower</span><span>Design speed</span><span>Faster</span></div><div class="srs">' +
+      '<div class="srs-card ok"><span class="tag">Build</span><h4>Street</h4><ul><li>Where wealth is built</li><li>Slow, so people walk and cross</li><li>Storefronts, homes, crossings</li></ul><div class="eg">Ketchikan: downtown, Newtown, Tongass Avenue in town</div></div>' +
+      '<div class="srs-card bad"><span class="tag">Avoid</span><h4>Stroad</h4><ul><li>Tries to do both, does neither</li><li>Fast but full of driveways</li><li>Wide lanes, turning traffic</li></ul><div class="eg">Ketchikan: don’t let town corridors widen into this</div></div>' +
+      '<div class="srs-card ok"><span class="tag">Build</span><h4>Road</h4><ul><li>Moves people between places</li><li>Fast, with few driveways</li><li>Few access points</li></ul><div class="eg">Ketchikan: North and South Tongass Highway</div></div></div>';
+  }
+
+  /* ---------- Sections ---------- */
+  var S = [];
+  function sec(id, group, nav, kicker, title, html) { S.push({ id: id, group: group, nav: nav, kicker: kicker, title: title, html: html }); }
+
+  sec("use", "Start", "How to use this", "Legal footing", "How to use this",
+    '<p class="point s-unit">Every decision rests on two things: the adopted Borough code and the 2035 Comprehensive Plan. Strong Towns and <i>Confessions of a Recovering Engineer</i> explain why those rules make sense, and they help you write better rules. They are not the legal test for a permit.</p>' +
+    P('<b>The legal footing.</b> Under ' + ext(SRC.statute, "AS 29.40.040") + ', the Assembly adopts land use regulations to carry out the comprehensive plan. The plan says the same: second-class boroughs must adopt a plan and implement it through zoning ' + R("Exec Sum p. 2") + '. The statute also bars variances for conditions the applicant created, for prohibited uses, or for financial hardship alone.') +
+    table(["Decision type", "Examples", "What you can argue"], [
+      ["Legislative (policy)", "Code text amendments, area rezones, area plans, the work plan", "Anything relevant: fiscal return, street safety, housing need, Strong Towns ideas"],
+      ["Quasi-judicial (like a judge)", "Conditional use permits, variances, plats, a single-parcel rezone", "Only the code's approval criteria and the hearing record, plus plan consistency where the criteria call for it"]
+    ]) +
+    fig("Routine permits could skip the hearing under a staff-decided Type II path", "Three ways a land use decision gets made in KGB", paths(), "Appendix A p. 4 · Core Plan Land Use 2a") +
+    P('<b>How to answer a challenge outside a hearing.</b> Lead with a Ketchikan fact, then the outside evidence. Never discuss a pending application outside the hearing.'));
+
+  sec("card", "Start", "Hearing card", "Keep open at the dais", "Hearing card",
+    '<p class="point s-unit">The finding formula, the five facts most worth having ready, and the scripts for the moments that trip people up. The same card opens from the button in the top bar.</p><div class="s-unit">' + hearingCard() + '</div>');
+
+  sec("numbers", "Ketchikan", "By the numbers", "Ketchikan", "Ketchikan by the numbers",
+    '<p class="point s-unit">The population is projected to shrink 20% by 2050, and only 0.5% of the land is Borough-owned. Every street and pipe built now will be paid for by fewer people. That is the strongest local case for building on the infrastructure we already have.</p>' +
+    table(["Fact", "Figure", "Source"], [
+      ["Borough population (2023)", "13,475 (City: 7,803)", R("Exec Sum p. 5")],
+      ["Projected population change, 2023–2050", "About −20%", R("Exec Sum p. 5")],
+      ["School enrollment, PK–12", "2,095 in 2023–24, down from a 2,474 peak in 2014–15", R("Exec Sum p. 5")],
+      ["Median home value", "$379,000 (2019–23)", R("Appx B pp. 34–35")],
+      ["Median household income", "$86,370", R("Exec Sum p. 5")],
+      ["Housing “vacancy”", "16%, which counts seasonal homes and short-term rentals", R("Appx B p. 35")],
+      ["Preferred growth", "42% want moderate growth", R("Exec Sum p. 4")],
+      ["Cruise passengers", "About 1.5 million in 2024, on a year-round population of about 13,500", R("Core, Transportation")],
+      ["Borough sales tax revenue", "$14.4M in 2024, mostly tourism", R("Core, Governance pp. 69–70")],
+      ["Property tax revenue", "$12.4M in 2024, all to the Local Education Fund", R("Core, Governance pp. 69–70")],
+      ["Mill rate", "4.75 after 2024; the plan also states 4.85 as of June 2025 (confirm with Finance)", R("Core, Governance p. 70")],
+      ["Setback variances", "“Dozens” a year, nearly all approved", R("Appx A p. 4")],
+      ["Special limitation zones", "“Dozens,” with no consistent mapping", R("Appx A p. 5")],
+      ["Road maintenance", "Paid through service areas, not areawide", R("Core, Governance p. 68")]
+    ]) +
+    fig("The Borough owns 0.5% of the land within its boundaries", "Share of 4,899 square miles by owner", ownership(), "Appendix A p. 10, Figure A-3") +
+    P('With so little public land, most new housing has to fit on private lots that already have streets and pipes.') +
+    fig("Affordable housing is the top housing priority at 71%", "Share of 2025 survey respondents choosing each, up to three picks (N = 409)", priorities(), "Appendix C p. 82 · 2025 Community Survey, Question 11") +
+    P('Infrastructure that leads to housing ranked second, ahead of permitting changes. Two more facts carry weight: property tax funds schools, and road upkeep outside the City falls on service-area residents.'));
+
+  sec("strongtowns", "Ideas", "Strong Towns", "The framework", "Strong Towns: the core ideas and the evidence",
+    '<p class="point s-unit">Spread-out growth produces tax revenue now but leaves long-term maintenance costs the tax base can’t cover. Compact, incremental growth on existing streets and pipes pays its way.</p>' +
+    table(["Idea", "What it says", "Evidence"], [
+      ["The growth Ponzi scheme", "New roads and pipes bring revenue at first. Their replacement costs arrive decades later and exceed what the development pays in tax.", "Lafayette, LA: $32B in infrastructure replacement liability against a $16B tax base. Maintenance alone would take about $3,300 a year from a median household paying about $1,500 in local tax. " + ext(SRC.lafayette, "Strong Towns, 2017")],
+      ["Value per acre", "Judge development by tax value per acre, not per project. Land and infrastructure are the scarce, costly inputs.", "Asheville, NC: a Super Walmart paid about $6,500/acre in property tax. A downtown mixed-use building with 19 condos paid about $634,000/acre. " + ext(SRC.asheville, "Urban3, 2016")],
+      ["Next increment by right", "Every neighborhood can take the next small step without special permission: a duplex, an ADU, a corner store.", "“No neighborhood should experience radical change, but no neighborhood can be exempt from change.” " + ext(SRC.incr, "Strong Towns")],
+      ["Parking minimums", "Required parking eats land and adds cost. Let builders and lenders decide how much to provide.", "After Buffalo dropped minimums, 36 major projects built 21% fewer spaces than required. Mixed-use projects built 53% fewer. " + ext(SRC.buffalo, "Hess & Rehler, JAPA 2021")],
+      ["Small builders", "Many small local builders make a resilient housing market. Rules sized for large developers shut them out.", "In the plan: pre-approved small-house plans " + R("Housing 2a") + " and a developer roundtable on infill barriers " + R("Housing 1g")]
+    ]) +
+    fig("Growth that can’t pay for its own replacement needs more growth", "The Strong Towns growth Ponzi scheme, read left to right", cycle(), "After Strong Towns · 4 stages, one loop") +
+    P('<b>Why it fits Ketchikan.</b> The Borough owns 0.5% of the land, the population is forecast to fall, and service-area residents pay for road maintenance. Building inward on sewered, paved, plowed streets is the cheapest way to add housing. It is also the only way that doesn’t grow the per-household maintenance bill.'));
+
+  sec("legal", "Ideas", "Legal to build today?", "Code test", "Would the older town be legal to build today?",
+    '<p class="point s-unit">Downtown commercial blocks pass: Central Commercial has no minimum lot size and zero setbacks. The conflict is in the older residential neighborhoods, where historic lots are often smaller than today’s 5,000 sq ft and 50 ft minimums.</p>' +
+    table(["Standard", "RM (medium)", "RH (high)", "CC (central commercial)"], [
+      ["Minimum lot area", "5,000 sq ft", "5,000 sq ft", "None"],
+      ["Minimum lot width", "50 ft", "50 ft", "50 ft"],
+      ["Front / side / rear setback", "10 / 5 / 15 ft", "10 / 5 / 5 ft", "0 / 0 / 0 ft"],
+      ["Maximum lot coverage", "50%", "100%", "100%"],
+      ["Dwellings per lot", "4", "No limit", "No limit"],
+      ["Off-street parking", "1 per dwelling", "1 per dwelling", "1 per dwelling; in the central parking area a covenant not to oppose a parking district can substitute"]
+    ], { cls: "tbl-cmp" }) +
+    '<p class="note s-unit">Sources: ' + ext(SRC.k1860, "KGBC 18.60.020") + ', ' + ext(SRC.k1860c, "18.60.030") + ', ' + ext(SRC.k1870, "18.70.020") + ', ' + ext(SRC.k1870f, "18.70.060") + '. Code current through Ord. 2120 (Aug 3, 2026).</p>' +
+    '<div class="callout tide s-unit"><b>The rebuild rule</b><span>A nonconforming building damaged by accident can be rebuilt with a permit within a year. One torn down from ordinary wear “must be rebuilt in accordance with the development standards of the zone” (' + ext(SRC.k1830, "KGBC 18.30.030") + '). An old house inside today’s setbacks can’t be replaced in its own footprint without a variance. That likely explains much of the dozens of setback variances heard each year.</span></div>' +
+    P('<b>Commercial parking adds up.</b> A restaurant needs 1 space per 5 seats plus half a space per employee. Retail needs 1 per 250 sq ft of display area plus half per employee ' + R("KGBC 18.70.060") + '. Few historic storefronts could supply that on site.') +
+    P('<b>The test to run.</b> Ask staff for a GIS count of RM and RH parcels under 5,000 sq ft or 50 ft wide, and of buildings inside current setbacks. If a large share of the older town is nonconforming, that is the local case for smaller lots and a Juneau-style alternative standard.'));
+
+  sec("streets", "Ideas", "Streets and roads", "Confessions of a Recovering Engineer", "Streets, roads, and stroads",
+    '<p class="point s-unit">How a street is built, not its posted limit, sets how fast people drive. Where people walk, shop, and cross, design for slow speeds. Where you need to move fast between places, build a real road with few driveways.</p>' +
+    fig("Build streets or roads, never the hybrid stroad", "", srs(), "After " + ext(SRC.stroad, "Strong Towns, 2018")) +
+    table(["Principle", "What it means", "Evidence"], [
+      ["Design speed drives behavior", "Engineers pick a design speed first, then size lanes, curves, and sight lines for it. Drivers go the speed the street feels safe for.", ext(SRC.speedcost, "Marohn, Confessions (2021), summarized")],
+      ["Forgiving design fails in town", "Wide lanes and clear zones suit rural highways. In town they invite speed. Make unsafe speeds feel uncomfortable.", "Same source"],
+      ["Narrow lanes are safer", "Across 1,100+ urban street sections in 7 US cities, 12 ft lanes had about 50% higher crash rates than 9 ft lanes.", ext(SRC.jhu, "Johns Hopkins, 2023")],
+      ["Widening doesn’t cure congestion", "Driving rises in proportion to added highway lane miles.", ext(SRC.duranton, "Duranton & Turner, AER 2011")]
+    ]) +
+    fig("Pedestrian death risk passes 50% at 42 mph", "Risk for an average pedestrian struck at each impact speed", '<div class="chart-box" id="pedChart"></div>', ext(SRC.tefft, "Tefft, AAA Foundation for Traffic Safety, 2011")) +
+    '<h3>What it means in Ketchikan</h3>' +
+    list([
+      '<b>Downtown and Tongass Avenue are streets, not roads.</b> They carry storefronts, crosswalks, and more than 1.5 million visitors each season. ' + R("Transportation 5b") + ' already calls for better crossings, sidewalks, and protected bike lanes. Most of the corridor is state-managed (road jurisdiction map, Appx A p. 11), so the Borough’s tool is advocacy with DOT&amp;PF and the STIP.',
+      '<b>North and South Tongass Highway are roads.</b> Keep them fast and safe. Limit new driveways and strip commercial. Group development into nodes like Ward Cove and Herring Cove.',
+      '<b>Neighborhood streets should be narrow.</b> Narrow streets cost less to build, plow, and repave. The infrastructure working group raised flexible road standards (Appx C p. 123). That is a Title 17 change.',
+      '<b>Cruise-season congestion is a reason to slow downtown, not widen it.</b> There is no room to widen along the viaduct, and added capacity fills back up. Coach staggering ' + R("Transportation 5d") + ' manages demand instead.'
+    ]));
+
+  sec("plan", "Plan", "Plan crosswalk", "Cite the plan first", "Where the adopted plan already backs this",
+    '<p class="point s-unit">Most Strong Towns ideas are already in the adopted plan. When challenged, cite the plan first. It carries legal weight; Strong Towns does not.</p>' +
+    table(["Strong Towns idea", "What the adopted plan says", "Where"], [
+      ["Next increment by right", "Urban Residential allows fourplexes, townhomes, live-work units, corner stores, and cafés", R("Exec Sum p. 8")],
+      ["Next increment by right", "Replace discretionary permits with administrative approval where feasible", R("Land Use 2a")],
+      ["Next increment by right", "Form-based standards and mixed-use overlays for infill areas", R("Land Use 2b")],
+      ["Next increment by right", "Keep supporting “missing middle” housing through code and permitting", R("Housing 1e")],
+      ["Small builders", "Pre-approved plans for small workforce housing", R("Housing 2a")],
+      ["Small builders", "Developer roundtable on barriers to small infill", R("Housing 1g")],
+      ["Build where infrastructure exists", "Urban Residential = areas on public sewer, “where smaller lots and higher housing densities are feasible”", R("Appx A p. 3")],
+      ["Build where infrastructure exists", "Downtown Core: “infill and redevelopment in walkable districts with existing infrastructure”", R("Exec Sum p. 8")],
+      ["Build where infrastructure exists", "Infill on vacant lots in older neighborhoods with existing infrastructure", R("Housing 3e") + " " + R("Land Use 2f")],
+      ["Don’t extend speculatively", "Unspecified Future Use lands need “infrastructure feasibility studies before future land use decisions are made”", R("Appx A p. 3")],
+      ["Parking", "Relaxed parking standards for projects with workforce or seasonal housing", R("Housing 2c")],
+      ["Parking", "Downtown sub-area plan to “address parking management”", R("Land Use Strategy 4")],
+      ["Streets, not stroads", "Better crossings, sidewalks, protected bike lanes on Tongass Avenue; continuous trail links", R("Transportation 5b")],
+      ["Streets, not stroads", "Manage cruise-season demand by staggering coach arrivals", R("Transportation 5d")],
+      ["Fiscal productivity", "Update the Capital Improvement Plan yearly based on long-range demographic trends", R("Governance 3b")],
+      ["Fiscal productivity", "Transparent budget and an annual fiscal health report", R("Governance 1a") + " " + R("Governance 5c")]
+    ]) +
+    '<div class="callout caution s-unit"><b>Where the plan is weaker</b><span>The plan also supports extending utilities and roads to open new land ' + R("Public Facilities 1") + '. The Strong Towns test is whether an extension’s tax base will cover its replacement cost. Ask for that number first. Also: Ward Cove’s action letter differs between the Core Plan (4f) and Appendix A (4e), so confirm letters before citing them in a motion.</span></div>');
+
+  sec("alaska", "Plan", "Alaska case studies", "Peers", "Alaska case studies",
+    '<p class="point s-unit">Other Alaska communities have already made these changes. When someone says “that’s a Lower 48 idea,” point here.</p><div class="cases">' +
+    [
+      ["Juneau", "2017, updated 2022", "Created a downtown Alternative Development Overlay because most of downtown “was built before modern zoning standards.” The update allows 3,000 sq ft lots, 25 ft widths, and 3 ft setbacks if all setbacks add up to at least 20 ft.", "A Southeast town with steep, old, small-lot neighborhoods. The direct model for the rebuild-rule problem.", ext(SRC.jnuOverlay, "CBJ Downtown Zoning Project") + " · " + ext(SRC.jnuOrd, "Ord. 2021-36")],
+      ["Juneau", "2015 to present", "Pays homeowners to add an ADU, starting at $6,000 and now up to $13,500. 44 units built from 2015 to 2023 with $264,000 in grants.", "Allowing ADUs isn’t always enough. A small incentive helps get them built.", ext(SRC.jnuAdu, "CBJ, Aug 2023")],
+      ["Anchorage", "Nov 22, 2022", "Eliminated parking minimums citywide, 12–0, while adding bike parking and accessible-space rules. Downtown already had none.", "One developer said minimums were “the difference between something working or not working financially.”", ext(SRC.anc, "Sightline, Nov 2022")],
+      ["Sitka", "After 2017–18", "Expanded where ADUs are allowed, eased ADU rules, and moved toward 6,000 sq ft minimum lots in many areas and smaller setbacks.", "A Southeast peer with island land limits and a tourism economy. Confirm adoption dates with Sitka Planning.", ext(SRC.sitka, "Smart Growth America")],
+      ["Sitka", "Mar 10, 2020", "Allowed tiny houses on chassis as permanent homes in mobile home lots, 6–0.", "One of the first US cities to do so: a low-cost housing option.", ext(SRC.sitkaTiny, "KCAW, Mar 2020")]
+    ].map(function (c) {
+      return '<article class="case s-unit"><div class="case-top"><b>' + c[0] + '</b><span>' + c[1] + '</span></div><p>' + c[2] + '</p><div class="why">' + c[3] + '</div>' + c[4] + '</article>';
+    }).join('') + '</div>');
+
+  sec("build", "Act", "Things to build", "Action list", "Things to build and try in Ketchikan",
+    '<p class="point s-unit">Start with code changes the Commission can recommend directly. Then add street pilots the City and State can run, and data projects that make the case locally.</p>' +
+    '<h3>Code changes · Commission recommends, Assembly adopts</h3>' +
+    table(["Change", "What it does", "Plan hook"], [
+      ["Cut the RM/RH minimum lot from 5,000 to 3,500 sq ft", "More homes on existing sewer and streets", R("Housing 1e") + " " + R("Appx C p. 134")],
+      ["Confirm duplexes through fourplexes are allowed by right", "RM already allows 4 dwellings per lot; check the use table for permit requirements", R("Exec Sum p. 8") + " " + R("Land Use 2a")],
+      ["Allow corner stores and cafés in Urban Residential, with size caps", "Neighborhood services within walking distance", R("Exec Sum p. 8")],
+      ["Drop or cut parking minimums, starting downtown and for workforce housing", "Frees land and lowers building cost", R("Housing 2c") + " " + R("Land Use Strategy 4")],
+      ["Move setback variances to staff approval", "Ends near-automatic hearings", R("Land Use 2a") + " " + R("Appx A p. 4")],
+      ["A Juneau-style alternative standard for older neighborhoods", "Lets owners rebuild in historic footprints", R("Land Use 2b") + " " + R("KGBC 18.30.030")],
+      ["Adopt a pre-approved small-house plan set", "Faster, cheaper permits for small builders", R("Housing 2a")],
+      ["Narrower street standards for new subdivisions", "Lower build, plow, and repaving costs", R("Title 17") + " " + R("Appx C p. 123")],
+      ["Lifecycle cost estimate for new roads and utility extensions", "Shows whether the tax base will cover replacement", R("Governance 3b") + " " + R("Public Facilities 1")]
+    ]) +
+    fig("A 3,500 sq ft minimum fits 8 lots where today’s rule fits 6", "Illustration: one 300 × 100 ft block face", lotSplit(), "KGBC 18.60.020 RM standards · hypothetical block") +
+    P('On the same street, with no new pipe or pavement, the smaller minimum adds two homes per 300 ft of frontage: a third more lots on infrastructure the Borough already maintains.') +
+    '<h3>Street pilots · City and DOT&amp;PF act, the Borough advocates</h3>' +
+    list([
+      'Temporary curb extensions and high-visibility crosswalks downtown during cruise season, measured before and after',
+      'A Tongass Avenue safety and lane-width study with DOT&amp;PF, tied to ' + R("Transportation 5b") + ' and the STIP',
+      'A slow zone on downtown and Newtown residential streets'
+    ]) +
+    '<h3>Data projects · make the case with local numbers</h3>' +
+    list([
+      'A value-per-acre map from the 2025 tax roll. The Borough already built an assessed-use map from it (Appx A p. 12).',
+      'Infrastructure replacement liability by service area: miles of road and pipe, age, and replacement cost against the taxable value they serve',
+      'Speed and crash data for Tongass Avenue from DOT&amp;PF'
+    ]));
+
+  var QA = [
+    ["“More housing will mean more traffic.”", "Summer congestion comes from about 1.5 million cruise visitors on a town of 13,500. A few dozen new homes don’t cause it. Homes near downtown make shorter trips, and many can be walked.", "Widening doesn’t fix congestion: driving grows in proportion to added lane miles (" + ext(SRC.duranton, "Duranton & Turner 2011") + "). The plan manages demand instead " + R("Transportation 5d") + "."],
+    ["“Where will everyone park?”", "The builder and the lender still decide how much parking a project needs. Ending the minimum only stops the code from forcing more than the market wants.", "In Buffalo, projects still built parking, just 21% less than the old code required (" + ext(SRC.buffalo, "Hess & Rehler 2021") + "). Anchorage dropped minimums citywide in 2022. The plan supports relaxed parking for workforce housing " + R("Housing 2c") + "."],
+    ["“Apartments will hurt the neighborhood.”", "The adopted Future Land Use Map already lists fourplexes and townhomes for Urban Residential " + R("Exec Sum p. 8") + ". The Strong Towns rule: no neighborhood sees radical change, and none is exempt from change.", "Research mostly measures rents, not values: new 50+ unit buildings in lower-income areas cut rents within about two blocks by 5–7% (" + ext(SRC.upjohn, "Upjohn Institute, 2020") + ")."],
+    ["“Why not just open up more land out the road?”", "The Borough owns 0.5% of the land, population is projected to fall about 20% by 2050, and service-area residents pay for road upkeep. Every new mile of road is a permanent bill for fewer people.", "Lafayette, LA ended up with twice as much infrastructure liability as tax base (" + ext(SRC.lafayette, "Strong Towns") + "). The plan requires feasibility studies before deciding the future of large undeveloped tracts " + R("Appx A p. 3") + "."],
+    ["“It will change the character of the neighborhood.”", "Character is mostly about building size, setbacks, and how buildings meet the street. A duplex can look like a house.", "The plan supports design standards that protect character while allowing housing " + R("Land Use 2b") + ". Juneau’s downtown overlay was created to protect its historic pattern."],
+    ["“People said they want moderate growth.”", "They did, at 42% " + R("Exec Sum p. 4") + ". Small infill on existing streets is moderate growth.", "The same survey ranked affordable housing first, at 71% " + R("Appx C p. 82") + "."],
+    ["“Slower streets will hurt business or slow emergency response.”", "Downtown business runs on foot traffic. Emergency access is a real constraint: set narrow-street standards with the Fire Department, not around it.", "A pedestrian hit at 42 mph has a 50% risk of dying, against 10% at 23 mph (" + ext(SRC.tefft, "Tefft 2011") + ")."],
+    ["“Tongass Avenue is a State road. Why is this our business?”", "The plan directs the Borough to push for safer crossings and sidewalks there " + R("Transportation 5b") + ".", "The 2024–2027 STIP lists more than $50 million in regional projects and “emphasizes that local advocacy is essential” (Core Plan, Transportation)."],
+    ["“Government shouldn’t be in the housing business.”", "Agreed, and most of these changes remove rules rather than spend money. Larger lots, required parking, and hearings for routine setbacks are government requirements.", "The housing working group itself noted little appetite for government investment in housing (Appx C p. 134)."]
+  ];
+  sec("answers", "Defend", "Answers to challenges", "Q&amp;A", "Answers to common challenges",
+    '<p class="point s-unit">Lead with the Ketchikan fact or the plan citation, then the outside evidence. In a hearing, use only what is in the record and the code criteria.</p>' +
+    '<div class="qa-tools"><button class="btn btn-sm btn-ghost" type="button" id="expandAll">Expand all</button><button class="btn btn-sm btn-ghost" type="button" id="collapseAll">Collapse all</button></div>' +
+    '<div class="qa">' + QA.map(function (q, i) {
+      return '<details class="q s-unit" id="qa-' + i + '"><summary>' + q[0] + '</summary><div class="ans"><p>' + q[1] + '</p><div class="fact">' + q[2] + '</div></div></details>';
+    }).join('') + '</div>');
+
+  sec("limits", "Defend", "Honest limits", "Credibility", "Honest limits",
+    '<p class="point s-unit">Strong Towns is a framework, not settled science. Naming where it strains in Ketchikan before a critic does makes the rest of the case more credible.</p>' +
+    table(["Limit", "Why it matters here", "How to handle it"], [
+      ["Value per acre is a simplification", "It counts revenue, not the cost of serving each acre. Sales tax is mostly tourism, so property value alone undercounts commercial land.", "Show property and sales tax together. Pair revenue with service and replacement costs."],
+      ["Steep terrain and landslides", "Infill on steep lots costs more and can raise hazard risk.", "Hazards come before density. Use the Environmental Constraints overlay " + R("Appx A p. 19") + "."],
+      ["Fire and emergency access", "The International Fire Code generally calls for 20 ft of clear width on fire access roads (confirm locally).", "Write narrow-street standards with the Fire Department. Use parking limits and turnouts, not just narrower pavement."],
+      ["The State controls Tongass Avenue", "DOT&amp;PF sets its design standards and budget.", "Advocate through the STIP and " + R("Transportation 5b") + ". Focus Borough effort on City and service-area streets."],
+      ["Allowing infill doesn’t guarantee it", "Building costs are high and the market is small. The working group heard there are few attractive lots available in the City.", "Pair code changes with the land inventory, pre-approved plans, and the developer roundtable " + R("Housing 1c") + " " + R("2a") + " " + R("1g") + "."],
+      ["Sewer limits density", "Urban Residential density depends on sewer, and the record conflicts on capacity.", "Get a written capacity answer before upzoning " + R("Public Facilities 2") + "."],
+      ["Population is projected to fall", "Upzoning may produce less building if demand drops.", "The shortage is current, and the 16% vacancy figure includes seasonal and short-term rentals. Track permits " + R("Housing 1b") + "."],
+      ["Parking in a rainy, hilly town", "Walking and transit have limits in winter; downtown parking is scarce in summer.", "Start with downtown and workforce housing " + R("Housing 2c") + ", then measure before going further."],
+      ["The speed data is a national average", "Tefft’s curve is for an average pedestrian. Older pedestrians face higher risk at every speed.", "This cuts in favor of slower streets. Say so."]
+    ]));
+
+  sec("data", "Defend", "Data to gather", "Local evidence", "Local data to gather",
+    '<p class="point s-unit">Outside studies persuade. Ketchikan’s own numbers settle arguments. Request these through staff so they become part of the public record.</p>' +
+    table(["Data", "Who has it", "What it proves"], [
+      ["Taxable value per acre by parcel (2025 tax roll)", "Borough Assessor / GIS", "Which development patterns fund the Borough"],
+      ["Road and pipe miles, age, and replacement cost by service area", "Public Works, City, KPU", "Whether each area’s tax base covers its own upkeep"],
+      ["RM and RH parcels under 5,000 sq ft or 50 ft wide; buildings inside setbacks", "Planning staff / GIS", "How much of the older town is nonconforming"],
+      ["Setback variance count, approval rate, and processing time, 3–5 years", "Planning staff", "Whether variances can move to staff approval"],
+      ["Sewer treatment capacity vs. line coverage", "City / KPU", "Whether the limit is capacity or installation"],
+      ["Speeds and crashes on Tongass Avenue", "DOT&amp;PF, Ketchikan Police", "Where design speed exceeds safe speed"],
+      ["Building permits and units added per year", "Borough and City building departments", "Whether code changes produce housing " + R("Housing 1b")]
+    ]));
+
+  sec("sources", "Defend", "Sources", "References", "Sources",
+    '<div class="sources">' +
+    '<div class="s-unit"><h3>Ketchikan plan documents</h3><ul><li>2035 KGB Comprehensive Plan: Core Plan, Executive Summary, Appendices A–D (adopted Feb 2, 2026)</li></ul></div>' +
+    '<div class="s-unit"><h3>Law and Borough code</h3><ul>' +
+    '<li>' + ext(SRC.statute, "AS 29.40.040, Land use regulation") + ' (edition viewed is older; confirm current text)</li>' +
+    '<li>' + ext(SRC.k1830, "KGBC 18.30.030, Nonconforming uses and structures") + '</li>' +
+    '<li>' + ext(SRC.k1860, "KGBC 18.60.020, Residential development requirements") + '</li>' +
+    '<li>' + ext(SRC.k1860c, "KGBC 18.60.030, Commercial development requirements") + '</li>' +
+    '<li>' + ext(SRC.k1870, "KGBC 18.70.020, Central parking area") + '</li>' +
+    '<li>' + ext(SRC.k1870f, "KGBC 18.70.060, Parking development requirements") + '</li></ul></div>' +
+    '<div class="s-unit"><h3>Strong Towns and fiscal productivity</h3><ul>' +
+    '<li>' + ext(SRC.lafayette, "The Real Reason Your City Has No Money, Strong Towns (2017)") + '</li>' +
+    '<li>' + ext(SRC.incr, "Incremental Housing Overview, Strong Towns Action Lab") + '</li>' +
+    '<li>' + ext(SRC.asheville, "What’s the value of a great downtown? Smart Growth America / Urban3 (2016)") + '</li>' +
+    '<li>' + ext(SRC.buffalo, "Hess & Rehler, Minus Minimums, JAPA (2021)") + '</li>' +
+    '<li>' + ext(SRC.upjohn, "Asquith, Mast & Reed, new apartments and nearby rents, Upjohn Institute (2020)") + '</li></ul></div>' +
+    '<div class="s-unit"><h3>Streets and safety</h3><ul>' +
+    '<li>' + ext(SRC.stroad, "What’s a Stroad and Why Does It Matter? Strong Towns (2018)") + '</li>' +
+    '<li>' + ext(SRC.speedcost, "The High Cost of Speed, on Marohn’s Confessions of a Recovering Engineer (2022)") + '</li>' +
+    '<li>' + ext(SRC.tefft, "Tefft, Impact Speed and a Pedestrian’s Risk of Severe Injury or Death, AAA Foundation (2011)") + '</li>' +
+    '<li>' + ext(SRC.jhu, "Johns Hopkins lane width study (2023), Streetsblog summary") + '</li>' +
+    '<li>' + ext(SRC.duranton, "Duranton & Turner, The Fundamental Law of Road Congestion, AER (2011)") + '</li></ul></div>' +
+    '<div class="s-unit"><h3>Alaska case studies</h3><ul>' +
+    '<li>' + ext(SRC.jnuOverlay, "CBJ Downtown Zoning Project") + ' and ' + ext(SRC.jnuOrd, "Juneau Ord. 2021-36") + '</li>' +
+    '<li>' + ext(SRC.jnuAdu, "CBJ ADU grants increased to $13,500 (Aug 2023)") + '</li>' +
+    '<li>' + ext(SRC.anc, "Anchorage Assembly unites to end parking mandates, Sightline (Nov 2022)") + '</li>' +
+    '<li>' + ext(SRC.sitka, "Since the workshop: Sitka tackles housing affordability, Smart Growth America") + '</li>' +
+    '<li>' + ext(SRC.sitkaTiny, "Assembly makes room for tiny houses in city code, KCAW (Mar 2020)") + '</li></ul></div>' +
+    '</div>');
+
+  /* ---------- Render ---------- */
+  var hero = '<div class="hero"><div class="eyebrow">KGB Planning Commission reference</div>' +
+    '<h1>Ketchikan Planning Fact Book</h1>' +
+    '<p class="lede">The adopted 2035 Comprehensive Plan, the Borough code, and the Strong Towns evidence in one place, for answering questions and backing zoning decisions with sourced facts.</p>' +
+    '<div class="meta"><span>As of <b>Oct 3, 2026</b></span><span>Plan adopted <b>Feb 2, 2026</b></span><span>Code through <b>Ord. 2120</b></span></div>' +
+    '<div class="tiles">' +
+    [["0.5%", "of land in the Borough is Borough-owned", "Appx A p. 10", true], ["−20%", "projected population change, 2023–2050", "Exec Sum p. 5"], ["71%", "of survey respondents put affordable housing first", "Appx C p. 82"],
+     ["5,000 sq ft", "minimum lot in RM and RH zones today", "KGBC 18.60.020"], ["1.5M", "cruise passengers in 2024, on 13,500 residents", "Core Plan"], ["50%", "pedestrian death risk at a 42 mph impact", "Tefft 2011"]]
+      .map(function (t) { return '<div class="tile' + (t[3] ? ' key' : '') + '"><span class="num">' + t[0] + '</span><span class="lbl">' + t[1] + '</span><span class="src">' + t[2] + '</span></div>'; }).join('') +
+    '</div></div>';
+
+  var content = document.getElementById("content");
+  content.innerHTML = hero + '<div class="match-count" id="matchCount" hidden></div>' + S.map(function (s) {
+    return '<section class="sec" id="' + s.id + '"><div class="sec-head"><span class="sec-kicker">' + s.kicker + '</span><h2>' + s.title + '</h2></div>' + s.html + '</section>';
+  }).join('') + '<footer class="foot"><span>Prepared for use at the Ketchikan Gateway Borough Planning Commission. Not legal advice; confirm code text with the Borough Clerk before citing in a motion.</span></footer>';
+
+  var groups = [];
+  S.forEach(function (s) { if (groups.indexOf(s.group) < 0) groups.push(s.group); });
+  document.getElementById("rail").innerHTML = groups.map(function (g) {
+    return '<div class="rail-group"><p class="rail-label">' + g + '</p>' + S.filter(function (s) { return s.group === g; }).map(function (s) { return '<a href="#' + s.id + '" data-id="' + s.id + '">' + s.nav + '</a>'; }).join('') + '</div>';
+  }).join('');
+  document.getElementById("chips").innerHTML = S.map(function (s) { return '<a href="#' + s.id + '" data-id="' + s.id + '">' + s.nav + '</a>'; }).join('');
+  document.getElementById("drawerBody").innerHTML = hearingCard();
+
+  /* Ped chart, sized to its box */
+  var pedBox = document.getElementById("pedChart");
+  function drawPed() { var w = Math.max(300, Math.round(pedBox.clientWidth || 700)); pedBox.innerHTML = pedChart(w); }
+  drawPed();
+  var rt; window.addEventListener("resize", function () { clearTimeout(rt); rt = setTimeout(drawPed, 120); });
+
+  /* Toast + copy */
+  var toast = document.getElementById("toast"), tt;
+  function say(msg) { toast.textContent = msg; toast.hidden = false; clearTimeout(tt); tt = setTimeout(function () { toast.hidden = true; }, 1800); }
+  document.addEventListener("click", function (e) {
+    var b = e.target.closest("[data-copy]"); if (!b) return;
+    var text = b.getAttribute("data-copy") === "formula" ? FORMULA : SCRIPT;
+    var done = function () { say("Copied"); };
+    try {
+      navigator.clipboard.writeText(text).then(done, function () { fallback(text); });
+    } catch (err) { fallback(text); }
+  });
+  function fallback(text) {
+    var ta = document.createElement("textarea"); ta.value = text; ta.setAttribute("readonly", ""); ta.style.position = "fixed"; ta.style.opacity = "0";
+    document.body.appendChild(ta); ta.select();
+    var ok = false; try { ok = document.execCommand("copy"); } catch (e) {}
+    document.body.removeChild(ta); say(ok ? "Copied" : "Select the text to copy it");
+  }
+
+  /* Drawer */
+  var drawer = document.getElementById("drawer"), scrim = document.getElementById("scrim"), opener = document.getElementById("openCard");
+  function openCard() { drawer.hidden = false; scrim.hidden = false; document.getElementById("closeCard").focus(); }
+  function closeCard() { drawer.hidden = true; scrim.hidden = true; opener.focus(); }
+  opener.addEventListener("click", openCard);
+  document.getElementById("closeCard").addEventListener("click", closeCard);
+  scrim.addEventListener("click", closeCard);
+
+  /* Q&A */
+  document.getElementById("expandAll").addEventListener("click", function () { document.querySelectorAll("details.q").forEach(function (d) { d.open = true; }); });
+  document.getElementById("collapseAll").addEventListener("click", function () { document.querySelectorAll("details.q").forEach(function (d) { d.open = false; }); });
+
+  /* Scrollspy */
+  var links = document.querySelectorAll(".rail a, .chips a");
+  function setActive(id) {
+    links.forEach(function (a) {
+      var on = a.getAttribute("data-id") === id; a.classList.toggle("active", on);
+      if (on && a.parentElement.id === "chips") {
+        var bar = a.parentElement;
+        if (bar.offsetParent !== null) bar.scrollLeft = a.offsetLeft - (bar.clientWidth - a.offsetWidth) / 2;
+      }
+    });
+  }
+  if ("IntersectionObserver" in window) {
+    var vis = {};
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { vis[en.target.id] = en.isIntersecting ? en.boundingClientRect.top : null; });
+      var best = null, bestTop = Infinity;
+      S.forEach(function (s) { var t = vis[s.id]; if (t !== null && t !== undefined && Math.abs(t) < bestTop) { best = s.id; bestTop = Math.abs(t); } });
+      if (best) setActive(best);
+    }, { rootMargin: "-90px 0px -55% 0px" });
+    S.forEach(function (s) { io.observe(document.getElementById(s.id)); });
+  }
+
+  /* Search */
+  var q = document.getElementById("q"), clearBtn = document.getElementById("clear"), kbd = document.getElementById("kbd");
+  var units = Array.prototype.slice.call(document.querySelectorAll("#content .s-unit"));
+  var originals = new Map();
+  units.forEach(function (u) { u._text = u.textContent.toLowerCase(); });
+  function clearMarks() {
+    document.querySelectorAll("#content mark.hit").forEach(function (m) { var t = document.createTextNode(m.textContent); m.parentNode.replaceChild(t, m); t.parentNode.normalize(); });
+  }
+  function markIn(el, term) {
+    var walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, null), nodes = [], n;
+    while ((n = walker.nextNode())) { if (n.nodeValue.toLowerCase().indexOf(term) > -1 && !n.parentNode.closest("svg")) nodes.push(n); }
+    nodes.forEach(function (node) {
+      var v = node.nodeValue, lower = v.toLowerCase(), frag = document.createDocumentFragment(), i = 0, k;
+      while ((k = lower.indexOf(term, i)) > -1) {
+        frag.appendChild(document.createTextNode(v.slice(i, k)));
+        var m = document.createElement("mark"); m.className = "hit"; m.textContent = v.slice(k, k + term.length); frag.appendChild(m);
+        i = k + term.length;
+      }
+      frag.appendChild(document.createTextNode(v.slice(i)));
+      node.parentNode.replaceChild(frag, node);
+    });
+  }
+  function run() {
+    var term = q.value.trim().toLowerCase();
+    clearMarks();
+    clearBtn.hidden = !term; kbd.hidden = !!term;
+    var mc = document.getElementById("matchCount"), hero = document.querySelector(".hero");
+    if (!term) {
+      units.forEach(function (u) { u.hidden = false; });
+      S.forEach(function (s) { document.getElementById(s.id).hidden = false; });
+      document.querySelectorAll(".rail a, .chips a").forEach(function (a) { a.classList.remove("dim"); });
+      hero.hidden = false; mc.hidden = true; document.getElementById("empty").hidden = true;
+      return;
+    }
+    var total = 0;
+    hero.hidden = true;
+    S.forEach(function (s) {
+      var el = document.getElementById(s.id), hits = 0;
+      el.querySelectorAll(".s-unit").forEach(function (u) {
+        if (u.parentElement.closest(".s-unit")) return;
+        var hit = u._text.indexOf(term) > -1 || (s.title.toLowerCase().indexOf(term) > -1);
+        u.hidden = !hit;
+        if (hit) { hits++; if (u.tagName === "DETAILS") u.open = true; markIn(u, term); }
+      });
+      el.querySelectorAll(".s-unit .s-unit").forEach(function (u) { u.hidden = false; });
+      el.querySelectorAll(":scope > h3").forEach(function (h) { h.hidden = true; });
+      el.querySelectorAll(".qa-tools").forEach(function (h) { h.hidden = true; });
+      el.hidden = hits === 0;
+      total += hits;
+      document.querySelectorAll('[data-id="' + s.id + '"]').forEach(function (a) { a.classList.toggle("dim", hits === 0); });
+    });
+    mc.hidden = total === 0;
+    mc.textContent = total + (total === 1 ? " match" : " matches") + " for “" + q.value.trim() + "”";
+    document.getElementById("empty").hidden = total !== 0;
+  }
+  function resetAux() { document.querySelectorAll("#content section > h3, .qa-tools").forEach(function (h) { h.hidden = false; }); }
+  var st;
+  q.addEventListener("input", function () { clearTimeout(st); st = setTimeout(function () { run(); if (!q.value.trim()) resetAux(); }, 120); });
+  clearBtn.addEventListener("click", function () { q.value = ""; run(); resetAux(); q.focus(); });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+      if (!drawer.hidden) { closeCard(); return; }
+      if (document.activeElement === q && q.value) { q.value = ""; run(); resetAux(); }
+    }
+    if (e.key === "/" && document.activeElement !== q && !/input|textarea/i.test(document.activeElement.tagName)) { e.preventDefault(); q.focus(); }
+  });
+  /* hidden <h3> must keep the hidden attribute effective on figures etc. */
+})();
+</script>
+
+<script>
+(function () {
+  "use strict";
+  var panel = document.getElementById("ask"), scrimA = document.getElementById("askScrim");
+  var openBtn = document.getElementById("openAsk"), closeBtn = document.getElementById("closeAsk");
+  var thread = document.getElementById("askThread"), form = document.getElementById("askForm"), input = document.getElementById("askInput");
+  var sendBtn = document.getElementById("askSend"), statusEl = document.getElementById("askStatus");
+  var passRow = document.getElementById("passRow"), passInput = document.getElementById("passInput");
+  var history = [], busy = false, status = null, controller = null;
+
+  function store(k, v) { try { if (v === undefined) return localStorage.getItem(k); if (v === null) localStorage.removeItem(k); else localStorage.setItem(k, v); } catch (e) { return null; } }
+  function passcode() { return passInput.value || store("fb-passcode") || ""; }
+  function headers() { return { "Content-Type": "application/json", "x-passcode": passcode() }; }
+  function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+
+  function open() { panel.hidden = false; scrimA.hidden = false; loadStatus(); setTimeout(function () { input.focus(); }, 30); }
+  function close() { panel.hidden = true; scrimA.hidden = true; openBtn.focus(); }
+  openBtn.addEventListener("click", open);
+  closeBtn.addEventListener("click", close);
+  scrimA.addEventListener("click", close);
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !panel.hidden) close(); });
+
+  function renderStatus(msg, ok) {
+    statusEl.innerHTML = "";
+    var s = el("span"); var d = el("span", "dot" + (ok === true ? " ok" : ok === false ? " bad" : "")); s.appendChild(d); s.appendChild(document.createTextNode(msg)); statusEl.appendChild(s);
+    if (status && status.documents && status.documents.length) {
+      var det = el("details"); det.appendChild(el("summary", null, status.documents.length + " documents loaded"));
+      var ul = el("ul"); status.documents.forEach(function (d) { ul.appendChild(el("li", null, d.title + " · " + Math.round(d.chars / 4).toLocaleString() + " tokens")); });
+      det.appendChild(ul); statusEl.appendChild(det);
+    }
+  }
+  function loadStatus() {
+    fetch("/api/status").then(function (r) { return r.json(); }).then(function (s) {
+      status = s;
+      passRow.hidden = !(s.passcodeRequired && !store("fb-passcode"));
+      if (!s.keyConfigured) return renderStatus("Ask is off: the server has no ANTHROPIC_API_KEY.", false);
+      if (!s.documents.length) return renderStatus("Ask is off: no documents in the docs folder.", false);
+      renderStatus("Ready · " + s.model, true);
+    }).catch(function () { renderStatus("Can't reach the server. Ask works only on the hosted version of this site.", false); });
+  }
+
+  document.getElementById("savePass").addEventListener("click", function () {
+    if (passInput.value) { store("fb-passcode", passInput.value); passRow.hidden = true; input.focus(); }
+  });
+  document.getElementById("warmBtn").addEventListener("click", function () {
+    var b = this; b.disabled = true; b.textContent = "Loading…";
+    fetch("/api/warm", { method: "POST", headers: headers(), body: "{}" }).then(function (r) { return r.json().then(function (j) { return { ok: r.ok, j: j, code: r.status }; }); })
+      .then(function (x) {
+        if (x.code === 401) { store("fb-passcode", null); passRow.hidden = false; }
+        renderStatus(x.ok ? "Documents loaded into Claude's cache for about " + (status && status.cacheTtl === "5m" ? "5 minutes" : "an hour") + "." : x.j.error, x.ok);
+      })
+      .catch(function () { renderStatus("Couldn't load documents. Check your connection.", false); })
+      .then(function () { b.disabled = false; b.textContent = "Preload"; });
+  });
+  document.getElementById("newChat").addEventListener("click", function () {
+    if (controller) controller.abort();
+    history = []; thread.innerHTML = ""; thread.appendChild(emptyState()); input.focus();
+  });
+
+  var SUGGEST = [
+    "What does the plan say about parking minimums?",
+    "What are the RM zone setbacks and minimum lot size?",
+    "Which actions in the plan support missing-middle housing?",
+    "What does the plan say about Herring Cove?",
+    "What did residents say about short-term rentals?"
+  ];
+  function emptyState() {
+    var w = el("div", "ask-empty");
+    var p = el("p"); p.innerHTML = "<b>Ask the plan.</b> Answers come from the comp plan, its appendices, the Fact Book, and any files in the docs folder, with the passages they rely on.";
+    w.appendChild(p);
+    var s = el("div", "ask-suggest");
+    SUGGEST.forEach(function (q) { var b = el("button", null, q); b.type = "button"; b.addEventListener("click", function () { input.value = q; ask(); }); s.appendChild(b); });
+    w.appendChild(s);
+    w.appendChild(el("p", "ask-note", "In a quasi-judicial hearing, decisions must rest on the code criteria and the hearing record. Use answers to find the right page, not as evidence."));
+    return w;
+  }
+  thread.appendChild(emptyState());
+
+  input.addEventListener("keydown", function (e) { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); ask(); } });
+  form.addEventListener("submit", function (e) { e.preventDefault(); ask(); });
+
+  function ask() {
+    var q = input.value.trim(); if (!q || busy) return;
+    var empty = thread.querySelector(".ask-empty"); if (empty) empty.remove();
+    input.value = ""; busy = true; sendBtn.disabled = true; sendBtn.textContent = "Answering…";
+    thread.appendChild(el("div", "msg-q", q));
+    var a = el("div", "msg-a"), body = el("div", "body"), typing = el("span", "typing"); typing.innerHTML = "<i></i><i></i><i></i>";
+    body.appendChild(typing); a.appendChild(body); thread.appendChild(a); thread.scrollTop = thread.scrollHeight;
+
+    var blocks = [], sources = [], plain = "", started = Date.now();
+    function srcIndex(c) {
+      var key = c.title + "|" + c.page + "|" + c.text.slice(0, 80);
+      for (var i = 0; i < sources.length; i++) if (sources[i].key === key) return i;
+      sources.push({ key: key, title: c.title, page: c.page, text: c.text }); return sources.length - 1;
+    }
+    function render() {
+      body.innerHTML = "";
+      blocks.forEach(function (b) {
+        body.appendChild(document.createTextNode(b.text));
+        var seen = {};
+        b.cites.forEach(function (n) { if (seen[n]) return; seen[n] = 1; var s = el("sup", null, "[" + (n + 1) + "]"); s.addEventListener("click", function () { var d = a.querySelector('[data-src="' + n + '"]'); if (d) { d.open = true; d.scrollIntoView({ block: "nearest" }); } }); body.appendChild(s); });
+      });
+      thread.scrollTop = thread.scrollHeight;
+    }
+    function finishSources(meta) {
+      if (sources.length) {
+        var box = el("div", "srcs"); box.appendChild(el("div", "srcs-label", "Sources"));
+        sources.forEach(function (s, i) {
+          var d = el("details", "src"); d.setAttribute("data-src", i);
+          var sm = el("summary"); var b = el("b", null, "[" + (i + 1) + "]"); sm.appendChild(b); sm.appendChild(document.createTextNode(s.title + (s.page ? " · p. " + s.page : "")));
+          d.appendChild(sm); d.appendChild(el("blockquote", null, s.text)); box.appendChild(d);
+        });
+        a.appendChild(box);
+      }
+      if (meta) a.appendChild(el("div", "meta-line", meta));
+    }
+    function fail(msg) { body.innerHTML = ""; a.appendChild(el("div", "err", msg)); }
+
+    controller = new AbortController();
+    fetch("/api/ask", { method: "POST", headers: headers(), body: JSON.stringify({ question: q, history: history }), signal: controller.signal })
+      .then(function (r) {
+        if (!r.ok) return r.json().catch(function () { return { error: "Request failed (" + r.status + ")." }; }).then(function (j) {
+          if (r.status === 401) { store("fb-passcode", null); passRow.hidden = false; }
+          throw new Error(j.error || "Request failed.");
+        });
+        var reader = r.body.getReader(), dec = new TextDecoder(), buf = "", gotDone = false;
+        function pump() {
+          return reader.read().then(function (x) {
+            if (x.done) return gotDone;
+            buf += dec.decode(x.value, { stream: true });
+            var parts = buf.split("\n\n"); buf = parts.pop();
+            parts.forEach(function (part) {
+              var line = part.split("\n").filter(function (l) { return l.indexOf("data: ") === 0; }).map(function (l) { return l.slice(6); }).join("");
+              if (!line) return;
+              var ev; try { ev = JSON.parse(line); } catch (e) { return; }
+              if (ev.type === "block") blocks.push({ text: "", cites: [] });
+              else if (ev.type === "text") { if (!blocks.length) blocks.push({ text: "", cites: [] }); blocks[blocks.length - 1].text += ev.text; plain += ev.text; render(); }
+              else if (ev.type === "cite") { if (!blocks.length) blocks.push({ text: "", cites: [] }); blocks[blocks.length - 1].cites.push(srcIndex(ev)); render(); }
+              else if (ev.type === "error") throw new Error(ev.error);
+              else if (ev.type === "done") {
+                gotDone = true;
+                var u = ev.usage || {}, secs = ((Date.now() - started) / 1000).toFixed(1);
+                var cached = u.cache_read_input_tokens ? " · documents from cache" : (u.cache_creation_input_tokens ? " · documents cached for next time" : "");
+                finishSources(secs + " s" + cached + (ev.stop === "max_tokens" ? " · answer was cut off; ask for the rest" : ""));
+              }
+            });
+            return pump();
+          });
+        }
+        return pump();
+      })
+      .then(function () {
+        if (!plain) fail("No answer came back. Try again.");
+        else { history.push({ role: "user", content: q }, { role: "assistant", content: plain }); history = history.slice(-12); }
+      })
+      .catch(function (err) { if (err.name !== "AbortError") fail(err.message || "Something went wrong."); })
+      .then(function () { busy = false; sendBtn.disabled = false; sendBtn.textContent = "Ask"; controller = null; input.focus(); });
+  }
+})();
+</script>
+
+</body>
+</html>
