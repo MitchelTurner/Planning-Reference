@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex">
 <title>Ketchikan Planning Fact Book</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'%3E%3Crect width='18' height='18' rx='4' fill='%2312222a'/%3E%3Cpath d='M2 12.5c2.2-1.4 4.4-1.4 6.6 0s4.4 1.4 6.6 0' fill='none' stroke='%239fc7e6' stroke-width='1.6' stroke-linecap='round'/%3E%3Cpath d='M4 9.5 9 3l5 6.5' fill='none' stroke='%23fff' stroke-width='1.6' stroke-linejoin='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;600;700;800&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap">
@@ -156,6 +157,10 @@ td:first-child { font-weight: 600; }
 td.num, th.num { font-variant-numeric: tabular-nums; }
 .tbl-cmp td:not(:first-child) { font-variant-numeric: tabular-nums; }
 .tbl-cmp th.hl, .tbl-cmp td.hl { background: var(--tide-tint); }
+/* Nine columns of short numbers: tighten the cells and keep them on one line so the table fits without scrolling. */
+.tbl-tight th, .tbl-tight td { padding: 9px 10px; white-space: nowrap; }
+.tbl-tight th { font-size: 10.5px; letter-spacing: .04em; }
+.tbl-tight td:first-child { white-space: normal; min-width: 108px; }
 @media (max-width: 680px) {
   .tbl-wrap.stack { border: 0; background: none; overflow: visible; }
   .stack table, .stack tbody, .stack tr, .stack td { display: block; width: 100%; }
@@ -166,6 +171,16 @@ td.num, th.num { font-variant-numeric: tabular-nums; }
   /* Label beside the value, not above it: a 16-row table is a long scroll on a phone. */
   .stack td:not(:first-child) { display: grid; grid-template-columns: 74px minmax(0, 1fr); gap: 10px; align-items: baseline; padding: 4px 0; }
   .stack td:not(:first-child)::before { content: attr(data-label); font-family: var(--f-mono); font-size: 10.5px; letter-spacing: .07em; text-transform: uppercase; color: var(--faint); line-height: 1.7; }
+  .stack td .v { min-width: 0; }
+  /* Wide numeric tables scroll sideways rather than stacking; the edge shades show there is more, and fade out at each end. */
+  .tbl-wrap:not(.stack) {
+    background:
+      linear-gradient(to right, var(--surface) 40%, rgba(255,255,255,0)) left / 30px 100% no-repeat local,
+      linear-gradient(to left, var(--surface) 40%, rgba(255,255,255,0)) right / 30px 100% no-repeat local,
+      radial-gradient(farthest-side at 0 50%, rgba(18,34,42,.15), rgba(18,34,42,0)) left / 11px 100% no-repeat scroll,
+      radial-gradient(farthest-side at 100% 50%, rgba(18,34,42,.15), rgba(18,34,42,0)) right / 11px 100% no-repeat scroll,
+      var(--surface);
+  }
 }
 
 /* Figures */
@@ -353,7 +368,6 @@ footer.foot { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--r
   .arrow em { top: auto; left: calc(50% + 12px); }
 }
 @media (max-width: 460px) {
-  .brand-name { display: none; }
   .topbar-in { gap: 10px; padding-inline: 16px; }
   .shell { padding-inline: 16px; }
   .chips { padding-inline: 16px; }
@@ -403,7 +417,6 @@ footer.foot { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--r
 .pass { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
 .pass input { height: 34px; border: 1px solid var(--rule-strong); border-radius: 8px; padding: 0 10px; font: inherit; font-size: 14px; flex: 1 1 160px; min-width: 0; }
 .ask-note { font-size: 12px; color: var(--muted); }
-@media (max-width: 720px) { .btn-ask span { display: none; } }
 
 /* Print: the hearing card on paper is the point, so drop the chrome and flatten the dark panels. */
 @media print {
@@ -543,7 +556,8 @@ footer.foot { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--r
     var h = '<div class="tbl-wrap' + (opts.stack === false ? '' : ' stack') + '"><table class="' + (opts.cls || '') + '"><thead><tr>' +
       heads.map(function (x, i) { return '<th' + (opts.hl === i ? ' class="hl"' : '') + '>' + x + '</th>'; }).join('') + '</tr></thead><tbody>';
     rows.forEach(function (r) {
-      h += '<tr class="s-unit">' + r.map(function (c, i) { return '<td data-label="' + esc(heads[i]) + '"' + (opts.hl === i ? ' class="hl"' : '') + '>' + c + '</td>'; }).join('') + '</tr>';
+      // The span keeps each cell a single child, so the stacked phone layout can put the label beside one value.
+      h += '<tr class="s-unit">' + r.map(function (c, i) { return '<td data-label="' + esc(heads[i]) + '"' + (opts.hl === i ? ' class="hl"' : '') + '><span class="v">' + c + '</span></td>'; }).join('') + '</tr>';
     });
     return h + '</tbody></table></div>';
   }
@@ -818,27 +832,27 @@ footer.foot { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--r
   sec("zones", "Ketchikan", "Zoning districts", "Reference", "Every zoning district and its numbers",
     '<p class="point s-unit">Fifteen base districts and five overlays. The numbers below are the whole of ' + R("KGBC 18.60") + ', so you can check an application against its zone without leaving the page.</p>' +
     '<h3>Residential</h3>' +
-    table(["Zone", "Min. lot area", "Min. width", "Front", "Side", "Rear", "Max. height", "Max. coverage", "Dwellings per lot"], [
+    table(["Zone", "Lot area", "Width", "Front", "Side", "Rear", "Height", "Coverage", "Dwellings"], [
       ["RR Rural", "50,000 sq ft", "160 ft", "25 ft", "30 ft", "60 ft", "30 ft", "25%", "1"],
       ["RS Suburban", "25,000 sq ft", "110 ft", "15 ft", "15 ft", "20 ft", "30 ft", "50%", "2"],
       ["RL Low density", "15,000 sq ft", "100 ft", "15 ft", "15 ft", "20 ft", "30 ft", "50%", "3"],
       ["RN Neighborhood", "10,000 sq ft", "75 ft", "15 ft", "10 ft", "20 ft", "30 ft", "50%", "3"],
       ["RM Medium density", "5,000 sq ft", "50 ft", "10 ft", "5 ft", "15 ft", "30 ft", "50%", "4"],
       ["RH High density", "5,000 sq ft", "50 ft", "10 ft", "5 ft", "5 ft *", "30 ft", "100%", "No limit"]
-    ], { cls: "tbl-cmp", stack: false }) +
-    '<p class="note s-unit">* Where an RH lot\'s rear line abuts an RL, RS, RN, or RM lot, the minimum rear yard is 15 feet. ' + ext(SRC.k1860, "KGBC 18.60.020") + '</p>' +
+    ], { cls: "tbl-cmp tbl-tight", stack: false }) +
+    '<p class="note s-unit">Minimums for lot area and width, minimum front, side, and rear yards, maximum height, maximum lot coverage, and the maximum number of dwellings per lot. * Where an RH lot\'s rear line abuts an RL, RS, RN, or RM lot, the minimum rear yard is 15 feet. ' + ext(SRC.k1860, "KGBC 18.60.020") + '</p>' +
     '<h3>Commercial, industrial, and miscellaneous</h3>' +
-    table(["Zone", "Min. lot area", "Min. width", "Front", "Side", "Rear", "Max. height", "Max. coverage", "Dwellings per lot"], [
+    table(["Zone", "Lot area", "Width", "Front", "Side", "Rear", "Height", "Coverage", "Dwellings"], [
       ["CC Central commercial", "None", "50 ft", "0", "0", "0", "None", "100%", "No limit"],
       ["CG General commercial", "None", "50 ft", "0", "0", "0", "50 ft", "100%", "No limit"],
       ["FD Future development", "None", "None", "0", "0", "0", "None", "100%", "1"],
       ["IL Light industrial", "None", "None", "0", "0", "0", "50 ft", "100%", "No limit"],
-      ["IH Heavy industrial", "None", "None", "0", "0", "0", "None", "100%", "2, caretaker only"],
+      ["IH Heavy industrial", "None", "None", "0", "0", "0", "None", "100%", "2, caretaker"],
       ["AD Airport development", "None", "None", "0", "0", "0", "None", "100%", "—"],
       ["PLI Public lands and institutions", "None", "None", "10 ft", "10 ft", "10 ft", "None", "100%", "—"],
       ["HD Creek Street historic", "None", "None", "0", "0", "0", "2 stories", "100%", "—"]
-    ], { cls: "tbl-cmp", stack: false }) +
-    '<p class="note s-unit">Where a CC, CG, or PLI zone abuts or is separated by an alley from a residential zone, yards are those of the adjacent residential zone; a CG use must also be screened. Residential development in FD follows the RS standards. Overlay districts use the underlying zone\'s numbers. Sources: ' + ext(SRC.k1860c, "KGBC 18.60.030") + ', ' + ext(SRC.k1860i, "18.60.040") + ', ' + ext(SRC.k1860m, "18.60.050") + '.</p>' +
+    ], { cls: "tbl-cmp tbl-tight", stack: false }) +
+    '<p class="note s-unit">Where a CC, CG, or PLI zone abuts or is separated by an alley from a residential zone, yards are those of the adjacent residential zone; a CG use must also be screened. Residential development in FD follows the RS standards. Dwellings in IH are for a caretaker or watchman only. Overlay districts use the underlying zone\'s numbers. Sources: ' + ext(SRC.k1860c, "KGBC 18.60.030") + ', ' + ext(SRC.k1860i, "18.60.040") + ', ' + ext(SRC.k1860m, "18.60.050") + '.</p>' +
     '<h3>What each district is for</h3>' +
     P('The purpose statements in ' + R("KGBC 18.40.010") + ' are worth reading before a rezone hearing, because a rezone has to be justified against the district\'s stated intent, not only its numbers.') +
     table(["Zone", "Established to"], [
@@ -1119,7 +1133,7 @@ footer.foot { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--r
     '<div class="meta"><span>As of <b>Oct 3, 2026</b></span><span>Plan adopted <b>Feb 2, 2026</b></span><span>Code through <b>Ord. 2120</b></span></div>' +
     '<div class="tiles">' +
     [["0.5%", "of land in the Borough is Borough-owned", "Appx A p. 10", true], ["−20%", "projected population change, 2023–2050", "Exec Sum p. 5"], ["71%", "of survey respondents put affordable housing first", "Appx C p. 82"],
-     ["5,000 sq ft", "minimum lot in RM and RH zones today", "KGBC 18.60.020"], ["1.5M", "cruise passengers in 2024, on 13,500 residents", "Core Plan"], ["50%", "pedestrian death risk at a 42 mph impact", "Tefft 2011"]]
+     ["5,000", "sq ft minimum lot in RM and RH zones today", "KGBC 18.60.020"], ["1.5M", "cruise passengers in 2024, on 13,500 residents", "Core Plan"], ["50%", "pedestrian death risk at a 42 mph impact", "Tefft 2011"]]
       .map(function (t) { return '<div class="tile' + (t[3] ? ' key' : '') + '"><span class="num">' + t[0] + '</span><span class="lbl">' + t[1] + '</span><span class="src">' + t[2] + '</span></div>'; }).join('') +
     '</div></div>';
 
